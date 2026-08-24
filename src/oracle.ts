@@ -41,26 +41,32 @@ function walk(
 ): OracleTable[] {
   if (!value || typeof value !== "object") return [];
   const found = [];
+  const name = typeof value.name === "string" ? value.name : undefined;
   if (Array.isArray(value.rows))
     found.push({
       id: path.join("/"),
       tableId: path.at(-1),
-      label: [...labels, value.name]
+      label: [...labels, name]
         .filter(Boolean)
         .filter(
-          (name, index, names) => index === 0 || name !== names[index - 1],
+          (label, index, names) => index === 0 || label !== names[index - 1],
         )
         .join(" / "),
       ...value,
     });
   for (const [key, child] of Object.entries(value))
     if (key !== "rows" && key !== "_source") {
-      const named = child as { name?: string };
+      const childName =
+        child &&
+        typeof child === "object" &&
+        typeof (child as { name?: unknown }).name === "string"
+          ? (child as { name: string }).name
+          : undefined;
       found.push(
         ...walk(
           child,
           [...path, key],
-          named?.name ? [...labels, named.name] : labels,
+          childName ? [...labels, childName] : labels,
         ),
       );
     }

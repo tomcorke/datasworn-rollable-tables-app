@@ -37,8 +37,27 @@ describe("Datasworn oracle helpers", () => {
     expect(
       tableDisplayName({ label: { name: "Broken" } } as unknown as OracleTable),
     ).toBe("Oracle table");
+    expect(tableDisplayName({ label: null })).toBe("Oracle table");
+    expect(
+      tableDisplayName({ label: ["Broken"] } as unknown as OracleTable),
+    ).toBe("Oracle table");
     expect(tableDisplayName({ name: "Regions" })).toBe("Regions");
     expect(tableDisplayName({ tableId: "regions" })).toBe("regions");
+  });
+  it("ignores object and array names while discovering table labels", () => {
+    const tables = getTables({
+      oracles: {
+        objectName: { name: { en: "Broken" }, rows: [] },
+        arrayName: { name: ["Broken"], rows: [] },
+        nullName: { name: null, rows: [{ min: 1, max: 100, text: "Result" }] },
+      },
+    });
+    expect(tables.map((table) => table.label)).toEqual(["", "", ""]);
+    expect(tables.map(tableDisplayName)).toEqual([
+      "objectName",
+      "arrayName",
+      "nullName",
+    ]);
   });
   it("preserves line breaks between multiline result fields", () => {
     expect(resultText({ text: "Forest", text2: "Trees\nHide nearby" })).toBe(
