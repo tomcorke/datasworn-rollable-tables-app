@@ -142,6 +142,7 @@ button {
 }
 .result h2 {
   font-size: 27px;
+  white-space: pre-line;
 }
 .table-card {
   background: #f8faf7;
@@ -181,6 +182,7 @@ button {
 .row p {
   margin: 0;
   line-height: 1.4;
+  white-space: pre-line;
 }
 footer {
   font: 12px "DM Mono";

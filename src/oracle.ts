@@ -88,7 +88,7 @@ export function resultParts(row: OracleRow | undefined): ResultPart[] {
   const text =
     [resolved?.text, resolved?.text2, resolved?.text3]
       .filter(Boolean)
-      .join(" - ") ||
+      .join("\n") ||
     resolved?.result ||
     resolved?.description;
   if (!text) return [{ type: "text", value: "No result for this roll." }];
