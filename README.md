@@ -2,6 +2,24 @@
 
 React + TypeScript SPA for browsing and rolling bundled Datasworn oracle tables.
 
+## GitHub Pages payload
+
+`npm run build:pages` builds the static site into `dist/`. The `gh-pages` branch contains only that generated payload and this README, so it can be used as a static publishing branch. Regenerate it from `main` when the app changes.
+
+To publish an update:
+
+```sh
+git switch gh-pages
+git merge main --no-edit
+rm -rf dist
+npm run build:pages
+git add -A
+git commit -m "Deploy latest main to GitHub Pages"
+git push origin gh-pages
+```
+
+The `gh-pages` branch should retain only `dist/` and this README. After merging `main`, remove any other tracked files before committing. Do not run package installation or modify `package-lock.json` as part of this process. If dependencies are missing, stop and ask the owner to run the documented manual npm command.
+
 ## Development
 
 Use test-driven development: write or update a focused failing test before implementing behavior, then make it pass and refactor only as needed.
