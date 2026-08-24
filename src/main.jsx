@@ -29,7 +29,7 @@ function App() {
   const collections = [...new Set(tables.map(t => t.ruleset).filter(Boolean))];
   const collectionTables = tables.filter(t => t.ruleset === selectedCollection);
   const table = collectionTables.find(t => t.id === selected) ?? collectionTables[0] ?? tables[0];
-  const tableById = id => { const slug = id.split('/').at(-1); return tables.find(t => t.id === id || t.id.endsWith(`/${slug}`) || (slug === 'ships' && t.tableId === 'size' && t.id.includes('sailing_ships'))); };
+  const tableById = id => { const slug = id.split('/').at(-1); return tables.find(t => t.id === id || t.id.endsWith(`/${slug}`) || t.id.split('/')[0] === slug || (slug === 'ships' && t.tableId === 'size' && t.id.includes('sailing_ships'))); };
   const rows = useMemo(() => table?.rows ?? [], [table]);
   const isFavourite = table && favourites.includes(favouriteKey(table));
   const choose = id => { const next = tables.find(t => t.id === id); setSelected(id); if (next?.ruleset) setSelectedCollection(next.ruleset); setLast(null); };
