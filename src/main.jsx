@@ -17,8 +17,8 @@ function App() {
   const [last, setLast] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    Promise.all(Object.entries(FILES).flatMap(([r, files]) => files.map(file => fetch(`${ROOT}/${r}/oracles/${file}.yaml`).then(res => res.ok ? res.text() : '').then(text => text ? getTables(parse(text)).map(t => ({ ...t, ruleset: COLLECTIONS[r] })) : []))))
-      .then(groups => { const loaded = groups.flat(); if (loaded.length) setTables(loaded); }).catch(() => {}).finally(() => setLoading(false));
+    Promise.allSettled(Object.entries(FILES).flatMap(([r, files]) => files.map(file => fetch(`${ROOT}/${r}/oracles/${file}.yaml`).then(res => res.ok ? res.text() : '').then(text => text ? getTables(parse(text)).map(t => ({ ...t, ruleset: COLLECTIONS[r] })) : []))))
+      .then(results => { const loaded = results.filter(r => r.status === 'fulfilled').flatMap(r => r.value); if (loaded.length) setTables(loaded); }).finally(() => setLoading(false));
   }, []);
   useEffect(() => localStorage.setItem('datasworn.selected', JSON.stringify(selected)), [selected]);
   useEffect(() => localStorage.setItem('datasworn.favourites', JSON.stringify(favourites)), [favourites]);
