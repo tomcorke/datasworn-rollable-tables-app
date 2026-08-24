@@ -5,7 +5,7 @@ import { getTables, rollTable, resultText, favouriteKey } from './oracle.js';
 import './style.css';
 
 const ROOT = 'https://raw.githubusercontent.com/rsek/datasworn/main/source_data';
-const RULESETS = ['classic', 'starforged', 'sundered_isles'];
+const FILES = { classic: ['action_and_theme','character','name','place','settlement','turning_point'], delve: ['character','combat_event','feature','monstrosity','site_name','site_nature','threat','trap'], starforged: ['campaign_launch','characters','core','creatures','derelicts','factions','location_themes','misc','planet_types','planets','settlements','space','starships','vaults'], sundered_isles: ['caves','character_creation','characters','core','encounters','factions','islands','misc','other','overland','plunder','ruins','sailing_ships','seafaring','settlements','shipwrecks','treasures','weather'] };
 const fallback = { oracles: { overland: { name: 'Overland', contents: { regions: { name: 'Overland Regions', rows: [{ min: 1, max: 20, text: 'Coastal waters' }, { min: 21, max: 40, text: 'Dense forest' }, { min: 41, max: 60, text: 'Open plains' }, { min: 61, max: 80, text: 'Mountain pass' }, { min: 81, max: 100, text: 'Ruined settlement' }] } } } } };
 const saved = key => { try { return JSON.parse(localStorage.getItem(key)); } catch { return null; } };
 
@@ -16,7 +16,7 @@ function App() {
   const [last, setLast] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    Promise.all(RULESETS.flatMap(r => ['oracles'].map(dir => fetch(`${ROOT}/${r}/${dir}.yaml`).then(res => res.ok ? res.text() : '').then(text => text ? getTables(parse(text)).map(t => ({ ...t, ruleset: r })) : []))))
+    Promise.all(Object.entries(FILES).flatMap(([r, files]) => files.map(file => fetch(`${ROOT}/${r}/oracles/${file}.yaml`).then(res => res.ok ? res.text() : '').then(text => text ? getTables(parse(text)).map(t => ({ ...t, ruleset: r })) : []))))
       .then(groups => { const loaded = groups.flat(); if (loaded.length) setTables(loaded); }).catch(() => {}).finally(() => setLoading(false));
   }, []);
   useEffect(() => localStorage.setItem('datasworn.selected', JSON.stringify(selected)), [selected]);

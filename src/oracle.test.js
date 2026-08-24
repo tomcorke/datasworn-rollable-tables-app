@@ -4,9 +4,10 @@ import { getTables, rollTable, resultText } from './oracle.js';
 describe('Datasworn oracle helpers', () => {
   const data = { oracles: { overland: { contents: {
     regions: { name: 'Regions', rows: [{ min: 1, max: 20, text: 'Forest', text2: 'Trees' }] },
+    nested: { contents: { details: { rows: [{ min: 1, max: 100, text: 'Detail' }] } } },
     ignored: { name: 'No rows' }
   } } } };
-  it('discovers tables across oracle collections', () => { expect(getTables(data)).toHaveLength(1); expect(getTables(data)[0].id).toBe('overland/regions'); });
+  it('discovers tables across oracle collections', () => { expect(getTables(data)).toHaveLength(2); expect(getTables(data)[0].id).toBe('overland/contents/regions'); });
   it('rolls within inclusive ranges', () => {
     const result = rollTable(getTables(data)[0], () => 0);
     expect(result.roll).toBe(1); expect(result.result).toBe('Forest - Trees');
