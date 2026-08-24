@@ -7,7 +7,7 @@ describe('Datasworn oracle helpers', () => {
     nested: { contents: { details: { rows: [{ min: 1, max: 100, text: 'Detail' }] } } },
     ignored: { name: 'No rows' }
   } } } };
-  it('discovers tables across oracle collections', () => { expect(getTables(data)).toHaveLength(2); expect(getTables(data)[0].id).toBe('overland/contents/regions'); });
+  it('discovers tables across oracle collections', () => { expect(getTables(data)).toHaveLength(2); expect(getTables(data)[0].id).toBe('overland/contents/regions'); expect(getTables(data)[0].label).toBe('Regions'); });
   it('rolls within inclusive ranges', () => {
     const result = rollTable(getTables(data)[0], () => 0);
     expect(result.roll).toBe(1); expect(result.result).toBe('Forest - Trees');

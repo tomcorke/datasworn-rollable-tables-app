@@ -1,8 +1,8 @@
-function walk(value, path = []) {
+function walk(value, path = [], labels = []) {
   if (!value || typeof value !== 'object') return [];
   const found = [];
-  if (Array.isArray(value.rows)) found.push({ id: path.join('/'), tableId: path.at(-1), ...value });
-  for (const [key, child] of Object.entries(value)) if (key !== 'rows' && key !== '_source') found.push(...walk(child, [...path, key]));
+  if (Array.isArray(value.rows)) found.push({ id: path.join('/'), tableId: path.at(-1), label: [...labels, value.name].filter(Boolean).filter((name, index, names) => index === 0 || name !== names[index - 1]).join(' / '), ...value });
+  for (const [key, child] of Object.entries(value)) if (key !== 'rows' && key !== '_source') found.push(...walk(child, [...path, key], child?.name ? [...labels, child.name] : labels));
   return found;
 }
 export function getTables(data) {
