@@ -6,7 +6,7 @@ describe('Datasworn oracle helpers', () => {
     regions: { name: 'Regions', rows: [{ min: 1, max: 20, text: 'Forest', text2: 'Trees' }] },
     ignored: { name: 'No rows' }
   } } } };
-  it('extracts only rollable tables', () => expect(getTables(data)).toHaveLength(1));
+  it('discovers tables across oracle collections', () => { expect(getTables(data)).toHaveLength(1); expect(getTables(data)[0].id).toBe('overland/regions'); });
   it('rolls within inclusive ranges', () => {
     const result = rollTable(getTables(data)[0], () => 0);
     expect(result.roll).toBe(1); expect(result.result).toBe('Forest - Trees');

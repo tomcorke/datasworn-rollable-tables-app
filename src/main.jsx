@@ -1,30 +1,39 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { parse } from 'yaml';
-import { getTables, rollTable, resultText } from './oracle.js';
+import { getTables, rollTable, resultText, favouriteKey } from './oracle.js';
 import './style.css';
 
-const DATA_URL = 'https://raw.githubusercontent.com/rsek/datasworn/main/source_data/sundered_isles/oracles/overland.yaml';
-const fallback = { oracles: { overland: { contents: { regions: { name: 'Overland Regions', oracle_type: 'table_text2', rows: [
-  {min:1,max:20,text:'Coastal waters'}, {min:21,max:40,text:'Dense forest'}, {min:41,max:60,text:'Open plains'}, {min:61,max:80,text:'Mountain pass'}, {min:81,max:100,text:'Ruined settlement'}
-] } } } } };
+const ROOT = 'https://raw.githubusercontent.com/rsek/datasworn/main/source_data';
+const RULESETS = ['classic', 'starforged', 'sundered_isles'];
+const fallback = { oracles: { overland: { name: 'Overland', contents: { regions: { name: 'Overland Regions', rows: [{ min: 1, max: 20, text: 'Coastal waters' }, { min: 21, max: 40, text: 'Dense forest' }, { min: 41, max: 60, text: 'Open plains' }, { min: 61, max: 80, text: 'Mountain pass' }, { min: 81, max: 100, text: 'Ruined settlement' }] } } } } };
+const saved = key => { try { return JSON.parse(localStorage.getItem(key)); } catch { return null; } };
 
-const tablesFromData = getTables;
 function App() {
-  const [tables, setTables] = useState(() => tablesFromData(fallback));
-  const [selected, setSelected] = useState(0);
+  const [tables, setTables] = useState(() => getTables(fallback));
+  const [selected, setSelected] = useState(() => saved('datasworn.selected') ?? 'overland/regions');
+  const [favourites, setFavourites] = useState(() => saved('datasworn.favourites') ?? []);
   const [last, setLast] = useState(null);
   const [loading, setLoading] = useState(true);
-  useEffect(() => { fetch(DATA_URL).then(r => r.text()).then(t => { const loaded = tablesFromData(parse(t)); if (loaded.length) setTables(loaded); }).catch(() => {}).finally(() => setLoading(false)); }, []);
-  const table = tables[selected];
-  const title = table?.name ?? 'Oracle table';
+  useEffect(() => {
+    Promise.all(RULESETS.flatMap(r => ['oracles'].map(dir => fetch(`${ROOT}/${r}/${dir}.yaml`).then(res => res.ok ? res.text() : '').then(text => text ? getTables(parse(text)).map(t => ({ ...t, ruleset: r })) : []))))
+      .then(groups => { const loaded = groups.flat(); if (loaded.length) setTables(loaded); }).catch(() => {}).finally(() => setLoading(false));
+  }, []);
+  useEffect(() => localStorage.setItem('datasworn.selected', JSON.stringify(selected)), [selected]);
+  useEffect(() => localStorage.setItem('datasworn.favourites', JSON.stringify(favourites)), [favourites]);
+  const table = tables.find(t => t.id === selected) ?? tables[0];
   const rows = useMemo(() => table?.rows ?? [], [table]);
-  return <main>
-    <header><p className="eyebrow">DATASWORN ORACLES</p><h1>Roll the unknown.</h1><p className="intro">Browse structured oracle tables from Sundered Isles. Choose a table, roll d100, follow the prompt.</p></header>
-    <section className="controls"><label>Table<select value={selected} onChange={e => { setSelected(Number(e.target.value)); setLast(null); }}>{tables.map((t, i) => <option key={t.id} value={i}>{t.name ?? t.id}</option>)}</select></label><button onClick={() => setLast(rollTable(table))}>Roll d100</button></section>
+  const isFavourite = table && favourites.includes(favouriteKey(table));
+  const choose = id => { setSelected(id); setLast(null); };
+  const toggleFavourite = tableId => setFavourites(current => current.includes(tableId) ? current.filter(id => id !== tableId) : [...current, tableId]);
+  const favouriteTables = favourites.map(id => tables.find(t => t.id === id)).filter(Boolean);
+  const collections = [...new Set(tables.map(t => t.collectionId))];
+  return <div className="layout"><aside><p className="eyebrow">QUICK ACCESS</p>{favouriteTables.length ? favouriteTables.map(t => <button className="favourite-link" key={t.id} onClick={() => choose(t.id)}>★ {t.name ?? t.tableId}</button>) : <p className="muted">Favourite tables appear here.</p>}<hr /><p className="eyebrow">COLLECTIONS</p>{collections.map(c => <p className="collection" key={c}>{c}</p>)}</aside><main>
+    <header><p className="eyebrow">DATASWORN ORACLES</p><h1>Roll the unknown.</h1><p className="intro">Browse oracle tables across Ironsworn, Starforged, and Sundered Isles. Choose a table, roll d100, follow the prompt.</p></header>
+    <section className="controls"><label>Table<select value={table?.id ?? ''} onChange={e => choose(e.target.value)}>{tables.map(t => <option key={t.id} value={t.id}>{t.ruleset ? `${t.ruleset} / ` : ''}{t.name ?? t.tableId}</option>)}</select></label><button onClick={() => setLast(rollTable(table))}>Roll d100</button>{table && <button className="star" aria-label="Favourite table" onClick={() => toggleFavourite(favouriteKey(table))}>{isFavourite ? '★' : '☆'}</button>}</section>
     {last && <section className="result"><span className="roll">{last.roll}</span><div><p className="eyebrow">RESULT</p><h2>{last.result}</h2></div></section>}
-    <section className="table-card"><div className="table-heading"><h2>{title}</h2><span>{loading ? 'Loading source data…' : `${rows.length} results`}</span></div><div className="rows">{rows.map((r, i) => <div className="row" key={i}><span>{r.min ?? r.roll?.[0]}–{r.max ?? r.roll?.[1]}</span><p>{resultText(r)}</p></div>)}</div></section>
+    <section className="table-card"><div className="table-heading"><h2>{table?.name ?? 'Oracle table'}</h2><span>{loading ? 'Loading all rulesets…' : `${rows.length} results`}</span></div><div className="rows">{rows.map((r, i) => <div className="row" key={i}><span>{r.min ?? r.roll?.[0]}–{r.max ?? r.roll?.[1]}</span><p>{resultText(r)}</p></div>)}</div></section>
     <footer>Source: <a href="https://github.com/rsek/datasworn" target="_blank">rsek/datasworn</a>. Data loaded from GitHub at runtime.</footer>
-  </main>;
+  </main></div>;
 }
 createRoot(document.getElementById('root')).render(<App />);
