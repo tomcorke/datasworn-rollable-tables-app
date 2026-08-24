@@ -10,7 +10,7 @@ To publish an update:
 
 ```sh
 git switch gh-pages
-git merge main --no-edit
+git merge main --allow-unrelated-histories --no-edit
 rm -rf dist
 npm run build:pages
 git rm -r --cached .
