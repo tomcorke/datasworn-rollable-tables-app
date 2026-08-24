@@ -15,6 +15,9 @@ describe('Datasworn oracle helpers', () => {
   it('returns a useful fallback when no range matches', () => {
     expect(rollTable({ rows: [] }, () => 0).result).toBe('No result for this roll.');
   });
+  it('resolves YAML merge aliases in table rows', () => {
+    expect(resultText({ '<<': { text: 'Known waters' } })).toBe('Known waters');
+  });
   it('formats nested/repeated roll instructions', () => {
     expect(resultText({ text: 'Roll twice', rolls: 2 })).toBe('Roll twice');
   });

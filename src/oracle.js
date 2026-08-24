@@ -1,3 +1,10 @@
+function resolve(value) {
+  if (Array.isArray(value)) return value.map(resolve);
+  if (!value || typeof value !== 'object') return value;
+  const merged = value['<<'];
+  const bases = Array.isArray(merged) ? merged : merged ? [merged] : [];
+  return { ...Object.assign({}, ...bases.map(resolve)), ...Object.fromEntries(Object.entries(value).filter(([key]) => key !== '<<').map(([key, child]) => [key, resolve(child)])) };
+}
 function walk(value, path = [], labels = []) {
   if (!value || typeof value !== 'object') return [];
   const found = [];
@@ -6,8 +13,8 @@ function walk(value, path = [], labels = []) {
   return found;
 }
 export function getTables(data) {
-  return walk(data?.oracles).filter(t => t.rows).map(table => ({ ...table, collectionId: table.id.split('/')[0] }));
+  return walk(resolve(data?.oracles)).filter(t => t.rows).map(table => ({ ...table, collectionId: table.id.split('/')[0] }));
 }
-export function resultText(row) { return [row?.text, row?.text2, row?.text3].filter(Boolean).join(' - ') || row?.result || row?.description || 'No result for this roll.'; }
+export function resultText(row) { const resolved = resolve(row); return [resolved?.text, resolved?.text2, resolved?.text3].filter(Boolean).join(' - ') || resolved?.result || resolved?.description || 'No result for this roll.'; }
 export function rollTable(table, random = Math.random) { const roll = Math.floor(random() * 100) + 1; const row = (table?.rows ?? []).find(r => roll >= Number(r.min) && roll <= Number(r.max)); return { roll, result: resultText(row) }; }
 export function favouriteKey(table) { return table.id; }
