@@ -19,7 +19,7 @@ function App() {
   const [last, setLast] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const loaded = Object.entries(bundledData).flatMap(([key, data]) => getTables(data).map(t => ({ ...t, sourceKey: key.slice(key.indexOf('-') + 1), ruleset: COLLECTIONS[key.split('-')[0]] })));
+    const loaded = Object.entries(bundledData).flatMap(([key, data]) => { const ruleset = Object.keys(COLLECTIONS).find(name => key.startsWith(`${name}-`)); return getTables(data).map(t => ({ ...t, sourceKey: key.slice(`${ruleset}-`.length), ruleset: COLLECTIONS[ruleset] })); });
     if (loaded.length) setTables(loaded);
     setLoading(false);
   }, []);
