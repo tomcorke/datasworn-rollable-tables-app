@@ -13,12 +13,13 @@ git switch gh-pages
 git merge main --no-edit
 rm -rf dist
 npm run build:pages
-git add -A
+git rm -r --cached .
+git add README.md dist
 git commit -m "Deploy latest main to GitHub Pages"
 git push origin gh-pages
 ```
 
-The `gh-pages` branch should retain only `dist/` and this README. After merging `main`, remove any other tracked files before committing. Do not run package installation or modify `package-lock.json` as part of this process. If dependencies are missing, stop and ask the owner to run the documented manual npm command.
+The `gh-pages` branch should retain only `README.md` and `dist/`. The Pages Actions workflow uploads `dist/`, so `public/CNAME` from `main` is included in the build as `dist/CNAME`; it is intentionally inside the uploaded artifact, not at the branch root. The `git rm --cached` command clears the merged source tree from the branch index, then `git add` restores only the README and Pages artifact. Do not run package installation or modify `package-lock.json` as part of this process. If dependencies are missing, stop and ask the owner to run the documented manual npm command.
 
 ## Development
 
