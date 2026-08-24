@@ -1,10 +1,12 @@
 import { describe, expect, it } from "vitest";
+import type { OracleTable } from "./oracle";
 import {
   getTables,
   referenceExplanation,
   rollTable,
   resultParts,
   resultText,
+  tableDisplayName,
 } from "./oracle";
 
 describe("Datasworn oracle helpers", () => {
@@ -30,6 +32,13 @@ describe("Datasworn oracle helpers", () => {
     expect(getTables(data)).toHaveLength(2);
     expect(getTables(data)[0].id).toBe("overland/contents/regions");
     expect(getTables(data)[0].label).toBe("Regions");
+  });
+  it("uses only string values for table display names", () => {
+    expect(
+      tableDisplayName({ label: { name: "Broken" } } as unknown as OracleTable),
+    ).toBe("Oracle table");
+    expect(tableDisplayName({ name: "Regions" })).toBe("Regions");
+    expect(tableDisplayName({ tableId: "regions" })).toBe("regions");
   });
   it("preserves line breaks between multiline result fields", () => {
     expect(resultText({ text: "Forest", text2: "Trees\nHide nearby" })).toBe(

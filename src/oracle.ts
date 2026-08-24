@@ -71,6 +71,12 @@ export function getTables(data: any): OracleTable[] {
     .filter((t) => t.rows)
     .map((table) => ({ ...table, collectionId: table.id.split("/")[0] }));
 }
+export function tableDisplayName(table: OracleTable | undefined): string {
+  for (const value of [table?.label, table?.name, table?.tableId]) {
+    if (typeof value === "string" && value.trim()) return value;
+  }
+  return "Oracle table";
+}
 export type ResultPart = {
   type: "text" | "link" | "reference";
   value: string;

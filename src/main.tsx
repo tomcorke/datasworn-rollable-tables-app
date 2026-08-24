@@ -7,6 +7,7 @@ import {
   resultParts,
   resultText,
   favouriteKey,
+  tableDisplayName,
 } from "./oracle";
 import { validateBundledData } from "./dataValidation";
 import type { OracleTable } from "./oracle";
@@ -162,7 +163,7 @@ function App() {
                 key={t.id}
                 onClick={() => choose(t.id)}
               >
-                ★ {t.label ?? t.name ?? t.tableId}
+                ★ {tableDisplayName(t)}
               </button>
             ))}
           </div>
@@ -212,7 +213,7 @@ function App() {
             >
               {collectionTables.map((t) => (
                 <option key={t.id} value={t.id}>
-                  {t.label ?? t.name ?? t.tableId}
+                  {tableDisplayName(t)}
                 </option>
               ))}
             </select>
@@ -292,7 +293,7 @@ function App() {
         )}
         <section className="table-card">
           <div className="table-heading">
-            <h2>{table?.name ?? "Oracle table"}</h2>
+            <h2>{tableDisplayName(table)}</h2>
             <span>
               {loading ? "Loading all rulesets…" : `${rows.length} results`}
             </span>
