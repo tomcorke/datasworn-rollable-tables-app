@@ -1,16 +1,16 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   getTables,
-  referenceExplanation,
+  rollLabel,
   rollTable,
-  resultParts,
-  resultText,
+  rowRange,
   favouriteKey,
   tableDisplayName,
 } from "./oracle";
 import { validateBundledData } from "./dataValidation";
-import type { OracleTable } from "./oracle";
+import type { OracleRow, OracleTable } from "./oracle";
+import { ResultContent } from "./ResultContent";
 import { resolveTableLink } from "./linkResolver";
 import "./style.css";
 import bundledData from "./data/index.json";
@@ -52,6 +52,9 @@ const fallback = {
     },
   },
 };
+type RollResult = { roll: number; row?: OracleRow };
+type HistoryEntry = RollResult & { sequence: number; table: OracleTable };
+
 const saved = (key) => {
   try {
     return JSON.parse(localStorage.getItem(key));
@@ -68,13 +71,16 @@ function App() {
     const fromUrl = new URLSearchParams(window.location.search).get("table");
     return fromUrl ?? saved("datasworn.selected") ?? "overland/regions";
   });
+  const [selectedSource, setSelectedSource] = useState<string>();
   const [selectedCollection, setSelectedCollection] = useState<string>(
     () => saved("datasworn.collection") ?? "Ironsworn",
   );
   const [favourites, setFavourites] = useState<string[]>(
     () => saved("datasworn.favourites") ?? [],
   );
-  const [last, setLast] = useState(null);
+  const [last, setLast] = useState<RollResult | null>(null);
+  const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [historyVisible, setHistoryVisible] = useState(true);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const loaded = Object.entries(parsedBundledData).flatMap(([key, data]) => {
@@ -87,7 +93,12 @@ function App() {
         ruleset: COLLECTIONS[ruleset],
       }));
     });
-    if (loaded.length) setTables(loaded);
+    if (loaded.length) {
+      setTables(loaded);
+      setSelectedSource(
+        loaded.find((table) => table.id === selected)?.sourceKey,
+      );
+    }
     setLoading(false);
   }, []);
   useEffect(
@@ -101,6 +112,7 @@ function App() {
       const next = tables.find((item) => item.id === id);
       if (!next) return;
       setSelected(id);
+      setSelectedSource(next.sourceKey);
       if (next.ruleset) setSelectedCollection(next.ruleset);
       setLast(null);
     };
@@ -127,18 +139,22 @@ function App() {
     (t) => t.ruleset === selectedCollection,
   );
   const table =
-    collectionTables.find((t) => t.id === selected) ??
+    collectionTables.find(
+      (t) =>
+        t.id === selected &&
+        (!selectedSource || t.sourceKey === selectedSource),
+    ) ??
     collectionTables[0] ??
     tables[0];
   const tableById = (id: string) => resolveTableLink(id, tables);
   const rows = useMemo(() => table?.rows ?? [], [table]);
   const isFavourite = table && favourites.includes(favouriteKey(table));
-  const choose = (id: string) => {
-    const next = tables.find((t) => t.id === id);
-    if (!next) return;
+  const choose = (next: OracleTable) => {
+    const id = next.id ?? "";
     window.history.pushState({}, "", `?table=${encodeURIComponent(id)}`);
     setSelected(id);
-    if (next?.ruleset) setSelectedCollection(next.ruleset);
+    setSelectedSource(next.sourceKey);
+    if (next.ruleset) setSelectedCollection(next.ruleset);
     setLast(null);
   };
   const toggleFavourite = (tableId: string) =>
@@ -152,7 +168,7 @@ function App() {
     .filter(Boolean);
   const collectionName = table?.ruleset ?? selectedCollection;
   return (
-    <div className="layout">
+    <div className={`layout${historyVisible ? "" : " history-hidden"}`}>
       <aside>
         <p className="eyebrow">QUICK ACCESS</p>
         {favouriteTables.length ? (
@@ -161,7 +177,7 @@ function App() {
               <button
                 className="favourite-link"
                 key={t.id}
-                onClick={() => choose(t.id)}
+                onClick={() => choose(t)}
               >
                 ★ {tableDisplayName(t)}
               </button>
@@ -172,10 +188,20 @@ function App() {
         )}
         <hr />
         <p className="eyebrow">COLLECTIONS</p>
-        {collections.map((c) => (
-          <p className="collection" key={c}>
-            {c}
-          </p>
+        {collections.map((collection) => (
+          <button
+            className="collection"
+            key={collection}
+            aria-current={
+              collection === selectedCollection ? "true" : undefined
+            }
+            onClick={() => {
+              const first = tables.find((t) => t.ruleset === collection);
+              if (first) choose(first);
+            }}
+          >
+            {collection}
+          </button>
         ))}
       </aside>
       <main>
@@ -184,7 +210,7 @@ function App() {
           <h1>Roll the unknown.</h1>
           <p className="intro">
             Browse oracle tables across Ironsworn, Starforged, and Sundered
-            Isles. Choose a table, roll d100, follow the prompt.
+            Isles. Choose a table, roll, follow the prompt.
           </p>
         </header>
         <section className="controls">
@@ -193,9 +219,8 @@ function App() {
             <select
               value={collectionName}
               onChange={(e) => {
-                setSelectedCollection(e.target.value);
                 const first = tables.find((t) => t.ruleset === e.target.value);
-                if (first) choose(first.id);
+                if (first) choose(first);
               }}
             >
               {collections.map((collection) => (
@@ -209,7 +234,12 @@ function App() {
             Table
             <select
               value={table?.id ?? ""}
-              onChange={(e) => choose(e.target.value)}
+              onChange={(e) => {
+                const next = collectionTables.find(
+                  (t) => t.id === e.target.value,
+                );
+                if (next) choose(next);
+              }}
             >
               {collectionTables.map((t) => (
                 <option key={t.id} value={t.id}>
@@ -220,18 +250,21 @@ function App() {
           </label>
           <button
             onClick={() => {
+              if (!table) return;
               const rolled = rollTable(table);
-              const row =
-                table?.rows.find((r) => rolled.result === resultText(r)) ??
-                table?.rows.find(
-                  (r) =>
-                    Number(r.min) <= rolled.roll &&
-                    Number(r.max) >= rolled.roll,
-                );
-              setLast({ ...rolled, row });
+              setLast(rolled);
+              setHistory((current) => [
+                {
+                  sequence: current[0]?.sequence + 1 || 1,
+                  table,
+                  roll: rolled.roll,
+                  row: rolled.row,
+                },
+                ...current,
+              ]);
             }}
           >
-            Roll d100
+            {rollLabel(table)}
           </button>
           {table && (
             <button
@@ -242,6 +275,14 @@ function App() {
               {isFavourite ? "★" : "☆"}
             </button>
           )}
+          <button
+            className="history-toggle"
+            aria-controls="roll-history"
+            aria-expanded={historyVisible}
+            onClick={() => setHistoryVisible((visible) => !visible)}
+          >
+            {historyVisible ? "Hide history" : "Show history"}
+          </button>
         </section>
         {last && (
           <section className="result">
@@ -249,44 +290,11 @@ function App() {
             <div>
               <p className="eyebrow">RESULT</p>
               <h2>
-                {resultParts(last.row).map((part, i) =>
-                  part.type === "reference" ? (
-                    <span className="book-reference" key={i}>
-                      <span className="book-reference-label">
-                        Source-book lookup
-                      </span>
-                      <span>{part.value}</span>
-                      <span className="book-reference-help">
-                        {referenceExplanation(part.value)}
-                      </span>
-                    </span>
-                  ) : part.type === "link" ? (
-                    tableById(part.id) ? (
-                      <button
-                        className="inline-link"
-                        key={i}
-                        onClick={() => choose(tableById(part.id).id)}
-                        title="Open linked oracle table"
-                      >
-                        {resultText({ text: part.value })}{" "}
-                        <span className="link-mark">↗</span>
-                      </button>
-                    ) : (
-                      <span
-                        className="unresolved-link"
-                        key={i}
-                        title="This linked oracle table is not included in the bundled data"
-                      >
-                        {resultText({ text: part.value })}{" "}
-                        <span className="link-mark">⚠</span>
-                      </span>
-                    )
-                  ) : (
-                    <React.Fragment key={i}>
-                      {resultText({ text: part.value })}
-                    </React.Fragment>
-                  ),
-                )}
+                <ResultContent
+                  row={last.row}
+                  resolveTable={tableById}
+                  onChoose={choose}
+                />
               </h2>
             </div>
           </section>
@@ -299,51 +307,28 @@ function App() {
             </span>
           </div>
           <div className="rows">
-            {rows.map((r, i) => (
-              <div className="row" key={i}>
-                <span>
-                  {r.min ?? r.roll?.[0]}–{r.max ?? r.roll?.[1]}
-                </span>
-                <p>
-                  {resultParts(r).map((part, i) =>
-                    part.type === "reference" ? (
-                      <span
-                        className="book-reference book-reference-compact"
-                        key={i}
-                        title="Source-book reference"
-                      >
-                        {part.value}
-                      </span>
-                    ) : part.type === "link" ? (
-                      tableById(part.id) ? (
-                        <button
-                          className="inline-link"
-                          key={i}
-                          onClick={() => choose(tableById(part.id).id)}
-                          title="Open linked oracle table"
-                        >
-                          {resultText({ text: part.value })}{" "}
-                          <span className="link-mark">↗</span>
-                        </button>
-                      ) : (
-                        <span
-                          className="unresolved-link"
-                          key={i}
-                          title="This linked oracle table is not included in the bundled data"
-                        >
-                          {resultText({ text: part.value })}{" "}
-                          <span className="link-mark">⚠</span>
-                        </span>
-                      )
-                    ) : (
-                      <React.Fragment key={i}>
-                        {resultText({ text: part.value })}
-                      </React.Fragment>
-                    ),
-                  )}
-                </p>
-              </div>
-            ))}
+            {rows.map((row, index) => {
+              const range = rowRange(table, index);
+              return (
+                <div className="row" key={index}>
+                  <span>
+                    {range
+                      ? range[0] === range[1]
+                        ? range[0]
+                        : `${range[0]}–${range[1]}`
+                      : "–"}
+                  </span>
+                  <p>
+                    <ResultContent
+                      row={row}
+                      resolveTable={tableById}
+                      onChoose={choose}
+                      compactReferences
+                    />
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
         <footer>
@@ -354,6 +339,33 @@ function App() {
           . Datasworn data bundled with this app.
         </footer>
       </main>
+      {historyVisible && (
+        <aside className="history" id="roll-history">
+          <p className="eyebrow">ROLL HISTORY</p>
+          {history.length ? (
+            history.map((entry) => (
+              <article className="history-entry" key={entry.sequence}>
+                <button onClick={() => choose(entry.table)}>
+                  {entry.table.ruleset} / {tableDisplayName(entry.table)}
+                </button>
+                <div className="history-result">
+                  <span className="history-roll">{entry.roll}</span>
+                  <p>
+                    <ResultContent
+                      row={entry.row}
+                      resolveTable={tableById}
+                      onChoose={choose}
+                      compactReferences
+                    />
+                  </p>
+                </div>
+              </article>
+            ))
+          ) : (
+            <p className="muted">Rolls appear here.</p>
+          )}
+        </aside>
+      )}
     </div>
   );
 }

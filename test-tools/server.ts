@@ -29,15 +29,64 @@ const server = http.createServer(async (req, res) => {
         })),
       );
     if (req.method === "POST" && req.url === "/roll") {
-      await page
-        .locator("button")
-        .filter((button) => button.textContent?.includes("Roll d100"))
-        .click();
+      await page.locator(".controls > button").click();
       return send(
         res,
         200,
         await page.evaluate(() => ({
           result: document.querySelector(".result")?.textContent,
+        })),
+      );
+    }
+    if (req.method === "POST" && req.url?.startsWith("/collection?")) {
+      const collection = new URL(req.url, "http://localhost").searchParams.get(
+        "name",
+      );
+      await page.evaluate((name) => {
+        const button = [...document.querySelectorAll("button.collection")].find(
+          (item) => item.textContent?.trim() === name,
+        ) as HTMLButtonElement | undefined;
+        button?.click();
+      }, collection);
+      return send(
+        res,
+        200,
+        await page.evaluate(() => ({
+          collection: (
+            document.querySelectorAll("select")[0] as HTMLSelectElement
+          )?.value,
+          table: document.querySelector(".table-heading h2")?.textContent,
+          query: location.search,
+        })),
+      );
+    }
+    if (req.method === "GET" && req.url === "/history")
+      return send(
+        res,
+        200,
+        await page.evaluate(() => ({
+          visible: Boolean(document.querySelector("#roll-history")),
+          entries: [...document.querySelectorAll(".history-entry")].map(
+            (entry) => entry.textContent,
+          ),
+        })),
+      );
+    if (req.method === "POST" && req.url === "/history/toggle") {
+      await page.locator('button[aria-controls="roll-history"]').click();
+      return send(res, 200, {
+        visible: await page.evaluate(() =>
+          Boolean(document.querySelector("#roll-history")),
+        ),
+      });
+    }
+    if (req.method === "POST" && req.url === "/history/open") {
+      await page.locator(".history-entry button").click();
+      return send(
+        res,
+        200,
+        await page.evaluate(() => ({
+          table: document.querySelector(".table-heading h2")?.textContent,
+          query: location.search,
         })),
       );
     }

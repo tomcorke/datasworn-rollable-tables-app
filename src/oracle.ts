@@ -1,6 +1,6 @@
 export type OracleRow = {
-  min?: number | string;
-  max?: number | string;
+  min?: number | string | null;
+  max?: number | string | null;
   roll?: number[];
   text?: string;
   text2?: string;
@@ -17,6 +17,7 @@ export type OracleTable = {
   rows?: OracleRow[];
   ruleset?: string;
   sourceKey?: string;
+  dice?: string;
   [key: string]: unknown;
 };
 
@@ -144,15 +145,43 @@ export function resultText(row: OracleRow | undefined): string {
     .replace(/\*([^*]+)\*/g, "$1")
     .replace(/_([^_]+)_/g, "$1");
 }
+export function rowRange(
+  table: OracleTable | undefined,
+  index: number,
+): [number, number] | undefined {
+  const row = table?.rows?.[index];
+  if (row?.min != null && row.max != null)
+    return [Number(row.min), Number(row.max)];
+  if (table?.rows?.every((item) => item.min == null && item.max == null))
+    return [index + 1, index + 1];
+}
+export function rollCeiling(table: OracleTable | undefined): number {
+  const rows = table?.rows ?? [];
+  if (rows.length && rows.every((row) => row.min == null && row.max == null))
+    return rows.length;
+  const die = table?.dice?.match(/^(?:1)?d(\d+)$/i);
+  if (die) return Number(die[1]);
+  return Math.max(
+    0,
+    ...rows.map((row) => Number(row.max)).filter(Number.isFinite),
+  );
+}
+export function rollLabel(table: OracleTable | undefined): string {
+  const die = table?.dice?.match(/^(?:1)?d(\d+)$/i);
+  return die ? `Roll d${die[1]}` : "Roll";
+}
 export function rollTable(
   table: OracleTable | undefined,
   random = Math.random,
 ) {
-  const roll = Math.floor(random() * 100) + 1;
-  const row = (table?.rows ?? []).find(
-    (r) => roll >= Number(r.min) && roll <= Number(r.max),
-  );
-  return { roll, result: resultText(row) };
+  const rows = table?.rows ?? [];
+  const ceiling = rollCeiling(table);
+  const roll = Math.floor(random() * ceiling) + 1;
+  const row = rows.find((_, index) => {
+    const range = rowRange(table, index);
+    return range && roll >= range[0] && roll <= range[1];
+  });
+  return { roll, result: resultText(row), row };
 }
 export function favouriteKey(table: OracleTable): string {
   return table.id ?? "";

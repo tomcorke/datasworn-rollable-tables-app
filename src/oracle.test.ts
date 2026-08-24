@@ -3,6 +3,9 @@ import type { OracleTable } from "./oracle";
 import {
   getTables,
   referenceExplanation,
+  rowRange,
+  rollCeiling,
+  rollLabel,
   rollTable,
   resultParts,
   resultText,
@@ -65,9 +68,85 @@ describe("Datasworn oracle helpers", () => {
     );
   });
   it("rolls within inclusive ranges", () => {
-    const result = rollTable(getTables(data)[0], () => 0);
+    const table = getTables(data)[0];
+    const result = rollTable(table, () => 0);
     expect(result.roll).toBe(1);
     expect(result.result).toBe("Forest\nTrees");
+    expect(result.row).toBe(table.rows[0]);
+  });
+  it("rolls the upper boundary of an explicit d10 table", () => {
+    const table = {
+      dice: "1d10",
+      rows: [
+        { min: 1, max: 9, text: "Lower" },
+        { min: 10, max: 10, text: "Upper" },
+      ],
+    };
+    expect(rollCeiling(table)).toBe(10);
+    expect(rollLabel(table)).toBe("Roll d10");
+    expect(rollTable(table, () => 0.999999)).toMatchObject({
+      roll: 10,
+      row: table.rows[1],
+      result: "Upper",
+    });
+  });
+  it("rolls the upper boundary of an explicit d20 table", () => {
+    const table = {
+      dice: "d20",
+      rows: [
+        { min: 1, max: 19, text: "Lower" },
+        { min: 20, max: 20, text: "Upper" },
+      ],
+    };
+    expect(rollCeiling(table)).toBe(20);
+    expect(rollLabel(table)).toBe("Roll d20");
+    expect(rollTable(table, () => 0.999999)).toMatchObject({
+      roll: 20,
+      row: table.rows[1],
+      result: "Upper",
+    });
+  });
+  it("uses the highest finite row maximum without declared dice", () => {
+    const table = {
+      rows: [
+        { min: 1, max: 19, text: "Lower" },
+        { min: 20, max: 20, text: "Upper" },
+      ],
+    };
+    expect(rollCeiling(table)).toBe(20);
+    expect(rollLabel(table)).toBe("Roll");
+    expect(rollTable(table, () => 0.999999).row).toBe(table.rows[1]);
+  });
+  it("assigns ordinal ranges to wholly unnumbered tables", () => {
+    const table = {
+      rows: [{ text: "First" }, { text: "Second" }, { text: "Third" }],
+    };
+    expect(table.rows.map((_, index) => rowRange(table, index))).toEqual([
+      [1, 1],
+      [2, 2],
+      [3, 3],
+    ]);
+    expect(rollTable(table, () => 0).row).toBe(table.rows[0]);
+    expect(rollTable(table, () => 0.999).row).toBe(table.rows[2]);
+  });
+  it("leaves missing ranges unavailable in mixed tables", () => {
+    const table = {
+      rows: [
+        { min: 1, max: 100, text: "Available" },
+        { min: null, max: null, text: "Unavailable" },
+      ],
+    };
+    expect(rowRange(table, 0)).toEqual([1, 100]);
+    expect(rowRange(table, 1)).toBeUndefined();
+  });
+  it("returns the exact matching row when result text is duplicated", () => {
+    const table = {
+      rows: [
+        { min: 1, max: 50, text: "Same" },
+        { min: 51, max: 100, text: "Same" },
+      ],
+    };
+    expect(rollTable(table, () => 0.5).row).toBe(table.rows[1]);
   });
   it("returns a useful fallback when no range matches", () => {
     expect(rollTable({ rows: [] }, () => 0).result).toBe(
