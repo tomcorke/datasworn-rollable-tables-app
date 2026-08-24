@@ -19,7 +19,7 @@ function App() {
   const [last, setLast] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const loaded = Object.entries(bundledData).flatMap(([key, data]) => getTables(data).map(t => ({ ...t, ruleset: COLLECTIONS[key.split('-')[0]] })));
+    const loaded = Object.entries(bundledData).flatMap(([key, data]) => getTables(data).map(t => ({ ...t, sourceKey: key.slice(key.indexOf('-') + 1), ruleset: COLLECTIONS[key.split('-')[0]] })));
     if (loaded.length) setTables(loaded);
     setLoading(false);
   }, []);
@@ -29,7 +29,11 @@ function App() {
   const collections = [...new Set(tables.map(t => t.ruleset).filter(Boolean))];
   const collectionTables = tables.filter(t => t.ruleset === selectedCollection);
   const table = collectionTables.find(t => t.id === selected) ?? collectionTables[0] ?? tables[0];
-  const tableById = id => { const slug = id.split('/').at(-1); return tables.find(t => t.id === id || t.id.endsWith(`/${slug}`) || t.id.split('/')[0] === slug || (slug === 'ships' && t.tableId === 'size' && t.id.includes('sailing_ships'))); };
+  const tableById = id => {
+    const parts = id.split('/').filter(Boolean);
+    const slugs = parts.slice(-2).map(slug => slug.replace(/s$/, ''));
+    return tables.find(t => t.id === id) || tables.find(t => slugs.includes(t.sourceKey?.replace(/s$/, ''))) || tables.find(t => slugs.includes(String(t.tableId).replace(/s$/, ''))) || tables.find(t => slugs.some(slug => t.id.split('/').includes(slug)));
+  };
   const rows = useMemo(() => table?.rows ?? [], [table]);
   const isFavourite = table && favourites.includes(favouriteKey(table));
   const choose = id => { const next = tables.find(t => t.id === id); setSelected(id); if (next?.ruleset) setSelectedCollection(next.ruleset); setLast(null); };
@@ -39,8 +43,8 @@ function App() {
   return <div className="layout"><aside><p className="eyebrow">QUICK ACCESS</p>{favouriteTables.length ? favouriteTables.map(t => <button className="favourite-link" key={t.id} onClick={() => choose(t.id)}>★ {t.label ?? t.name ?? t.tableId}</button>) : <p className="muted">Favourite tables appear here.</p>}<hr /><p className="eyebrow">COLLECTIONS</p>{collections.map(c => <p className="collection" key={c}>{c}</p>)}</aside><main>
     <header><p className="eyebrow">DATASWORN ORACLES</p><h1>Roll the unknown.</h1><p className="intro">Browse oracle tables across Ironsworn, Starforged, and Sundered Isles. Choose a table, roll d100, follow the prompt.</p></header>
     <section className="controls"><label>Collection<select value={collectionName} onChange={e => { setSelectedCollection(e.target.value); const first = tables.find(t => t.ruleset === e.target.value); if (first) choose(first.id); }}>{collections.map(collection => <option key={collection} value={collection}>{collection}</option>)}</select></label><label>Table<select value={table?.id ?? ''} onChange={e => choose(e.target.value)}>{collectionTables.map(t => <option key={t.id} value={t.id}>{t.label ?? t.name ?? t.tableId}</option>)}</select></label><button onClick={() => { const rolled = rollTable(table); const row = table?.rows.find(r => rolled.result === resultText(r)) ?? table?.rows.find(r => Number(r.min) <= rolled.roll && Number(r.max) >= rolled.roll); setLast({ ...rolled, row }); }}>Roll d100</button>{table && <button className="star" aria-label="Favourite table" onClick={() => toggleFavourite(favouriteKey(table))}>{isFavourite ? '★' : '☆'}</button>}</section>
-    {last && <section className="result"><span className="roll">{last.roll}</span><div><p className="eyebrow">RESULT</p><h2>{resultParts(last.row).map((part, i) => part.type === 'link' && tableById(part.id) ? <button className="inline-link" key={i} onClick={() => choose(tableById(part.id).id)}>{resultText({ text: part.value })} ↗</button> : <React.Fragment key={i}>{resultText({ text: part.value })}</React.Fragment>)}</h2></div></section>}
-    <section className="table-card"><div className="table-heading"><h2>{table?.name ?? 'Oracle table'}</h2><span>{loading ? 'Loading all rulesets…' : `${rows.length} results`}</span></div><div className="rows">{rows.map((r, i) => <div className="row" key={i}><span>{r.min ?? r.roll?.[0]}–{r.max ?? r.roll?.[1]}</span><p>{resultParts(r).map((part, i) => part.type === 'link' && tableById(part.id) ? <button className="inline-link" key={i} onClick={() => choose(tableById(part.id).id)}>{resultText({ text: part.value })} ↗</button> : <React.Fragment key={i}>{resultText({ text: part.value })}</React.Fragment>)}</p></div>)}</div></section>
+    {last && <section className="result"><span className="roll">{last.roll}</span><div><p className="eyebrow">RESULT</p><h2>{resultParts(last.row).map((part, i) => part.type === 'link' && tableById(part.id) ? <button className="inline-link" key={i} onClick={() => choose(tableById(part.id).id)} title="Open linked oracle table">{resultText({ text: part.value })} <span className="link-mark">↗</span></button> : <React.Fragment key={i}>{resultText({ text: part.value })}</React.Fragment>)}</h2></div></section>}
+    <section className="table-card"><div className="table-heading"><h2>{table?.name ?? 'Oracle table'}</h2><span>{loading ? 'Loading all rulesets…' : `${rows.length} results`}</span></div><div className="rows">{rows.map((r, i) => <div className="row" key={i}><span>{r.min ?? r.roll?.[0]}–{r.max ?? r.roll?.[1]}</span><p>{resultParts(r).map((part, i) => part.type === 'link' && tableById(part.id) ? <button className="inline-link" key={i} onClick={() => choose(tableById(part.id).id)} title="Open linked oracle table">{resultText({ text: part.value })} <span className="link-mark">↗</span></button> : <React.Fragment key={i}>{resultText({ text: part.value })}</React.Fragment>)}</p></div>)}</div></section>
     <footer>Source: <a href="https://github.com/rsek/datasworn" target="_blank">rsek/datasworn</a>. Datasworn data bundled with this app.</footer>
   </main></div>;
 }
