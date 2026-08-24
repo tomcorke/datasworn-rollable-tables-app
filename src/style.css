@@ -1,8 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 :root {
+  --canvas: #e9eee9;
+  --surface: #f8faf7;
+  --surface-subtle: #eef2ee;
+  --surface-accent: #d4e5d9;
+  --text: #18201e;
+  --text-muted: #52605a;
+  --accent: #174c3e;
+  --accent-contrast: #fff;
+  --border: #708077;
+  --focus: #1677c8;
+  --link-surface: #e1eee5;
+  --link-surface-hover: #cde2d4;
+  --warning-surface: #fff5dc;
+  --warning-text: #8a5b12;
+  --warning-border: #8a5b12;
+  --reference-surface: #eef1f4;
+  --reference-text: #4c5965;
+
   font-family: "Space Grotesk", sans-serif;
-  color: #18201e;
-  background: #e9eee9;
+  color: var(--text);
+  background: var(--canvas);
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --canvas: #111714;
+  --surface: #18201d;
+  --surface-subtle: #202a26;
+  --surface-accent: #20382e;
+  --text: #e5ece7;
+  --text-muted: #9aafa4;
+  --accent: #8dd7b8;
+  --accent-contrast: #111714;
+  --border: #80958a;
+  --focus: #6bbcff;
+  --link-surface: #28483b;
+  --link-surface-hover: #345d4c;
+  --warning-surface: #3e311b;
+  --warning-text: #ffd789;
+  --warning-border: #d2a34f;
+  --reference-surface: #252d34;
+  --reference-text: #d0d9e0;
+
+  color-scheme: dark;
 }
 * {
   box-sizing: border-box;
@@ -23,7 +63,7 @@ body {
 }
 aside {
   padding: 64px 0 32px;
-  border-right: 1px solid #cbd6cd;
+  border-right: 1px solid var(--border);
 }
 .quick-access {
   display: flex;
@@ -39,7 +79,7 @@ aside {
   border: 0;
   background: transparent;
   padding: 9px 8px;
-  color: #174c3e;
+  color: var(--accent);
   cursor: pointer;
   font: 14px "Space Grotesk";
   line-height: 1.35;
@@ -51,7 +91,7 @@ aside {
   height: auto;
   border: 0;
   background: transparent;
-  color: #708077;
+  color: var(--text-muted);
   padding: 8px;
   text-align: left;
   font: 12px "DM Mono";
@@ -59,17 +99,17 @@ aside {
 .collection:hover,
 .collection:focus-visible,
 .collection[aria-current="true"] {
-  background: #d4e5d9;
-  color: #174c3e;
+  background: var(--surface-accent);
+  color: var(--accent);
 }
 aside hr {
   border: 0;
-  border-top: 1px solid #cbd6cd;
+  border-top: 1px solid var(--border);
   margin: 28px 8px;
 }
 .muted {
   font-size: 13px;
-  color: #708077;
+  color: var(--text-muted);
   padding: 0 8px;
 }
 main {
@@ -77,14 +117,33 @@ main {
   padding: 64px 0 32px;
 }
 header {
+  position: relative;
   max-width: 650px;
+}
+.theme-toggle {
+  position: fixed;
+  z-index: 2;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--accent);
+  border-color: var(--border);
+  font-size: 20px;
+  line-height: 1;
+}
+.theme-toggle:hover {
+  background: var(--surface-accent);
 }
 .eyebrow {
   font:
     500 11px "DM Mono",
     monospace;
   letter-spacing: 0.12em;
-  color: #597568;
+  color: var(--text-muted);
   margin: 0 0 12px;
 }
 h1 {
@@ -101,7 +160,7 @@ h2 {
 .intro {
   font-size: 19px;
   line-height: 1.45;
-  color: #52605a;
+  color: var(--text-muted);
 }
 .controls {
   display: flex;
@@ -118,16 +177,16 @@ label {
   display: grid;
   gap: 8px;
   flex: 1;
-  color: #597568;
+  color: var(--text-muted);
 }
 select,
 button {
   min-width: 0;
   height: 48px;
   width: 100%;
-  border: 1px solid #aebdb3;
+  border: 1px solid var(--border);
   border-radius: 6px;
-  background: #f8faf7;
+  background: var(--surface);
   padding: 0 14px;
   font: 16px "Space Grotesk";
   color: inherit;
@@ -135,9 +194,9 @@ button {
 button {
   flex: 0 0 auto;
   width: auto;
-  background: #174c3e;
-  color: #fff;
-  border-color: #174c3e;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent);
   font-weight: 600;
   cursor: pointer;
   padding: 0 24px;
@@ -146,23 +205,23 @@ button {
   display: flex;
   gap: 22px;
   align-items: center;
-  background: #d4e5d9;
-  border: 1px solid #adc7b5;
+  background: var(--surface-accent);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 22px;
   margin-bottom: 24px;
 }
 .roll {
   font: 500 44px "DM Mono";
-  color: #174c3e;
+  color: var(--accent);
 }
 .result h2 {
   font-size: 27px;
   white-space: pre-line;
 }
 .table-card {
-  background: #f8faf7;
-  border: 1px solid #cbd6cd;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -171,28 +230,28 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 20px 22px;
-  border-bottom: 1px solid #dce4dd;
+  border-bottom: 1px solid var(--border);
 }
 .table-heading span {
   font: 12px "DM Mono";
-  color: #708077;
+  color: var(--text-muted);
 }
 .row {
   display: grid;
   grid-template-columns: 90px 1fr;
   gap: 18px;
   padding: 13px 22px;
-  border-bottom: 1px solid #e4eae5;
+  border-bottom: 1px solid var(--border);
 }
 .row:nth-child(even) {
-  background: #eef2ee;
+  background: var(--surface-subtle);
 }
 .row:last-child {
   border: 0;
 }
 .row > span {
   font: 12px "DM Mono";
-  color: #597568;
+  color: var(--text-muted);
   padding-top: 3px;
 }
 .row p {
@@ -202,11 +261,11 @@ button {
 }
 footer {
   font: 12px "DM Mono";
-  color: #708077;
+  color: var(--text-muted);
   margin-top: 24px;
 }
 a {
-  color: #174c3e;
+  color: var(--accent);
 }
 .sr-only {
   position: absolute;
@@ -222,9 +281,9 @@ a {
 .star {
   padding: 0 15px;
   font-size: 23px;
-  background: #d4e5d9;
-  color: #174c3e;
-  border-color: #adc7b5;
+  background: var(--surface-accent);
+  color: var(--accent);
+  border-color: var(--border);
 }
 .inline-link,
 .unresolved-link {
@@ -237,30 +296,30 @@ a {
   line-height: inherit;
 }
 .inline-link {
-  border: 1px solid #8fb5a2;
-  background: #e1eee5;
-  color: #174c3e;
+  border: 1px solid var(--border);
+  background: var(--link-surface);
+  color: var(--accent);
   cursor: pointer;
 }
 .inline-link:hover,
 .inline-link:focus-visible {
-  background: #cde2d4;
-  border-color: #174c3e;
+  background: var(--link-surface-hover);
+  border-color: var(--accent);
 }
 .link-mark {
   font-size: 0.8em;
   font-weight: 600;
 }
 .unresolved-link {
-  border: 1px dashed #c18b36;
-  background: #fff5dc;
-  color: #8a5b12;
+  border: 1px dashed var(--warning-border);
+  background: var(--warning-surface);
+  color: var(--warning-text);
   text-decoration: underline;
   text-decoration-style: dotted;
   cursor: help;
 }
 .unresolved-link .link-mark {
-  color: #b06b00;
+  color: var(--warning-text);
 }
 .book-reference {
   display: inline-flex;
@@ -268,10 +327,10 @@ a {
   gap: 3px;
   margin: 0 3px;
   padding: 6px 9px;
-  border: 1px solid #9ca9b5;
+  border: 1px solid var(--border);
   border-radius: 4px;
-  background: #eef1f4;
-  color: #4c5965;
+  background: var(--reference-surface);
+  color: var(--reference-text);
   font:
     500 0.8em "DM Mono",
     monospace;
@@ -283,13 +342,13 @@ a {
   font-size: 0.72em;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #687785;
+  color: var(--reference-text);
 }
 .book-reference-help {
   font:
     400 0.9em "Space Grotesk",
     sans-serif;
-  color: #52605a;
+  color: var(--text-muted);
   white-space: normal;
 }
 .book-reference-compact {
@@ -303,7 +362,7 @@ a {
 }
 .book-reference::before {
   content: "↗ ";
-  color: #687785;
+  color: var(--reference-text);
   position: absolute;
   margin-left: -7px;
   margin-top: -1px;
@@ -312,18 +371,18 @@ a {
   min-width: 0;
   padding-right: 16px;
   border-right: 0;
-  border-left: 1px solid #cbd6cd;
+  border-left: 1px solid var(--border);
   padding-left: 24px;
 }
 .history-toggle {
   height: 48px;
   padding: 0 14px;
-  background: #f8faf7;
-  color: #174c3e;
+  background: var(--surface);
+  color: var(--accent);
 }
 .history-entry {
   padding: 14px 0;
-  border-bottom: 1px solid #cbd6cd;
+  border-bottom: 1px solid var(--border);
 }
 .history-entry > button {
   width: 100%;
@@ -331,7 +390,7 @@ a {
   padding: 0;
   border: 0;
   background: transparent;
-  color: #174c3e;
+  color: var(--accent);
   text-align: left;
   font-size: 13px;
 }
@@ -350,7 +409,16 @@ a {
 }
 .history-roll {
   font: 500 18px "DM Mono";
-  color: #597568;
+  color: var(--text-muted);
+}
+button:hover {
+  filter: brightness(1.1);
+}
+button:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
 }
 @media (max-width: 760px) {
   .layout {

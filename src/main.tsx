@@ -12,6 +12,13 @@ import { validateBundledData } from "./dataValidation";
 import type { OracleRow, OracleTable } from "./oracle";
 import { ResultContent } from "./ResultContent";
 import { resolveTableLink } from "./linkResolver";
+import {
+  getSavedTheme,
+  getSystemTheme,
+  persistTheme,
+  resolveTheme,
+} from "./theme";
+import type { Theme } from "./theme";
 import "./style.css";
 import bundledData from "./data/index.json";
 
@@ -62,6 +69,13 @@ const saved = (key) => {
     return null;
   }
 };
+const save = (key: string, value: unknown) => {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    // Keep the app usable when storage is unavailable.
+  }
+};
 
 function App() {
   const [tables, setTables] = useState<OracleTable[]>(() =>
@@ -82,6 +96,35 @@ function App() {
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [historyVisible, setHistoryVisible] = useState(true);
   const [loading, setLoading] = useState(true);
+  const [explicitTheme, setExplicitTheme] = useState(
+    () => getSavedTheme() !== null,
+  );
+  const [theme, setTheme] = useState<Theme>(() =>
+    resolveTheme(getSavedTheme(), getSystemTheme() === "dark"),
+  );
+  const chooseTheme = (nextTheme: Theme) => {
+    document.documentElement.dataset.theme = nextTheme;
+    document.documentElement.style.colorScheme = nextTheme;
+    persistTheme(nextTheme);
+    setTheme(nextTheme);
+    setExplicitTheme(true);
+  };
+  useEffect(() => {
+    if (explicitTheme) return;
+    try {
+      const preference = window.matchMedia("(prefers-color-scheme: dark)");
+      const followSystem = (event: MediaQueryListEvent) => {
+        const nextTheme = event.matches ? "dark" : "light";
+        document.documentElement.dataset.theme = nextTheme;
+        document.documentElement.style.colorScheme = nextTheme;
+        setTheme(nextTheme);
+      };
+      preference.addEventListener("change", followSystem);
+      return () => preference.removeEventListener("change", followSystem);
+    } catch {
+      return;
+    }
+  }, [explicitTheme]);
   useEffect(() => {
     const loaded = Object.entries(parsedBundledData).flatMap(([key, data]) => {
       const ruleset = Object.keys(COLLECTIONS).find((name) =>
@@ -101,10 +144,7 @@ function App() {
     }
     setLoading(false);
   }, []);
-  useEffect(
-    () => localStorage.setItem("datasworn.selected", JSON.stringify(selected)),
-    [selected],
-  );
+  useEffect(() => save("datasworn.selected", selected), [selected]);
   useEffect(() => {
     const onPopState = () => {
       const id = new URLSearchParams(window.location.search).get("table");
@@ -120,18 +160,10 @@ function App() {
     return () => window.removeEventListener("popstate", onPopState);
   }, [tables]);
   useEffect(
-    () =>
-      localStorage.setItem(
-        "datasworn.collection",
-        JSON.stringify(selectedCollection),
-      ),
+    () => save("datasworn.collection", selectedCollection),
     [selectedCollection],
   );
-  useEffect(
-    () =>
-      localStorage.setItem("datasworn.favourites", JSON.stringify(favourites)),
-    [favourites],
-  );
+  useEffect(() => save("datasworn.favourites", favourites), [favourites]);
   const collections = [
     ...new Set(tables.map((t) => t.ruleset).filter(Boolean)),
   ];
@@ -206,6 +238,15 @@ function App() {
       </aside>
       <main>
         <header>
+          <button
+            className="theme-toggle"
+            type="button"
+            aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+            title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+            onClick={() => chooseTheme(theme === "light" ? "dark" : "light")}
+          >
+            <span aria-hidden="true">{theme === "light" ? "☀" : "☾"}</span>
+          </button>
           <p className="eyebrow">DATASWORN ORACLES</p>
           <h1>Roll the unknown.</h1>
           <p className="intro">
