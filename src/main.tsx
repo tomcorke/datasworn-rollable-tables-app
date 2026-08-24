@@ -63,9 +63,10 @@ function App() {
   const [tables, setTables] = useState<OracleTable[]>(() =>
     getTables(fallback),
   );
-  const [selected, setSelected] = useState<string>(
-    () => saved("datasworn.selected") ?? "overland/regions",
-  );
+  const [selected, setSelected] = useState<string>(() => {
+    const fromUrl = new URLSearchParams(window.location.search).get("table");
+    return fromUrl ?? saved("datasworn.selected") ?? "overland/regions";
+  });
   const [selectedCollection, setSelectedCollection] = useState<string>(
     () => saved("datasworn.collection") ?? "Ironsworn",
   );
@@ -92,6 +93,19 @@ function App() {
     () => localStorage.setItem("datasworn.selected", JSON.stringify(selected)),
     [selected],
   );
+  useEffect(() => {
+    const onPopState = () => {
+      const id = new URLSearchParams(window.location.search).get("table");
+      if (!id) return;
+      const next = tables.find((item) => item.id === id);
+      if (!next) return;
+      setSelected(id);
+      if (next.ruleset) setSelectedCollection(next.ruleset);
+      setLast(null);
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, [tables]);
   useEffect(
     () =>
       localStorage.setItem(
@@ -120,6 +134,8 @@ function App() {
   const isFavourite = table && favourites.includes(favouriteKey(table));
   const choose = (id: string) => {
     const next = tables.find((t) => t.id === id);
+    if (!next) return;
+    window.history.pushState({}, "", `?table=${encodeURIComponent(id)}`);
     setSelected(id);
     if (next?.ruleset) setSelectedCollection(next.ruleset);
     setLast(null);
