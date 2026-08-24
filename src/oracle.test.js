@@ -21,6 +21,9 @@ describe('Datasworn oracle helpers', () => {
   it('keeps internal link targets in result parts', () => {
     expect(resultParts({ text: '[Sailing Ships](id:sundered_isles/collections/oracles/ships)' })).toEqual([{ type: 'link', value: 'Sailing Ships', id: 'sundered_isles/collections/oracles/ships' }]);
   });
+  it('formats unresolved internal links without losing their target', () => {
+    expect(resultParts({ text: '[Missing](id:missing/table)' })).toEqual([{ type: 'link', value: 'Missing', id: 'missing/table' }]);
+  });
   it('formats Datasworn markdown links and emphasis', () => {
     expect(resultText({ text: '__Sails, ho!__ [Sailing Ships](id:sundered_isles/collections/oracles/ships)' })).toBe('Sails, ho! Sailing Ships');
   });
