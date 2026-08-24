@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { parse } from 'yaml';
 import { getTables, rollTable, resultParts, resultText, favouriteKey } from './oracle.js';
 import './style.css';
+import bundledData from './data/index.json';
 
 const ROOT = 'https://raw.githubusercontent.com/rsek/datasworn/main/source_data';
 const FILES = { classic: ['action_and_theme','character','name','place','settlement','turning_point'], delve: ['character','combat_event','feature','monstrosity','site_name','site_nature','threat','trap'], starforged: ['campaign_launch','characters','core','creatures','derelicts','factions','location_themes','misc','planet_types','planets','settlements','space','starships','vaults'], sundered_isles: ['caves','character_creation','characters','core','encounters','factions','islands','misc','other','overland','plunder','ruins','sailing_ships','seafaring','settlements','shipwrecks','treasures','weather'] };
@@ -18,8 +19,9 @@ function App() {
   const [last, setLast] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    Promise.allSettled(Object.entries(FILES).flatMap(([r, files]) => files.map(file => fetch(`${ROOT}/${r}/oracles/${file}.yaml`).then(res => res.ok ? res.text() : '').then(text => text ? getTables(parse(text)).map(t => ({ ...t, ruleset: COLLECTIONS[r] })) : []))))
-      .then(results => { const loaded = results.filter(r => r.status === 'fulfilled').flatMap(r => r.value); if (loaded.length) setTables(loaded); }).finally(() => setLoading(false));
+    const loaded = Object.entries(bundledData).flatMap(([key, data]) => getTables(data).map(t => ({ ...t, ruleset: COLLECTIONS[key.split('-')[0]] })));
+    if (loaded.length) setTables(loaded);
+    setLoading(false);
   }, []);
   useEffect(() => localStorage.setItem('datasworn.selected', JSON.stringify(selected)), [selected]);
   useEffect(() => localStorage.setItem('datasworn.collection', JSON.stringify(selectedCollection)), [selectedCollection]);
@@ -39,7 +41,7 @@ function App() {
     <section className="controls"><label>Collection<select value={collectionName} onChange={e => { setSelectedCollection(e.target.value); const first = tables.find(t => t.ruleset === e.target.value); if (first) choose(first.id); }}>{collections.map(collection => <option key={collection} value={collection}>{collection}</option>)}</select></label><label>Table<select value={table?.id ?? ''} onChange={e => choose(e.target.value)}>{collectionTables.map(t => <option key={t.id} value={t.id}>{t.label ?? t.name ?? t.tableId}</option>)}</select></label><button onClick={() => { const rolled = rollTable(table); const row = table?.rows.find(r => rolled.result === resultText(r)) ?? table?.rows.find(r => Number(r.min) <= rolled.roll && Number(r.max) >= rolled.roll); setLast({ ...rolled, row }); }}>Roll d100</button>{table && <button className="star" aria-label="Favourite table" onClick={() => toggleFavourite(favouriteKey(table))}>{isFavourite ? '★' : '☆'}</button>}</section>
     {last && <section className="result"><span className="roll">{last.roll}</span><div><p className="eyebrow">RESULT</p><h2>{resultParts(last.row).map((part, i) => part.type === 'link' ? <button className="inline-link" key={i} onClick={() => { const target = tableById(part.id); if (target) choose(target.id); }}>{resultText({ text: part.value })} ↗</button> : <React.Fragment key={i}>{resultText({ text: part.value })}</React.Fragment>)}</h2></div></section>}
     <section className="table-card"><div className="table-heading"><h2>{table?.name ?? 'Oracle table'}</h2><span>{loading ? 'Loading all rulesets…' : `${rows.length} results`}</span></div><div className="rows">{rows.map((r, i) => <div className="row" key={i}><span>{r.min ?? r.roll?.[0]}–{r.max ?? r.roll?.[1]}</span><p>{resultParts(r).map((part, i) => part.type === 'link' ? <button className="inline-link" key={i} onClick={() => { const target = tableById(part.id); if (target) choose(target.id); }}>{resultText({ text: part.value })} ↗</button> : <React.Fragment key={i}>{resultText({ text: part.value })}</React.Fragment>)}</p></div>)}</div></section>
-    <footer>Source: <a href="https://github.com/rsek/datasworn" target="_blank">rsek/datasworn</a>. Data loaded from GitHub at runtime.</footer>
+    <footer>Source: <a href="https://github.com/rsek/datasworn" target="_blank">rsek/datasworn</a>. Datasworn data bundled with this app.</footer>
   </main></div>;
 }
 createRoot(document.getElementById('root')).render(<App />);

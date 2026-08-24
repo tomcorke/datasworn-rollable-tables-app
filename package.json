@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test-tools": "node test-tools/server.mjs"
+    "test-tools": "node test-tools/server.mjs",
+    "data:build": "node scripts/build-data.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
