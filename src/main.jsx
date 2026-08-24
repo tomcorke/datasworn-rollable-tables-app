@@ -33,7 +33,8 @@ function App() {
     const normalise = value => String(value).toLowerCase().replace(/[_-]/g, '').replace(/s$/, '');
     const parts = id.split('/').filter(Boolean);
     const slugs = parts.slice(-2).map(normalise);
-    return tables.find(t => t.id === id) || tables.find(t => slugs.includes(normalise(t.sourceKey))) || tables.find(t => slugs.includes(normalise(t.tableId))) || tables.find(t => slugs.some(slug => t.id.split('/').some(part => normalise(part) === slug)));
+    const bySource = tables.find(t => slugs.some(slug => { const source = normalise(t.sourceKey); return source === slug || source.includes(slug) || slug.includes(source); }));
+    return tables.find(t => t.id === id) || bySource || tables.find(t => slugs.includes(normalise(t.tableId))) || tables.find(t => slugs.some(slug => t.id.split('/').some(part => normalise(part) === slug)));
   };
   const rows = useMemo(() => table?.rows ?? [], [table]);
   const isFavourite = table && favourites.includes(favouriteKey(table));
