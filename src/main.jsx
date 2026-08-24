@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { parse } from 'yaml';
 import { getTables, rollTable, resultParts, resultText, favouriteKey } from './oracle.js';
+import { resolveTableLink } from './linkResolver.js';
 import './style.css';
 import bundledData from './data/index.json';
 
@@ -29,13 +30,7 @@ function App() {
   const collections = [...new Set(tables.map(t => t.ruleset).filter(Boolean))];
   const collectionTables = tables.filter(t => t.ruleset === selectedCollection);
   const table = collectionTables.find(t => t.id === selected) ?? collectionTables[0] ?? tables[0];
-  const tableById = id => {
-    const normalise = value => String(value).toLowerCase().replace(/[_-]/g, '').replace(/s$/, '');
-    const parts = id.split('/').filter(Boolean);
-    const slugs = parts.slice(-2).map(normalise);
-    const bySource = tables.find(t => slugs.some(slug => { const source = normalise(t.sourceKey); return source === slug || source.includes(slug) || slug.includes(source); }));
-    return tables.find(t => t.id === id) || bySource || tables.find(t => slugs.includes(normalise(t.tableId))) || tables.find(t => slugs.some(slug => t.id.split('/').some(part => normalise(part) === slug)));
-  };
+  const tableById = id => resolveTableLink(id, tables);
   const rows = useMemo(() => table?.rows ?? [], [table]);
   const isFavourite = table && favourites.includes(favouriteKey(table));
   const choose = id => { const next = tables.find(t => t.id === id); setSelected(id); if (next?.ruleset) setSelectedCollection(next.ruleset); setLast(null); };
