@@ -1,0 +1,372 @@
+import { useEffect, useMemo, useState } from "react";
+import { createRoot } from "react-dom/client";
+import {
+  getTables,
+  rollLabel,
+  rollTable,
+  rowRange,
+  favouriteKey,
+  tableDisplayName,
+} from "./oracle";
+import { validateBundledData } from "./dataValidation";
+import type { OracleRow, OracleTable } from "./oracle";
+import { ResultContent } from "./ResultContent";
+import { resolveTableLink } from "./linkResolver";
+import "./style.css";
+import bundledData from "./data/index.json";
+
+const parsedBundledData = Object.fromEntries(
+  Object.entries(bundledData).flatMap(([key, data]) => {
+    if (data === null) return [];
+    const parsed = validateBundledData(data);
+    if (!parsed.success)
+      throw new Error(
+        `Invalid bundled Datasworn data in ${key}: ${parsed.error.message}`,
+      );
+    return [[key, parsed.data]];
+  }),
+);
+
+const COLLECTIONS = {
+  classic: "Ironsworn",
+  delve: "Delve",
+  starforged: "Starforged",
+  sundered_isles: "Sundered Isles",
+};
+const fallback = {
+  oracles: {
+    overland: {
+      name: "Overland",
+      contents: {
+        regions: {
+          name: "Overland Regions",
+          rows: [
+            { min: 1, max: 20, text: "Coastal waters" },
+            { min: 21, max: 40, text: "Dense forest" },
+            { min: 41, max: 60, text: "Open plains" },
+            { min: 61, max: 80, text: "Mountain pass" },
+            { min: 81, max: 100, text: "Ruined settlement" },
+          ],
+        },
+      },
+    },
+  },
+};
+type RollResult = { roll: number; row?: OracleRow };
+type HistoryEntry = RollResult & { sequence: number; table: OracleTable };
+
+const saved = (key) => {
+  try {
+    return JSON.parse(localStorage.getItem(key));
+  } catch {
+    return null;
+  }
+};
+
+function App() {
+  const [tables, setTables] = useState<OracleTable[]>(() =>
+    getTables(fallback),
+  );
+  const [selected, setSelected] = useState<string>(() => {
+    const fromUrl = new URLSearchParams(window.location.search).get("table");
+    return fromUrl ?? saved("datasworn.selected") ?? "overland/regions";
+  });
+  const [selectedSource, setSelectedSource] = useState<string>();
+  const [selectedCollection, setSelectedCollection] = useState<string>(
+    () => saved("datasworn.collection") ?? "Ironsworn",
+  );
+  const [favourites, setFavourites] = useState<string[]>(
+    () => saved("datasworn.favourites") ?? [],
+  );
+  const [last, setLast] = useState<RollResult | null>(null);
+  const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [historyVisible, setHistoryVisible] = useState(true);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const loaded = Object.entries(parsedBundledData).flatMap(([key, data]) => {
+      const ruleset = Object.keys(COLLECTIONS).find((name) =>
+        key.startsWith(`${name}-`),
+      );
+      return getTables(data).map((t) => ({
+        ...t,
+        sourceKey: key.slice(`${ruleset}-`.length),
+        ruleset: COLLECTIONS[ruleset],
+      }));
+    });
+    if (loaded.length) {
+      setTables(loaded);
+      setSelectedSource(
+        loaded.find((table) => table.id === selected)?.sourceKey,
+      );
+    }
+    setLoading(false);
+  }, []);
+  useEffect(
+    () => localStorage.setItem("datasworn.selected", JSON.stringify(selected)),
+    [selected],
+  );
+  useEffect(() => {
+    const onPopState = () => {
+      const id = new URLSearchParams(window.location.search).get("table");
+      if (!id) return;
+      const next = tables.find((item) => item.id === id);
+      if (!next) return;
+      setSelected(id);
+      setSelectedSource(next.sourceKey);
+      if (next.ruleset) setSelectedCollection(next.ruleset);
+      setLast(null);
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, [tables]);
+  useEffect(
+    () =>
+      localStorage.setItem(
+        "datasworn.collection",
+        JSON.stringify(selectedCollection),
+      ),
+    [selectedCollection],
+  );
+  useEffect(
+    () =>
+      localStorage.setItem("datasworn.favourites", JSON.stringify(favourites)),
+    [favourites],
+  );
+  const collections = [
+    ...new Set(tables.map((t) => t.ruleset).filter(Boolean)),
+  ];
+  const collectionTables = tables.filter(
+    (t) => t.ruleset === selectedCollection,
+  );
+  const table =
+    collectionTables.find(
+      (t) =>
+        t.id === selected &&
+        (!selectedSource || t.sourceKey === selectedSource),
+    ) ??
+    collectionTables[0] ??
+    tables[0];
+  const tableById = (id: string) => resolveTableLink(id, tables);
+  const rows = useMemo(() => table?.rows ?? [], [table]);
+  const isFavourite = table && favourites.includes(favouriteKey(table));
+  const choose = (next: OracleTable) => {
+    const id = next.id ?? "";
+    window.history.pushState({}, "", `?table=${encodeURIComponent(id)}`);
+    setSelected(id);
+    setSelectedSource(next.sourceKey);
+    if (next.ruleset) setSelectedCollection(next.ruleset);
+    setLast(null);
+  };
+  const toggleFavourite = (tableId: string) =>
+    setFavourites((current) =>
+      current.includes(tableId)
+        ? current.filter((id) => id !== tableId)
+        : [...current, tableId],
+    );
+  const favouriteTables = favourites
+    .map((id) => tables.find((t) => t.id === id))
+    .filter(Boolean);
+  const collectionName = table?.ruleset ?? selectedCollection;
+  return (
+    <div className={`layout${historyVisible ? "" : " history-hidden"}`}>
+      <aside>
+        <p className="eyebrow">QUICK ACCESS</p>
+        {favouriteTables.length ? (
+          <div className="quick-access">
+            {favouriteTables.map((t) => (
+              <button
+                className="favourite-link"
+                key={t.id}
+                onClick={() => choose(t)}
+              >
+                ★ {tableDisplayName(t)}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p className="muted">Favourite tables appear here.</p>
+        )}
+        <hr />
+        <p className="eyebrow">COLLECTIONS</p>
+        {collections.map((collection) => (
+          <button
+            className="collection"
+            key={collection}
+            aria-current={
+              collection === selectedCollection ? "true" : undefined
+            }
+            onClick={() => {
+              const first = tables.find((t) => t.ruleset === collection);
+              if (first) choose(first);
+            }}
+          >
+            {collection}
+          </button>
+        ))}
+      </aside>
+      <main>
+        <header>
+          <p className="eyebrow">DATASWORN ORACLES</p>
+          <h1>Roll the unknown.</h1>
+          <p className="intro">
+            Browse oracle tables across Ironsworn, Starforged, and Sundered
+            Isles. Choose a table, roll, follow the prompt.
+          </p>
+        </header>
+        <section className="controls">
+          <label>
+            Collection
+            <select
+              value={collectionName}
+              onChange={(e) => {
+                const first = tables.find((t) => t.ruleset === e.target.value);
+                if (first) choose(first);
+              }}
+            >
+              {collections.map((collection) => (
+                <option key={collection} value={collection}>
+                  {collection}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Table
+            <select
+              value={table?.id ?? ""}
+              onChange={(e) => {
+                const next = collectionTables.find(
+                  (t) => t.id === e.target.value,
+                );
+                if (next) choose(next);
+              }}
+            >
+              {collectionTables.map((t) => (
+                <option key={t.id} value={t.id}>
+                  {tableDisplayName(t)}
+                </option>
+              ))}
+            </select>
+          </label>
+          <button
+            onClick={() => {
+              if (!table) return;
+              const rolled = rollTable(table);
+              setLast(rolled);
+              setHistory((current) => [
+                {
+                  sequence: current[0]?.sequence + 1 || 1,
+                  table,
+                  roll: rolled.roll,
+                  row: rolled.row,
+                },
+                ...current,
+              ]);
+            }}
+          >
+            {rollLabel(table)}
+          </button>
+          {table && (
+            <button
+              className="star"
+              aria-label="Favourite table"
+              onClick={() => toggleFavourite(favouriteKey(table))}
+            >
+              {isFavourite ? "★" : "☆"}
+            </button>
+          )}
+          <button
+            className="history-toggle"
+            aria-controls="roll-history"
+            aria-expanded={historyVisible}
+            onClick={() => setHistoryVisible((visible) => !visible)}
+          >
+            {historyVisible ? "Hide history" : "Show history"}
+          </button>
+        </section>
+        {last && (
+          <section className="result">
+            <span className="roll">{last.roll}</span>
+            <div>
+              <p className="eyebrow">RESULT</p>
+              <h2>
+                <ResultContent
+                  row={last.row}
+                  resolveTable={tableById}
+                  onChoose={choose}
+                />
+              </h2>
+            </div>
+          </section>
+        )}
+        <section className="table-card">
+          <div className="table-heading">
+            <h2>{tableDisplayName(table)}</h2>
+            <span>
+              {loading ? "Loading all rulesets…" : `${rows.length} results`}
+            </span>
+          </div>
+          <div className="rows">
+            {rows.map((row, index) => {
+              const range = rowRange(table, index);
+              return (
+                <div className="row" key={index}>
+                  <span>
+                    {range
+                      ? range[0] === range[1]
+                        ? range[0]
+                        : `${range[0]}–${range[1]}`
+                      : "–"}
+                  </span>
+                  <p>
+                    <ResultContent
+                      row={row}
+                      resolveTable={tableById}
+                      onChoose={choose}
+                      compactReferences
+                    />
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+        <footer>
+          Source:{" "}
+          <a href="https://github.com/rsek/datasworn" target="_blank">
+            rsek/datasworn
+          </a>
+          . Datasworn data bundled with this app.
+        </footer>
+      </main>
+      {historyVisible && (
+        <aside className="history" id="roll-history">
+          <p className="eyebrow">ROLL HISTORY</p>
+          {history.length ? (
+            history.map((entry) => (
+              <article className="history-entry" key={entry.sequence}>
+                <button onClick={() => choose(entry.table)}>
+                  {entry.table.ruleset} / {tableDisplayName(entry.table)}
+                </button>
+                <div className="history-result">
+                  <span className="history-roll">{entry.roll}</span>
+                  <p>
+                    <ResultContent
+                      row={entry.row}
+                      resolveTable={tableById}
+                      onChoose={choose}
+                      compactReferences
+                    />
+                  </p>
+                </div>
+              </article>
+            ))
+          ) : (
+            <p className="muted">Rolls appear here.</p>
+          )}
+        </aside>
+      )}
+    </div>
+  );
+}
+createRoot(document.getElementById("root")).render(<App />);
