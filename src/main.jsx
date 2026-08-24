@@ -30,9 +30,10 @@ function App() {
   const collectionTables = tables.filter(t => t.ruleset === selectedCollection);
   const table = collectionTables.find(t => t.id === selected) ?? collectionTables[0] ?? tables[0];
   const tableById = id => {
+    const normalise = value => String(value).toLowerCase().replace(/[_-]/g, '').replace(/s$/, '');
     const parts = id.split('/').filter(Boolean);
-    const slugs = parts.slice(-2).map(slug => slug.replace(/s$/, ''));
-    return tables.find(t => t.id === id) || tables.find(t => slugs.includes(t.sourceKey?.replace(/s$/, ''))) || tables.find(t => slugs.includes(String(t.tableId).replace(/s$/, ''))) || tables.find(t => slugs.some(slug => t.id.split('/').includes(slug)));
+    const slugs = parts.slice(-2).map(normalise);
+    return tables.find(t => t.id === id) || tables.find(t => slugs.includes(normalise(t.sourceKey))) || tables.find(t => slugs.includes(normalise(t.tableId))) || tables.find(t => slugs.some(slug => t.id.split('/').some(part => normalise(part) === slug)));
   };
   const rows = useMemo(() => table?.rows ?? [], [table]);
   const isFavourite = table && favourites.includes(favouriteKey(table));
