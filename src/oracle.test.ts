@@ -32,9 +32,9 @@ describe("Datasworn oracle helpers", () => {
     expect(getTables(data)[0].label).toBe("Regions");
   });
   it("preserves line breaks between multiline result fields", () => {
-    expect(
-      resultText({ text: "Forest", text2: "Trees\nHide nearby" }),
-    ).toBe("Forest\nTrees\nHide nearby");
+    expect(resultText({ text: "Forest", text2: "Trees\nHide nearby" })).toBe(
+      "Forest\nTrees\nHide nearby",
+    );
   });
   it("rolls within inclusive ranges", () => {
     const result = rollTable(getTables(data)[0], () => 0);

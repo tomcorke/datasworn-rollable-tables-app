@@ -10,13 +10,13 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test-tools": "node test-tools/server.mjs",
-    "data:build": "node scripts/build-data.mjs",
+    "test-tools": "node --experimental-strip-types test-tools/server.ts",
+    "data:build": "node --experimental-strip-types scripts/build-data.ts",
     "lint:css": "stylelint \"src/**/*.css\"",
     "format:css": "prettier --write \"src/**/*.css\"",
     "format:css:check": "prettier --check \"src/**/*.css\"",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\" \"test-tools/**/*.{js,mjs}\" \"scripts/**/*.{js,mjs}\" \"*.{js,mjs,ts,json}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"test-tools/**/*.{js,mjs}\" \"scripts/**/*.{js,mjs}\" \"*.{js,mjs,ts,json}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx}\" \"test-tools/**/*.ts\" \"scripts/**/*.ts\" \"*.{ts,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\" \"test-tools/**/*.ts\" \"scripts/**/*.ts\" \"*.{ts,json}\""
   },
   "dependencies": {
     "react": "latest",
@@ -27,12 +27,14 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/node": "^26.2.0",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
     "@vitejs/plugin-react": "^6.1.0",
     "eslint": "^10.9.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.4",
+    "jiti": "^2.7.0",
     "prettier": "^3.9.6",
     "puppeteer": "^25.8.0",
     "stylelint": "^17.14.1",

@@ -29,7 +29,10 @@ const server = http.createServer(async (req, res) => {
         })),
       );
     if (req.method === "POST" && req.url === "/roll") {
-      await page.locator("button").filter({ text: "Roll d100" }).click();
+      await page
+        .locator("button")
+        .filter((button) => button.textContent?.includes("Roll d100"))
+        .click();
       return send(
         res,
         200,
