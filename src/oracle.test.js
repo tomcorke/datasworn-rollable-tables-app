@@ -18,6 +18,9 @@ describe('Datasworn oracle helpers', () => {
   it('resolves YAML merge aliases in table rows', () => {
     expect(resultText({ '<<': { text: 'Known waters' } })).toBe('Known waters');
   });
+  it('formats Datasworn markdown links and emphasis', () => {
+    expect(resultText({ text: '__Sails, ho!__ [Sailing Ships](id:sundered_isles/collections/oracles/ships)' })).toBe('Sails, ho! Sailing Ships');
+  });
   it('formats nested/repeated roll instructions', () => {
     expect(resultText({ text: 'Roll twice', rolls: 2 })).toBe('Roll twice');
   });
