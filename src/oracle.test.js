@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getTables, rollTable, resultText } from './oracle.js';
+import { getTables, rollTable, resultParts, resultText } from './oracle.js';
 
 describe('Datasworn oracle helpers', () => {
   const data = { oracles: { overland: { contents: {
@@ -17,6 +17,9 @@ describe('Datasworn oracle helpers', () => {
   });
   it('resolves YAML merge aliases in table rows', () => {
     expect(resultText({ '<<': { text: 'Known waters' } })).toBe('Known waters');
+  });
+  it('keeps internal link targets in result parts', () => {
+    expect(resultParts({ text: '[Sailing Ships](id:sundered_isles/collections/oracles/ships)' })).toEqual([{ type: 'link', value: 'Sailing Ships', id: 'sundered_isles/collections/oracles/ships' }]);
   });
   it('formats Datasworn markdown links and emphasis', () => {
     expect(resultText({ text: '__Sails, ho!__ [Sailing Ships](id:sundered_isles/collections/oracles/ships)' })).toBe('Sails, ho! Sailing Ships');
