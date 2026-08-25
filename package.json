@@ -13,6 +13,7 @@
     "test": "vitest run",
     "test-tools": "node --experimental-strip-types test-tools/server.ts",
     "data:build": "node --experimental-strip-types scripts/build-data.ts",
+    "data:build:agent": "node --experimental-strip-types scripts/build-agent-tables.ts",
     "lint:css": "stylelint \"src/**/*.css\"",
     "format:css": "prettier --write \"src/**/*.css\"",
     "format:css:check": "prettier --check \"src/**/*.css\"",

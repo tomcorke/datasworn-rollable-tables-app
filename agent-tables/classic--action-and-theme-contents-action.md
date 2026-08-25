@@ -1,0 +1,510 @@
+# Action
+- **Ruleset:** classic
+- **Collection:** Action and Theme Oracles
+- **Table ID:** `classic/action_and_theme/contents/action`
+- **Source data:** `src/data/classic-action_and_theme.yaml`
+## Description
+
+Use this table to inspire a discovery, event, character goal, or situation. A roll on this table can be combined with a [Theme](id:classic/oracles/action_and_theme/theme) to provide an action and a subject. Then, interpret the result based on the context of the question and your current situation.
+## Results
+### 1-1
+
+Scheme
+
+
+### 2-2
+
+Clash
+
+
+### 3-3
+
+Weaken
+
+
+### 4-4
+
+Initiate
+
+
+### 5-5
+
+Create
+
+
+### 6-6
+
+Swear
+
+
+### 7-7
+
+Avenge
+
+
+### 8-8
+
+Guard
+
+
+### 9-9
+
+Defeat
+
+
+### 10-10
+
+Control
+
+
+### 11-11
+
+Break
+
+
+### 12-12
+
+Risk
+
+
+### 13-13
+
+Surrender
+
+
+### 14-14
+
+Inspect
+
+
+### 15-15
+
+Raid
+
+
+### 16-16
+
+Evade
+
+
+### 17-17
+
+Assault
+
+
+### 18-18
+
+Deflect
+
+
+### 19-19
+
+Threaten
+
+
+### 20-20
+
+Attack
+
+
+### 21-21
+
+Leave
+
+
+### 22-22
+
+Preserve
+
+
+### 23-23
+
+Manipulate
+
+
+### 24-24
+
+Remove
+
+
+### 25-25
+
+Eliminate
+
+
+### 26-26
+
+Withdraw
+
+
+### 27-27
+
+Abandon
+
+
+### 28-28
+
+Investigate
+
+
+### 29-29
+
+Hold
+
+
+### 30-30
+
+Focus
+
+
+### 31-31
+
+Uncover
+
+
+### 32-32
+
+Breach
+
+
+### 33-33
+
+Aid
+
+
+### 34-34
+
+Uphold
+
+
+### 35-35
+
+Falter
+
+
+### 36-36
+
+Suppress
+
+
+### 37-37
+
+Hunt
+
+
+### 38-38
+
+Share
+
+
+### 39-39
+
+Destroy
+
+
+### 40-40
+
+Avoid
+
+
+### 41-41
+
+Reject
+
+
+### 42-42
+
+Demand
+
+
+### 43-43
+
+Explore
+
+
+### 44-44
+
+Bolster
+
+
+### 45-45
+
+Seize
+
+
+### 46-46
+
+Mourn
+
+
+### 47-47
+
+Reveal
+
+
+### 48-48
+
+Gather
+
+
+### 49-49
+
+Defy
+
+
+### 50-50
+
+Transform
+
+
+### 51-51
+
+Persevere
+
+
+### 52-52
+
+Serve
+
+
+### 53-53
+
+Begin
+
+
+### 54-54
+
+Move
+
+
+### 55-55
+
+Coordinate
+
+
+### 56-56
+
+Resist
+
+
+### 57-57
+
+Await
+
+
+### 58-58
+
+Impress
+
+
+### 59-59
+
+Take
+
+
+### 60-60
+
+Oppose
+
+
+### 61-61
+
+Capture
+
+
+### 62-62
+
+Overwhelm
+
+
+### 63-63
+
+Challenge
+
+
+### 64-64
+
+Acquire
+
+
+### 65-65
+
+Protect
+
+
+### 66-66
+
+Finish
+
+
+### 67-67
+
+Strengthen
+
+
+### 68-68
+
+Restore
+
+
+### 69-69
+
+Advance
+
+
+### 70-70
+
+Command
+
+
+### 71-71
+
+Refuse
+
+
+### 72-72
+
+Find
+
+
+### 73-73
+
+Deliver
+
+
+### 74-74
+
+Hide
+
+
+### 75-75
+
+Fortify
+
+
+### 76-76
+
+Betray
+
+
+### 77-77
+
+Secure
+
+
+### 78-78
+
+Arrive
+
+
+### 79-79
+
+Affect
+
+
+### 80-80
+
+Change
+
+
+### 81-81
+
+Defend
+
+
+### 82-82
+
+Debate
+
+
+### 83-83
+
+Support
+
+
+### 84-84
+
+Follow
+
+
+### 85-85
+
+Construct
+
+
+### 86-86
+
+Locate
+
+
+### 87-87
+
+Endure
+
+
+### 88-88
+
+Release
+
+
+### 89-89
+
+Lose
+
+
+### 90-90
+
+Reduce
+
+
+### 91-91
+
+Escalate
+
+
+### 92-92
+
+Distract
+
+
+### 93-93
+
+Journey
+
+
+### 94-94
+
+Escort
+
+
+### 95-95
+
+Learn
+
+
+### 96-96
+
+Communicate
+
+
+### 97-97
+
+Depart
+
+
+### 98-98
+
+Search
+
+
+### 99-99
+
+Charge
+
+
+### 100-100
+
+Summon
+
+## Reference syntax
+Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.
