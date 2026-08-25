@@ -7,63 +7,60 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-9
 
 Creatures attack without warning
 
 
-### 2
+### 10-18
 
 Creatures guided or controlled by a greater threat
 
 
-### 3
+### 19-27
 
 Creatures reveal new aspects or abilities
 
 
-### 4
+### 28-36
 
 Creatures reveal surprising cleverness
 
 
-### 5
+### 37-45
 
 Creatures take or destroy something important
 
 
-### 6
+### 46-54
 
 Discovery of a live but threatened victim
 
 
-### 7
+### 55-63
 
 Hazardous architecture or terrain
 
 
-### 8
+### 64-72
 
 Lured or driven into a trap or dead-end
 
 
-### 9
+### 73-81
 
 Powerful or dominant creature reveals itself
 
 
-### 10
+### 82-90
 
 Toxic or sickening environment
 
 
 ### 91-98
 
-[Action](id:starforged/oracles/core/action) + [Theme](id:starforged/oracles/core/theme)
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
-**References**
-- **Action** - [starforged/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [starforged/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 99-100
 

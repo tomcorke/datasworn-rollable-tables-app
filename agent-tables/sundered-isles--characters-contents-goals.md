@@ -244,7 +244,7 @@ Uphold or enforce laws
 
 ### 95-100
 
-No result text supplied.
+[Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

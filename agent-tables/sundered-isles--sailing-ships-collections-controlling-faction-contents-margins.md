@@ -9,17 +9,17 @@ Outer Seas
 ## Results
 ### 1-45
 
-No result text supplied.
+Known faction
 
 
 ### 46-75
 
-No result text supplied.
+Unknown faction
 
 
 ### 76-100
 
-No result text supplied.
+Independent
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

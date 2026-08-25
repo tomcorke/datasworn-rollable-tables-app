@@ -164,7 +164,7 @@ Wet or humid
 
 ### 94-100
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

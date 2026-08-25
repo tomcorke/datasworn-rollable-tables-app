@@ -9,17 +9,17 @@ No description supplied.
 ## Results
 ### 1-90
 
-No result text supplied.
+None
 
 
 ### 91-96
 
-No result text supplied.
+Orbital settlement
 
 
 ### 97-100
 
-No result text supplied.
+Planetside settlement
 
 
 ### 4

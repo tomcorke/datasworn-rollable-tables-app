@@ -5,7 +5,7 @@
 - **Source data:** `src/data/delve-character.yaml`
 ## Description
 
-To give an NPC or faction a task or objective, use the Activity oracle. For more detail, you can combine this prompt with the [Focus](id:delve/oracles/feature/focus) oracle or [Theme](id:classic/oracles/action_and_theme/theme) oracle.
+To give an NPC or faction a task or objective, use the Activity oracle. For more detail, you can combine this prompt with the [Focus](delve--feature-contents-focus.md) oracle or [Theme](classic--action-and-theme-contents-theme.md) oracle.
 ## Results
 ### 1-2
 

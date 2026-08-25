@@ -5,7 +5,7 @@
 - **Source data:** `src/data/starforged-vaults.yaml`
 ## Description
 
-Use this table to help envision a complication within a vault, such as when you [Explore a Waypoint](id:starforged/moves/exploration/explore_a_waypoint) and are prompted to envision a peril.
+Use this table to help envision a complication within a vault, such as when you [Explore a Waypoint](#unresolved-reference) *(unresolved in bundled data)* and are prompted to envision a peril.
 ## Results
 ### 1-5
 
@@ -104,7 +104,7 @@ Unnerving sound or sensation
 
 ### 96-99
 
-No result text supplied.
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
 
 ### 100-100

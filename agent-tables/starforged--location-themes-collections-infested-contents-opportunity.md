@@ -7,27 +7,27 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-20
 
 Clue to the nature or vulnerabilities of these creatures
 
 
-### 2
+### 21-40
 
 Creatures turn on each other
 
 
-### 3
+### 41-60
 
 Early warning of an attack or ambush
 
 
-### 4
+### 61-80
 
 External event provides a helpful distraction
 
 
-### 5
+### 81-100
 
 Helpful resource or equipment
 

@@ -5,7 +5,7 @@
 - **Source data:** `src/data/delve-site_name.yaml`
 ## Description
 
-You may also use your preferred name randomizer to generate a Namesake for your site. If you want to add details for the Namesake, use the [Character oracles](id:classic/collections/oracles/character) in *Ironsworn Core*. This may help inspire a deeper understanding of the history of the site.
+You may also use your preferred name randomizer to generate a Namesake for your site. If you want to add details for the Namesake, use the [Character oracles](#unresolved-reference) *(unresolved in bundled data)* in *Ironsworn Core*. This may help inspire a deeper understanding of the history of the site.
 ## Results
 ### 1-2
 

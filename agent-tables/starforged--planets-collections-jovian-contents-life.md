@@ -9,32 +9,32 @@ No description supplied.
 ## Results
 ### 1-35
 
-No result text supplied.
+None
 
 
 ### 36-60
 
-No result text supplied.
+Extinct
 
 
 ### 61-85
 
-No result text supplied.
+Scarce
 
 
 ### 86-95
 
-No result text supplied.
+Diverse
 
 
 ### 96-98
 
-No result text supplied.
+Bountiful
 
 
 ### 99-100
 
-No result text supplied.
+Overrun
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

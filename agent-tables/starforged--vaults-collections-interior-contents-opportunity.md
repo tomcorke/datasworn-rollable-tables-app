@@ -5,7 +5,7 @@
 - **Source data:** `src/data/starforged-vaults.yaml`
 ## Description
 
-Use this table to help envision a favorable circumstance within a vault, such as when you [Explore a Waypoint](id:starforged/moves/exploration/explore_a_waypoint) and are prompted to envision an opportunity.
+Use this table to help envision a favorable circumstance within a vault, such as when you [Explore a Waypoint](#unresolved-reference) *(unresolved in bundled data)* and are prompted to envision an opportunity.
 ## Results
 ### 1-10
 

@@ -170,12 +170,12 @@ You are lost or off course
 
 ### 97-99
 
-No result text supplied.
+[Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
 
 ### 100-100
 
-No result text supplied.
+Roll twice
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

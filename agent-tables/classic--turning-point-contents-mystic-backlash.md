@@ -5,7 +5,7 @@
 - **Source data:** `src/data/classic-turning_point.yaml`
 ## Description
 
-Those who deal in magic may find themselves at the mercy of chaos. This oracle can supplement, or replace, the [Pay the Price](id:classic/moves/fate/pay_the_price) table when resolving the outcome of a failed ritual or other negative interaction with mystical forces. Use this oracle in dramatic moments, or to introduce an unexpected outcome triggered by a match.
+Those who deal in magic may find themselves at the mercy of chaos. This oracle can supplement, or replace, the [Pay the Price](#unresolved-reference) *(unresolved in bundled data)* table when resolving the outcome of a failed ritual or other negative interaction with mystical forces. Use this oracle in dramatic moments, or to introduce an unexpected outcome triggered by a match.
 ## Results
 ### 1-4
 

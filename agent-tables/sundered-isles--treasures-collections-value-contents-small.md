@@ -10,18 +10,14 @@ No description supplied.
 ### 1-80
 
 Trifle
-One [Precious Item](id:sundered_isles/oracles/treasures/precious_item)
+One [Precious Item](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Precious Item** - [sundered_isles/oracles/treasures/precious_item](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 81-100
 
 Stash
-Roll the action die and reveal that many [Precious Items](id:sundered_isles/oracles/treasures/precious_item)
+Roll the action die and reveal that many [Precious Items](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Precious Items** - [sundered_isles/oracles/treasures/precious_item](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 3
 

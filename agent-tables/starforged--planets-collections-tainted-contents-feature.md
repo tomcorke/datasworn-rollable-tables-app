@@ -7,81 +7,79 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-7
 
 Caustic gas storms
 
 
-### 2
+### 8-14
 
 Corrosive, low-lying fog
 
 
-### 3
+### 15-21
 
 Fungus-encrusted caves
 
 
-### 4
+### 22-28
 
 Gelatinous ponds
 
 
-### 5
+### 29-35
 
 Hallucinogenic toxins
 
 
-### 6
+### 36-42
 
 Layers of fast-growing lichen
 
 
-### 7
+### 43-49
 
 Moldering bones
 
 
-### 8
+### 50-56
 
 Mutated flora
 
 
-### 9
+### 57-63
 
 Poisonous gas vents
 
 
-### 10
+### 64-70
 
 Spore clouds
 
 
-### 11
+### 71-77
 
 Terrain marred by fleshy pustules
 
 
-### 12
+### 78-84
 
 Toxic rain
 
 
-### 13
+### 85-91
 
 Virulent fungal infestations
 
 
 ### 92-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (planetside)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (planetside)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

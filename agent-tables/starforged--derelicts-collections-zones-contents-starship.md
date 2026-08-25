@@ -9,42 +9,42 @@ If you explore the depths of a derelict, you may use the zone oracles to help en
 ## Results
 ### 1
 
-No result text supplied.
+[Access](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 1-5
 
-No result text supplied.
+[Community](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 6-30
 
-No result text supplied.
+[Engineering](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 31-55
 
-No result text supplied.
+[Living](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 56-65
 
-No result text supplied.
+[Medical](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 66-85
 
-No result text supplied.
+[Operations](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 86-90
 
-No result text supplied.
+[Production](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 91-100
 
-No result text supplied.
+[Research](#unresolved-reference) *(unresolved in bundled data)*
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

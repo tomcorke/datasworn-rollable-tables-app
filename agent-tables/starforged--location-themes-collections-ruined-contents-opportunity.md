@@ -7,27 +7,27 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-20
 
 Access to an untouched or preserved area
 
 
-### 2
+### 21-40
 
 Insight into what brought this place to ruin
 
 
-### 3
+### 41-60
 
 Interesting or useful device or artifact
 
 
-### 4
+### 61-80
 
 Salvageable equipment or resources
 
 
-### 5
+### 81-100
 
 Shortcut or passage through the destruction
 

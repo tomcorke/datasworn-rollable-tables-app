@@ -24,17 +24,17 @@ Corrosive
 
 ### 1-20
 
-No result text supplied.
+Marginal
 
 
 ### 21-50
 
-No result text supplied.
+Breathable
 
 
 ### 51-100
 
-No result text supplied.
+Ideal
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

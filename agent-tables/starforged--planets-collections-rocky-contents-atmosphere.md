@@ -9,22 +9,22 @@ No description supplied.
 ## Results
 ### 1-65
 
-No result text supplied.
+None / thin
 
 
 ### 66-85
 
-No result text supplied.
+Toxic
 
 
 ### 86-90
 
-No result text supplied.
+Corrosive
 
 
 ### 91-100
 
-No result text supplied.
+Marginal
 
 
 ### 5

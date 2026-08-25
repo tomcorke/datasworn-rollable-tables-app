@@ -219,7 +219,7 @@ Wine
 
 ### 96-99
 
-No result text supplied.
+[Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
 
 ### 100-100

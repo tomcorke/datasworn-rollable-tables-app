@@ -7,63 +7,60 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-9
 
 Announcement or notification brings harrowing news
 
 
-### 2
+### 10-18
 
 Arrival of a foe or rival
 
 
-### 3
+### 19-27
 
 Blockade or security cordon cuts off needed access
 
 
-### 4
+### 28-36
 
 Caught in the crossfire of a dispute
 
 
-### 5
+### 37-45
 
 Disturbing evidence of exploitive conditions
 
 
-### 6
+### 46-54
 
 Lured into danger
 
 
-### 7
+### 55-63
 
 Signs of disease, infestation, or toxic environment
 
 
-### 8
+### 64-72
 
 Signs of unrest or rebellion
 
 
-### 9
+### 73-81
 
 Signs that you are being watched or followed
 
 
-### 10
+### 82-90
 
 Unwanted attention from authority or enemies
 
 
 ### 91-98
 
-[Action](id:starforged/oracles/core/action) + [Theme](id:starforged/oracles/core/theme)
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
-**References**
-- **Action** - [starforged/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [starforged/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 99-100
 

@@ -9,26 +9,20 @@ No description supplied.
 ## Results
 ### 1-40
 
-[Dominion](id:starforged/oracles/factions/dominion)
+[Dominion](starforged--factions-contents-dominion.md)
 Governing power
 
-**References**
-- **Dominion** - [starforged/oracles/factions/dominion](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 41-70
 
-[Guild](id:starforged/oracles/factions/guild)
+[Guild](starforged--factions-contents-guild.md)
 Organization of specialists
 
-**References**
-- **Guild** - [starforged/oracles/factions/guild](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-100
 
-[Fringe Group](id:starforged/oracles/factions/fringe_group)
+[Fringe Group](starforged--factions-contents-fringe-group.md)
 Band of outlaws, outcasts, or rogues
 
-**References**
-- **Fringe Group** - [starforged/oracles/factions/fringe_group](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

@@ -9,96 +9,92 @@ No description supplied.
 ## Results
 ### 1-15
 
-[Stellar Object](id:starforged/oracles/space/stellar_object)
+[Stellar Object](starforged--space-contents-stellar-object.md)
 
-**References**
-- **Stellar Object** - [starforged/oracles/space/stellar_object](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 16-35
 
-[Planet](id:starforged/collections/oracles/planets)
+[Planet](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Planet** - [starforged/collections/oracles/planets](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 36-37
 
-No result text supplied.
+[Settlement](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 38-39
 
-No result text supplied.
+[Starship](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 40-41
 
-No result text supplied.
+[Derelict](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 42-45
 
-No result text supplied.
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 46-49
 
-No result text supplied.
+[Creature](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 50-56
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 57-61
 
-No result text supplied.
+Debris field: Mineral asteroids
 
 
 ### 62-64
 
-No result text supplied.
+Debris field: Frozen asteroids
 
 
 ### 65-66
 
-No result text supplied.
+Debris field: Crystalline asteroids
 
 
 ### 67-68
 
-No result text supplied.
+Debris field: Creature boneyard
 
 
 ### 69-70
 
-No result text supplied.
+Debris field: Metallic wreckage
 
 
 ### 71-72
 
-No result text supplied.
+Large rogue asteroid
 
 
 ### 73-74
 
-No result text supplied.
+Comet with a tail of ionized gas
 
 
 ### 75-79
 
-No result text supplied.
+Fiery energy storm
 
 
 ### 80-81
 
-No result text supplied.
+Chaotic meteoroid storm
 
 
 ### 82-85
 
-No result text supplied.
+Turbulent gravitational wave
 
 
 ### 86-93

@@ -9,31 +9,27 @@ Use this table to choose a structured prompt from among the Core oracles (pages 
 ## Results
 ### 1-20
 
-No result text supplied.
+[Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
 
 ### 21-40
 
-No result text supplied.
+[Action](sundered-isles--core-contents-action.md) + [Focus](sundered-isles--core-contents-focus.md)
 
 
 ### 41-60
 
-No result text supplied.
+[Descriptor](sundered-isles--core-contents-descriptor.md) + [Theme](sundered-isles--core-contents-theme.md)
 
 
 ### 61-80
 
-No result text supplied.
+[Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
 
 ### 81-100
 
-[Action](id:sundered_isles/oracles/core/action) + [Descriptor](id:sundered_isles/oracles/core/descriptor) + [Focus](id:sundered_isles/oracles/core/focus)
+[Action](sundered-isles--core-contents-action.md) + [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
-**References**
-- **Action** - [sundered_isles/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Descriptor** - [sundered_isles/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [sundered_isles/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

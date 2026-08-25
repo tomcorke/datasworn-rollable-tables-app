@@ -104,17 +104,12 @@ Toxic or polluted habitat
 
 ### 88-90
 
-Within or near [Precursor Vault](id:starforged/collections/oracles/vaults)
+Within or near [Precursor Vault](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 91-100
 
-[Descriptor](id:starforged/oracles/core/descriptor) + [Focus](id:starforged/oracles/core/focus)
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
-**References**
-- **Descriptor** - [starforged/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [starforged/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

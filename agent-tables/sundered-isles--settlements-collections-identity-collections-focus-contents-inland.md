@@ -33,170 +33,199 @@ Ship graveyard
 
 ### 1-12
 
-No result text supplied.
+Fishing
+Boatwrights, fishmongers, net makers
 
 
 ### 13-14
 
-No result text supplied.
+Alcohol Production
+Breweries, distilleries, wineries
 
 
 ### 15-15
 
-No result text supplied.
+Archeology
+Excavation sites, field camps, relic hunters
 
 
 ### 16-17
 
-No result text supplied.
+Crafts
+Artisans, markets, workshops
 
 
 ### 18-20
 
-No result text supplied.
+Culture
+Archives, festivals, historical sites
 
 
 ### 21-24
 
-No result text supplied.
+Defense
+Armories, fortifications, militia
 
 
 ### 25-25
 
-No result text supplied.
+Dueling
+Dueling grounds, fencing schools
 
 
 ### 26-27
 
-No result text supplied.
+Education
+Libraries, universities
 
 
 ### 28-28
 
-No result text supplied.
+Entertainment
+Arenas, fairs, street performers, theaters
 
 
 ### 29-29
 
-No result text supplied.
+Espionage
+Assassin guild, spy network
 
 
 ### 30-31
 
-No result text supplied.
+Exploration
+Navigators guild, outfitters, scouts
 
 
 ### 32-39
 
-No result text supplied.
+Farming
+Fields, granaries, mills, orchards
 
 
 ### 40-43
 
-No result text supplied.
+Hospitality
+Bath houses, brothels, inns, taverns
 
 
 ### 44-46
 
-No result text supplied.
+Hunting
+Animal trainers, tanners, taxidermists,
 
 
 ### 47-47
 
-No result text supplied.
+Law
+Courts, gallows, patrols, prisons
 
 
 ### 48-51
 
-No result text supplied.
+Livestock / horses
+Ranches, slaughterhouses, stables
 
 
 ### 52-57
 
-No result text supplied.
+Logging
+Logging camps, sawmills
 
 
 ### 58-59
 
-No result text supplied.
+Medicine
+Apothecaries, herbalists, infirmaries
 
 
 ### 60-63
 
-No result text supplied.
+Metalworking
+Artificers, blacksmiths, forges
 
 
 ### 64-67
 
-No result text supplied.
+Mining
+Foundries, mines, smelters
 
 
 ### 68-69
 
-No result text supplied.
+Mysticism
+Alchemists, curio dealers, enclaves, mystics
 
 
 ### 70-71
 
-No result text supplied.
+Nature
+Animal sanctuaries, gardens, groves
 
 
 ### 72-73
 
-No result text supplied.
+Religion
+Monasteries, sacred sites, temples
 
 
 ### 74-75
 
-No result text supplied.
+Science
+Academies, naturalist guild, observatories
 
 
 ### 76-77
 
-No result text supplied.
+Smuggling
+Black market, fences, smugglers
 
 
 ### 78-78
 
-No result text supplied.
+Society
+Balls, boutiques, social clubs, tailors
 
 
 ### 79-79
 
-No result text supplied.
+Statecraft
+Embassies, envoys, court or council
 
 
 ### 80-83
 
-No result text supplied.
+Stoneworking
+Masons, quarries, stone yards
 
 
 ### 84-89
 
-No result text supplied.
+Trade
+Auction house, markets, merchant guild
 
 
 ### 90-91
 
-No result text supplied.
+Vices
+Brothels, drug dens, gambling halls, taverns
 
 
 ### 92-93
 
-No result text supplied.
+Warfare
+Armies or fleets, command post, forts
 
 
 ### 94-95
 
-No result text supplied.
+Weaponry
+Cannon foundries, gunsmiths, powder mills
 
 
 ### 96-100
 
-[Action](id:sundered_isles/oracles/core/action) + [Theme](id:sundered_isles/oracles/core/theme)
+[Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
-**References**
-- **Action** - [sundered_isles/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [sundered_isles/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

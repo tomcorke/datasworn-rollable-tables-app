@@ -9,58 +9,42 @@ No description supplied.
 ## Results
 ### 1-11
 
-[Ancient](id:delve/site_themes/ancient)
+[Ancient](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Ancient** - [delve/site_themes/ancient](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 12-23
 
-[Corrupted](id:delve/site_themes/corrupted)
+[Corrupted](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Corrupted** - [delve/site_themes/corrupted](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 24-35
 
-[Fortified](id:delve/site_themes/fortified)
+[Fortified](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Fortified** - [delve/site_themes/fortified](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 36-48
 
-[Hallowed](id:delve/site_themes/hallowed)
+[Hallowed](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Hallowed** - [delve/site_themes/hallowed](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 49-61
 
-[Haunted](id:delve/site_themes/haunted)
+[Haunted](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Haunted** - [delve/site_themes/haunted](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 62-74
 
-[Infested](id:delve/site_themes/infested)
+[Infested](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Infested** - [delve/site_themes/infested](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 75-87
 
-[Ravaged](id:delve/site_themes/ravaged)
+[Ravaged](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Ravaged** - [delve/site_themes/ravaged](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 88-100
 
-[Wild](id:delve/site_themes/wild)
+[Wild](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Wild** - [delve/site_themes/wild](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

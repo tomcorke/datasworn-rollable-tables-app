@@ -9,172 +9,172 @@ No description supplied.
 ## Results
 ### 1
 
-No result text supplied.
+Corrupted or mutated lifeform
 
 
 ### 2
 
-No result text supplied.
+Signs of a lifeform's power or cunning
 
 
 ### 3
 
-No result text supplied.
+Hazardous plant life or malignant spores
 
 
 ### 4
 
-No result text supplied.
+Lifeform hunts for prey
 
 
 ### 5
 
-No result text supplied.
+Lifeform lairs here
 
 
 ### 6
 
-No result text supplied.
+Lifeforms guided by a greater threat
 
 
 ### 7
 
-No result text supplied.
+Lifeforms spooked or stampeding
 
 
 ### 8
 
-No result text supplied.
+Threatening lifeform draws near
 
 
 ### 1-3
 
-No result text supplied.
+Life is revealed or takes an unexpected form
 
 
 ### 4-7
 
-No result text supplied.
+Blocked or impassible path
 
 
 ### 8-11
 
-No result text supplied.
+Corrosive substance or environment
 
 
 ### 12-15
 
-No result text supplied.
+Disturbing remains or evidence of death
 
 
 ### 16-19
 
-No result text supplied.
+Drastic environmental change
 
 
 ### 20-23
 
-No result text supplied.
+Enemy holds this area
 
 
 ### 24-27
 
-No result text supplied.
+Entangling or engulfing hazard
 
 
 ### 28-31
 
-No result text supplied.
+Equipment fails or malfunctions
 
 
 ### 32-35
 
-No result text supplied.
+Guarded or patrolled path
 
 
 ### 36-39
 
-No result text supplied.
+Led astray
 
 
 ### 40-43
 
-No result text supplied.
+Lost the path
 
 
 ### 44-47
 
-No result text supplied.
+Meteorites fall from the sky
 
 
 ### 48-51
 
-No result text supplied.
+Irradiated area or object
 
 
 ### 52-55
 
-No result text supplied.
+Realization that something was left behind
 
 
 ### 56-59
 
-No result text supplied.
+Seismic or volcanic upheaval
 
 
 ### 60-63
 
-No result text supplied.
+Signs of a lurking or trailing foe
 
 
 ### 64-67
 
-No result text supplied.
+Storm or atmospheric disruption
 
 
 ### 68-71
 
-No result text supplied.
+Toxic or sickening environment
 
 
 ### 72-75
 
-No result text supplied.
+Trap or alarm
 
 
 ### 76-79
 
-No result text supplied.
+Treacherous or arduous path
 
 
 ### 80-83
 
-No result text supplied.
+Troubling visions or apparitions
 
 
 ### 84-87
 
-No result text supplied.
+Visibility hindered by atmospheric effects
 
 
 ### 88-91
 
-No result text supplied.
+Worrying arrival of a ship or vehicle
 
 
 ### 92-95
 
-No result text supplied.
+Wreckage or ruins portend a new threat
 
 
 ### 96-99
 
-No result text supplied.
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
 
 ### 100-100
 
-No result text supplied.
+Roll twice
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

@@ -5,7 +5,7 @@
 - **Source data:** `src/data/sundered_isles-settlements.yaml`
 ## Description
 
-If you roll a [Settlement Focus](id:sundered_isles/collections/settlements/focus) curse, take your result on that table and make note that it is cursed. Something about this activity has an uncanny or dreadful aspect. If you investigate or interact further, use the table below to help reveal the industry’s relationship to a cursed power.
+If you roll a [Settlement Focus](#unresolved-reference) *(unresolved in bundled data)* curse, take your result on that table and make note that it is cursed. Something about this activity has an uncanny or dreadful aspect. If you investigate or interact further, use the table below to help reveal the industry’s relationship to a cursed power.
 ## Results
 ### 1-10
 

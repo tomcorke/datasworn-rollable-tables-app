@@ -7,56 +7,54 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-11
 
 Cloud-breaching trees
 
 
-### 2
+### 12-22
 
 Towering mountains
 
 
-### 3
+### 23-33
 
 Expansive rivers or wetlands
 
 
-### 4
+### 34-44
 
 Unbroken canopy
 
 
-### 5
+### 45-55
 
 Inland seas
 
 
-### 6
+### 56-66
 
 Unusual vegetation color
 
 
-### 7
+### 67-77
 
 Massive canyons
 
 
-### 8
+### 78-88
 
 Persistent cloud cover
 
 
 ### 89-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (orbital)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (orbital)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

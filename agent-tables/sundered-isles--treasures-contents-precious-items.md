@@ -119,7 +119,7 @@ Unworked gemstones
 
 ### 85-88
 
-No result text supplied.
+[Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
 
 ### 89-100

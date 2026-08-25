@@ -7,81 +7,79 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-7
 
 Background radiation
 
 
-### 2
+### 8-14
 
 Chaotically juxtaposed biomes
 
 
-### 3
+### 15-21
 
 Creature boneyards
 
 
-### 4
+### 22-28
 
 Creature lairs or watering holes
 
 
-### 5
+### 29-35
 
 Crystalline formations
 
 
-### 6
+### 36-42
 
 Fierce electrical storms
 
 
-### 7
+### 43-49
 
 Floating terrain
 
 
-### 8
+### 50-56
 
 Frequent seismic activity
 
 
-### 9
+### 57-63
 
 Magnetic disturbances
 
 
-### 10
+### 64-70
 
 Scarred or excavated terrain
 
 
-### 11
+### 71-77
 
 Signs of an engineered biosphere
 
 
-### 12
+### 78-84
 
 Sudden weather fluctuations
 
 
-### 13
+### 85-91
 
 Towering geological formations
 
 
 ### 92-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (planetside)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (planetside)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

@@ -5,7 +5,7 @@
 - **Source data:** `src/data/starforged-misc.yaml`
 ## Description
 
-When you [Gather Information](id:starforged/moves/adventure/gather_information) to investigate a mystery, you might uncover clues in the form of messages, rumors, eyewitness reports, data, or physical evidence. You can use this oracle to help reveal what this evidence connects to or implicates. Then, use the outcome of the [Gather Information](id:starforged/moves/adventure/gather_information) roll—strong hit, weak hit, or miss—to guide whether the clue brings clarity or complications.
+When you [Gather Information](#unresolved-reference) *(unresolved in bundled data)* to investigate a mystery, you might uncover clues in the form of messages, rumors, eyewitness reports, data, or physical evidence. You can use this oracle to help reveal what this evidence connects to or implicates. Then, use the outcome of the [Gather Information](#unresolved-reference) *(unresolved in bundled data)* roll—strong hit, weak hit, or miss—to guide whether the clue brings clarity or complications.
 ## Results
 ### 1-3
 
@@ -159,10 +159,7 @@ Suggests an imposter or forgery
 
 ### 91-100
 
-[Descriptor](id:starforged/oracles/core/descriptor) + [Focus](id:starforged/oracles/core/focus)
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
-**References**
-- **Descriptor** - [starforged/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [starforged/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

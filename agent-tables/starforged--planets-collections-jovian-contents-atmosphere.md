@@ -14,22 +14,22 @@ None / thin
 
 ### 1-50
 
-No result text supplied.
+Toxic
 
 
 ### 51-65
 
-No result text supplied.
+Corrosive
 
 
 ### 66-85
 
-No result text supplied.
+Marginal
 
 
 ### 86-100
 
-No result text supplied.
+Breathable
 
 
 ### 6

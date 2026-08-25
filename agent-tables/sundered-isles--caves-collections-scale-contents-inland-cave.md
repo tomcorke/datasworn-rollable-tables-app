@@ -9,27 +9,32 @@ No description supplied.
 ## Results
 ### 1-20
 
-No result text supplied.
+Troublesome
+Minor cave system
 
 
 ### 21-50
 
-No result text supplied.
+Dangerous
+Limited cave system
 
 
 ### 51-75
 
-No result text supplied.
+Formidable
+Extensive cave system
 
 
 ### 76-90
 
-No result text supplied.
+Extreme
+Vast cave system
 
 
 ### 91-100
 
-No result text supplied.
+Epic
+Fathomless cave system
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

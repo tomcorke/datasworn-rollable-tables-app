@@ -9,27 +9,27 @@ No description supplied.
 ## Results
 ### 1-93
 
-No result text supplied.
+None / thin
 
 
 ### 94-95
 
-No result text supplied.
+Toxic
 
 
 ### 96-97
 
-No result text supplied.
+Corrosive
 
 
 ### 98-99
 
-No result text supplied.
+Marginal
 
 
 ### 100-100
 
-No result text supplied.
+Breathable
 
 
 ### 6

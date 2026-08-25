@@ -8,102 +8,102 @@
 
 Forested lands
 ## Results
-### 1
+### 1-5
 
 Cave tucked behind a misty waterfall
 
 
-### 2
+### 6-10
 
 Game trail leads through dense wood
 
 
-### 3
+### 11-15
 
 Gloomy, twisted tree
 
 
-### 4
+### 16-20
 
 Grassy glade
 
 
-### 5
+### 21-25
 
 Grove of tall ferns
 
 
-### 6
+### 26-30
 
 Large, mirror-like lake
 
 
-### 7
+### 31-35
 
 Mushrooms thrive in a shadowy thicket
 
 
-### 8
+### 36-40
 
 Old stone bridge over a stream
 
 
-### 9
+### 41-45
 
 Pond sheltered by close-packed trees
 
 
-### 10
+### 46-50
 
 Ring of rune-etched standing stones
 
 
-### 11
+### 51-55
 
 Rocky promontory
 
 
-### 12
+### 56-60
 
 Ropes and bridges connect tall trees
 
 
-### 13
+### 61-65
 
 Scorched trees and ashy ground
 
 
-### 14
+### 66-70
 
 Stand of ancient trees with huge trunks
 
 
-### 15
+### 71-75
 
 Towering, lightning-split tree
 
 
-### 16
+### 76-80
 
 Tract of barren, clear-cut ground
 
 
-### 17
+### 81-85
 
 Trees carved with faces
 
 
-### 18
+### 86-90
 
 Widespread thicket of prickly shrubs
 
 
-### 19
+### 91-95
 
 Wildflower meadow
 
 
-### 20
+### 96-100
 
 Well-used walking path
 

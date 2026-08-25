@@ -169,7 +169,7 @@ Work or environment causes mutations
 
 ### 97-100
 
-No result text supplied.
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

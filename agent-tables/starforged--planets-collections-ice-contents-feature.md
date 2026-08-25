@@ -7,81 +7,79 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-7
 
 Abyssal ice fissures
 
 
-### 2
+### 8-14
 
 Blinding snow storms
 
 
-### 3
+### 15-21
 
 Clusters of ice spikes
 
 
-### 4
+### 22-28
 
 Colossal ice caves
 
 
-### 5
+### 29-35
 
 Glistening ice spires
 
 
-### 6
+### 36-42
 
 Massive snow drifts
 
 
-### 7
+### 43-49
 
 Preserved carcasses
 
 
-### 8
+### 50-56
 
 Rocky islands amid icy wastes
 
 
-### 9
+### 57-63
 
 Shattered plains of pack ice
 
 
-### 10
+### 64-70
 
 Steaming hot springs
 
 
-### 11
+### 71-77
 
 Subsurface liquid oceans
 
 
-### 12
+### 78-84
 
 Vibrant auroras
 
 
-### 13
+### 85-91
 
 Wind-carved ice formations
 
 
 ### 92-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (planetside)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (planetside)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

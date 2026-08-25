@@ -7,27 +7,27 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-20
 
 Access to a hidden or sealed area
 
 
-### 2
+### 21-40
 
 Encounter with a helpful adherent or heretic
 
 
-### 3
+### 41-60
 
 Insight into the nature or history of the faith
 
 
-### 4
+### 61-80
 
 Insight into the schemes or methods of religious zealots
 
 
-### 5
+### 81-100
 
 Interesting or valuable artifact or device
 

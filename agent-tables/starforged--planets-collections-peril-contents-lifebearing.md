@@ -9,172 +9,172 @@ No description supplied.
 ## Results
 ### 1-3
 
-No result text supplied.
+Corrupted or mutated lifeform
 
 
 ### 4-6
 
-No result text supplied.
+Signs of a lifeform's power or cunning
 
 
 ### 7-9
 
-No result text supplied.
+Hazardous plant life or malignant spores
 
 
 ### 10-12
 
-No result text supplied.
+Lifeform hunts for prey
 
 
 ### 13-15
 
-No result text supplied.
+Lifeform lairs here
 
 
 ### 16-18
 
-No result text supplied.
+Lifeforms guided by a greater threat
 
 
 ### 19-21
 
-No result text supplied.
+Lifeforms spooked or stampeding
 
 
 ### 22-24
 
-No result text supplied.
+Threatening lifeform draws near
 
 
 ### 25-27
 
-No result text supplied.
+Life is revealed or takes an unexpected form
 
 
 ### 28-30
 
-No result text supplied.
+Blocked or impassible path
 
 
 ### 31-33
 
-No result text supplied.
+Corrosive substance or environment
 
 
 ### 34-36
 
-No result text supplied.
+Disturbing remains or evidence of death
 
 
 ### 37-39
 
-No result text supplied.
+Drastic environmental change
 
 
 ### 40-42
 
-No result text supplied.
+Enemy holds this area
 
 
 ### 43-45
 
-No result text supplied.
+Entangling or engulfing hazard
 
 
 ### 46-48
 
-No result text supplied.
+Equipment fails or malfunctions
 
 
 ### 49-51
 
-No result text supplied.
+Guarded or patrolled path
 
 
 ### 52-54
 
-No result text supplied.
+Led astray
 
 
 ### 55-57
 
-No result text supplied.
+Lost the path
 
 
 ### 58-60
 
-No result text supplied.
+Meteorites fall from the sky
 
 
 ### 61-63
 
-No result text supplied.
+Irradiated area or object
 
 
 ### 64-66
 
-No result text supplied.
+Realization that something was left behind
 
 
 ### 67-69
 
-No result text supplied.
+Seismic or volcanic upheaval
 
 
 ### 70-72
 
-No result text supplied.
+Signs of a lurking or trailing foe
 
 
 ### 73-75
 
-No result text supplied.
+Storm or atmospheric disruption
 
 
 ### 76-78
 
-No result text supplied.
+Toxic or sickening environment
 
 
 ### 79-81
 
-No result text supplied.
+Trap or alarm
 
 
 ### 82-84
 
-No result text supplied.
+Treacherous or arduous path
 
 
 ### 85-87
 
-No result text supplied.
+Troubling visions or apparitions
 
 
 ### 88-90
 
-No result text supplied.
+Visibility hindered by atmospheric effects
 
 
 ### 91-93
 
-No result text supplied.
+Worrying arrival of a ship or vehicle
 
 
 ### 94-96
 
-No result text supplied.
+Wreckage or ruins portend a new threat
 
 
 ### 97-99
 
-No result text supplied.
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
 
 ### 100-100
 
-No result text supplied.
+Roll twice
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

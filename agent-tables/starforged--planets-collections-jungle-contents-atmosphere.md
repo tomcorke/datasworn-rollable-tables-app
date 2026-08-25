@@ -14,27 +14,27 @@ None / thin
 
 ### 1-25
 
-No result text supplied.
+Toxic
 
 
 ### 26-30
 
-No result text supplied.
+Corrosive
 
 
 ### 31-60
 
-No result text supplied.
+Marginal
 
 
 ### 61-90
 
-No result text supplied.
+Breathable
 
 
 ### 91-100
 
-No result text supplied.
+Ideal
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

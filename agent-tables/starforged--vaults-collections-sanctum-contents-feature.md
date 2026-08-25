@@ -174,7 +174,7 @@ Whispering voices speak to you
 
 ### 91-95
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 96-100

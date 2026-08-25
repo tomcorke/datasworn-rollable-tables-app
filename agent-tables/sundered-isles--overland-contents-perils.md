@@ -170,7 +170,7 @@ Weather changes for the worse
 
 ### 97-99
 
-No result text supplied.
+[Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
 
 ### 100-100

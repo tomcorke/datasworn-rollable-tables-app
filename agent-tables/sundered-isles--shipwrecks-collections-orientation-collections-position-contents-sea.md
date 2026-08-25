@@ -9,32 +9,32 @@ No description supplied.
 ## Results
 ### 1-30
 
-No result text supplied.
+Sunk and fully submerged
 
 
 ### 31-55
 
-No result text supplied.
+Adrift on the surface
 
 
 ### 56-65
 
-No result text supplied.
+Anchored in position on the surface
 
 
 ### 66-85
 
-No result text supplied.
+Awash / partially submerged
 
 
 ### 86-95
 
-No result text supplied.
+Stranded on dry ground or rocks
 
 
 ### 96-100
 
-No result text supplied.
+Perched on improbably high ground
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

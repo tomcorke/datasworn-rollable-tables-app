@@ -7,81 +7,79 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-7
 
 Crystalline formations
 
 
-### 2
+### 8-14
 
 Crystalline caves
 
 
-### 3
+### 15-21
 
 Exposed mineral deposits
 
 
-### 4
+### 22-28
 
 Geometric terrain features
 
 
-### 5
+### 29-35
 
 Geothermal vents
 
 
-### 6
+### 36-42
 
 Glassy impact craters
 
 
-### 7
+### 43-49
 
 Massive dust dunes
 
 
-### 8
+### 50-56
 
 Powerful magnetic fields
 
 
-### 9
+### 57-63
 
 Rubble-strewn lava fields
 
 
-### 10
+### 64-70
 
 Steam-heated caves
 
 
-### 11
+### 71-77
 
 Subsurface magma flows
 
 
-### 12
+### 78-84
 
 Swirling low-lying gases
 
 
-### 13
+### 85-91
 
 Towering rocky spires
 
 
 ### 92-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (planetside)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (planetside)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

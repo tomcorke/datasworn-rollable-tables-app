@@ -8,102 +8,102 @@
 
 Lands scarred by volcanic eruptions
 ## Results
-### 1
+### 1-5
 
 Boiling lake
 
 
-### 2
+### 6-10
 
 Bubbling lava pool
 
 
-### 3
+### 11-15
 
 Columns of volcanic rock
 
 
-### 4
+### 16-20
 
 Deep crevice churning with magma
 
 
-### 5
+### 21-25
 
 Devastated structures
 
 
-### 6
+### 26-30
 
 Dunes of volcanic ash
 
 
-### 7
+### 31-35
 
 Erupting lava fissure
 
 
-### 8
+### 36-40
 
 Expanse of glassy lava rock
 
 
-### 9
+### 41-45
 
 Fast-moving river of lava
 
 
-### 10
+### 46-50
 
 Field of cracked, partially solidified lava
 
 
-### 11
+### 51-55
 
 Gouts of steam as lava meets water
 
 
-### 12
+### 56-60
 
 Landscape set ablaze
 
 
-### 13
+### 61-65
 
 Lava tube plunges into darkness
 
 
-### 14
+### 66-70
 
 Roiling ash clouds
 
 
-### 15
+### 71-75
 
 Scorched trees amid an ashy plain
 
 
-### 16
+### 76-80
 
 Smoldering crater
 
 
-### 17
+### 81-85
 
 Steaming hot springs
 
 
-### 18
+### 86-90
 
 Stubborn plantlife emerges from ruin
 
 
-### 19
+### 91-95
 
 Towering cinder cone
 
 
-### 20
+### 96-100
 
 Vents spewing steam and volcanic gases
 

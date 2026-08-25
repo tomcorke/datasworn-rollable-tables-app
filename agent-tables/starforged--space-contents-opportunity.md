@@ -5,7 +5,7 @@
 - **Source data:** `src/data/starforged-space.yaml`
 ## Description
 
-Choose or roll on this table when you want inspiration for a beneficial encounter or event on a spaceborne journey, such as when you roll a strong hit with a match as you [Undertake an Expedition](id:starforged/moves/exploration/undertake_an_expedition), or if you [Explore a Waypoint](id:starforged/moves/exploration/explore_a_waypoint) and find an opportunity.
+Choose or roll on this table when you want inspiration for a beneficial encounter or event on a spaceborne journey, such as when you roll a strong hit with a match as you [Undertake an Expedition](#unresolved-reference) *(unresolved in bundled data)*, or if you [Explore a Waypoint](#unresolved-reference) *(unresolved in bundled data)* and find an opportunity.
 ## Results
 ### 1-4
 

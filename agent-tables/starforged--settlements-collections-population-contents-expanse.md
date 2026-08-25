@@ -9,27 +9,27 @@ No description supplied.
 ## Results
 ### 1-20
 
-No result text supplied.
+Few
 
 
 ### 21-50
 
-No result text supplied.
+Dozens
 
 
 ### 51-80
 
-No result text supplied.
+Hundreds
 
 
 ### 81-95
 
-No result text supplied.
+Thousands
 
 
 ### 96-100
 
-No result text supplied.
+Tens of thousands
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

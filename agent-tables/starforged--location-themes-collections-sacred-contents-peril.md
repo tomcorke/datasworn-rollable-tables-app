@@ -7,63 +7,60 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-9
 
 An aspect of the faith beguiles you or lures you into danger
 
 
-### 2
+### 10-18
 
 Dreadful aspects or powers of the faith are revealed
 
 
-### 3
+### 19-27
 
 Embodiment of a god or power is given corrupted form or purpose
 
 
-### 4
+### 28-36
 
 Guardians seek martyrdom in defense of this place
 
 
-### 5
+### 37-45
 
 Leaders corrupt or exploit their followers to oppose you
 
 
-### 6
+### 46-54
 
 Prophecies portend a dire threat
 
 
-### 7
+### 55-63
 
 Protective ward or enigmatic puzzle blocks the way
 
 
-### 8
+### 64-72
 
 Religious artifact evokes unnerving power
 
 
-### 9
+### 73-81
 
 Unnatural corruption or decay fouls the environment
 
 
-### 10
+### 82-90
 
 Zealots enact a ceremony to unlock forbidden powers
 
 
 ### 91-98
 
-[Action](id:starforged/oracles/core/action) + [Theme](id:starforged/oracles/core/theme)
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
-**References**
-- **Action** - [starforged/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [starforged/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 99-100
 

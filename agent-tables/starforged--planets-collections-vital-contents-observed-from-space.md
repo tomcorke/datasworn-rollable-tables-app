@@ -7,56 +7,54 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-11
 
 Complex ring system
 
 
-### 2
+### 12-22
 
 Numerous small moons
 
 
-### 3
+### 23-33
 
 Dramatic seasonal variation
 
 
-### 4
+### 34-44
 
 Unusual day or night cycle
 
 
-### 5
+### 45-55
 
 High gravity
 
 
-### 6
+### 56-66
 
 Vibrantly colored landscapes
 
 
-### 7
+### 67-77
 
 Large moon
 
 
-### 8
+### 78-88
 
 Narrow livable band
 
 
 ### 89-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (orbital)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (orbital)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

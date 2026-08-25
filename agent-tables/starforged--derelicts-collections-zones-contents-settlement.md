@@ -9,44 +9,42 @@ If you explore the depths of a derelict, you may use the zone oracles to help en
 ## Results
 ### 1
 
-[Access](id:starforged/collections/oracles/derelicts/access)
+[Access](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Access** - [starforged/collections/oracles/derelicts/access](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 1-20
 
-No result text supplied.
+[Community](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 21-30
 
-No result text supplied.
+[Engineering](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 31-50
 
-No result text supplied.
+[Living](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 51-60
 
-No result text supplied.
+[Medical](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 61-70
 
-No result text supplied.
+[Operations](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 71-90
 
-No result text supplied.
+[Production](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 91-100
 
-No result text supplied.
+[Research](#unresolved-reference) *(unresolved in bundled data)*
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

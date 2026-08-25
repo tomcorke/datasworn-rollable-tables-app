@@ -9,22 +9,22 @@ No description supplied.
 ## Results
 ### 1-25
 
-No result text supplied.
+None
 
 
 ### 26-75
 
-No result text supplied.
+Extinct
 
 
 ### 76-95
 
-No result text supplied.
+Scarce
 
 
 ### 96-100
 
-No result text supplied.
+Diverse
 
 
 ### 5

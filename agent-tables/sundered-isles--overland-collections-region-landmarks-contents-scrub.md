@@ -8,102 +8,102 @@
 
 Open landscape dominated by grass or shrubs
 ## Results
-### 1
+### 1-5
 
 Abandoned homestead
 
 
-### 2
+### 6-10
 
 Cavernous sinkhole
 
 
-### 3
+### 11-15
 
 Craggy outcroppings
 
 
-### 4
+### 16-20
 
 Crumbling stone wall
 
 
-### 5
+### 21-25
 
 Expanse of deep, sucking mud
 
 
-### 6
+### 26-30
 
 Field of blooming wildflowers
 
 
-### 7
+### 31-35
 
 Field of shoulder-high grasses
 
 
-### 8
+### 36-40
 
 Large insect mounds
 
 
-### 9
+### 41-45
 
 Maze of trails through dense shrubs
 
 
-### 10
+### 46-50
 
 Meandering river or stream
 
 
-### 11
+### 51-55
 
 Misty hollow
 
 
-### 12
+### 56-60
 
 Old stone road
 
 
-### 13
+### 61-65
 
 Plain of rugged, exposed rock
 
 
-### 14
+### 66-70
 
 Scattered stones of a fallen structure
 
 
-### 15
+### 71-75
 
 Spring-fed lake or pond
 
 
-### 16
+### 76-80
 
 Stand of spindly trees
 
 
-### 17
+### 81-85
 
 Thorny thicket
 
 
-### 18
+### 86-90
 
 Towering, solitary tree
 
 
-### 19
+### 91-95
 
 Watering hole
 
 
-### 20
+### 96-100
 
 Weathered burial mounds
 

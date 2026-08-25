@@ -7,81 +7,79 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-7
 
 Clouds of metal particles
 
 
-### 2
+### 8-14
 
 Crystalline rains
 
 
-### 3
+### 15-21
 
 Floating glaciers
 
 
-### 4
+### 22-28
 
 Floating islands
 
 
-### 5
+### 29-35
 
 Layer of suspended liquid
 
 
-### 6
+### 36-42
 
 Pockets of explosive gases
 
 
-### 7
+### 43-49
 
 Powerful vortexes
 
 
-### 8
+### 50-56
 
 Radiation fields
 
 
-### 9
+### 57-63
 
 Storm-swept rocky debris
 
 
-### 10
+### 64-70
 
 Torrential rain
 
 
-### 11
+### 71-77
 
 Towering thunderheads
 
 
-### 12
+### 78-84
 
 Violent turbulence
 
 
-### 13
+### 85-91
 
 Zones of localized atmosphere
 
 
 ### 92-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (planetside)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (planetside)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

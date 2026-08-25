@@ -7,252 +7,252 @@
 
 To give a sector or region of space a random name, roll once for the first word and once for the second word. Or just roll once choose a suitable pairing from anywhere in that row.
 ## Results
-### 1
+### 1-2
 
 Abyss
 
 
-### 2
+### 3-4
 
 Anvil
 
 
-### 3
+### 5-6
 
 Arch
 
 
-### 4
+### 7-8
 
 Breach
 
 
-### 5
+### 9-10
 
 Chain
 
 
-### 6
+### 11-12
 
 Channel
 
 
-### 7
+### 13-14
 
 Chasm
 
 
-### 8
+### 15-16
 
 Circlet
 
 
-### 9
+### 17-18
 
 Cluster
 
 
-### 10
+### 19-20
 
 Crossing
 
 
-### 11
+### 21-22
 
 Crown
 
 
-### 12
+### 23-24
 
 Currents
 
 
-### 13
+### 25-26
 
 Deep
 
 
-### 14
+### 27-28
 
 Desolation
 
 
-### 15
+### 29-30
 
 Drift
 
 
-### 16
+### 31-32
 
 Flow
 
 
-### 17
+### 33-34
 
 Flux
 
 
-### 18
+### 35-36
 
 Gap
 
 
-### 19
+### 37-38
 
 Gate
 
 
-### 20
+### 39-40
 
 Gyre
 
 
-### 21
+### 41-42
 
 Heart
 
 
-### 22
+### 43-44
 
 Helix
 
 
-### 23
+### 45-46
 
 Juncture
 
 
-### 24
+### 47-48
 
 Limits
 
 
-### 25
+### 49-50
 
 Locus
 
 
-### 26
+### 51-52
 
 Maelstrom
 
 
-### 27
+### 53-54
 
 Margin
 
 
-### 28
+### 55-56
 
 Maw
 
 
-### 29
+### 57-58
 
 Maze
 
 
-### 30
+### 59-60
 
 Nexus
 
 
-### 31
+### 61-62
 
 Oasis
 
 
-### 32
+### 63-64
 
 Pass
 
 
-### 33
+### 65-66
 
 Pit
 
 
-### 34
+### 67-68
 
 Pyre
 
 
-### 35
+### 69-70
 
 Reach
 
 
-### 36
+### 71-72
 
 Rest
 
 
-### 37
+### 73-74
 
 Rift
 
 
-### 38
+### 75-76
 
 Sanctum
 
 
-### 39
+### 77-78
 
 Shallows
 
 
-### 40
+### 79-80
 
 Shoal
 
 
-### 41
+### 81-82
 
 Spine
 
 
-### 42
+### 83-84
 
 Straits
 
 
-### 43
+### 85-86
 
 Threshold
 
 
-### 44
+### 87-88
 
 Tide
 
 
-### 45
+### 89-90
 
 Verge
 
 
-### 46
+### 91-92
 
 Vertex
 
 
-### 47
+### 93-94
 
 Vigil
 
 
-### 48
+### 95-96
 
 Void
 
 
-### 49
+### 97-98
 
 Web
 
 
-### 50
+### 99-100
 
 Zenith
 

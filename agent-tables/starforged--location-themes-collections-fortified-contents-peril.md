@@ -7,63 +7,60 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-9
 
 Alarm is triggered
 
 
-### 2
+### 10-18
 
 Automated security or weapons target you
 
 
-### 3
+### 19-27
 
 Checkpoint or path with restricted access
 
 
-### 4
+### 28-36
 
 Enemies converge on this area
 
 
-### 5
+### 37-45
 
 Enemies reveal new capabilities or technology
 
 
-### 6
+### 46-54
 
 Enemies trick you or lure you into a trap
 
 
-### 7
+### 55-63
 
 Powerful enemy appears
 
 
-### 8
+### 64-72
 
 Problematic alliance or affiliation is revealed
 
 
-### 9
+### 73-81
 
 Revealed schemes of an enemy leader create new urgency
 
 
-### 10
+### 82-90
 
 Your plan is undone by an unexpected complication
 
 
 ### 91-98
 
-[Action](id:starforged/oracles/core/action) + [Theme](id:starforged/oracles/core/theme)
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
-**References**
-- **Action** - [starforged/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [starforged/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 99-100
 

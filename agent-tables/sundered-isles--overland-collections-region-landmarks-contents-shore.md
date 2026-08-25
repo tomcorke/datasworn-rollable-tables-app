@@ -8,102 +8,102 @@
 
 Where the land meets the sea
 ## Results
-### 1
+### 1-5
 
 Approaching or anchored ship
 
 
-### 2
+### 6-10
 
 Beached shipwreck
 
 
-### 3
+### 11-15
 
 Black sand beach
 
 
-### 4
+### 16-20
 
 Craggy rocks and tide pools
 
 
-### 5
+### 21-25
 
 Geometric columns of volcanic rock
 
 
-### 6
+### 26-30
 
 Grassy dunes
 
 
-### 7
+### 31-35
 
 Landed boat
 
 
-### 8
+### 36-40
 
 Mangrove thicket
 
 
-### 9
+### 41-45
 
 Picturesque sandy beach
 
 
-### 10
+### 46-50
 
 River outlet
 
 
-### 11
+### 51-55
 
 Rocky shelf with geysering blowholes
 
 
-### 12
+### 56-60
 
 Saltwater gorge
 
 
-### 13
+### 61-65
 
 Sandspit connecting to a rocky islet
 
 
-### 14
+### 66-70
 
 Seals basking on rocky outcroppings
 
 
-### 15
+### 71-75
 
 Squawking seabirds circling tall rocks
 
 
-### 16
+### 76-80
 
 Storm-swept debris
 
 
-### 17
+### 81-85
 
 Tall seaside cliffs
 
 
-### 18
+### 86-90
 
 Watery sea cave
 
 
-### 19
+### 91-95
 
 Wave-swept pebble beach
 
 
-### 20
+### 96-100
 
 Wide, saltwater channel
 

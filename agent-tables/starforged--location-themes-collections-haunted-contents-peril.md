@@ -7,63 +7,60 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-9
 
 Assailed by an angry or vengeful being
 
 
-### 2
+### 10-18
 
 Beguiling illusions tempt you to linger or stay
 
 
-### 3
+### 19-27
 
 Besieged by frightening sensations
 
 
-### 4
+### 28-36
 
 Equipment is plagued by unexplainable malfunctions
 
 
-### 5
+### 37-45
 
 Plunged into disorienting darkness or illusionary surroundings
 
 
-### 6
+### 46-54
 
 Spectral manifestations of your fears
 
 
-### 7
+### 55-63
 
 Spirits or undead reveal surprising abilities or motivations
 
 
-### 8
+### 64-72
 
 Sudden, shocking reveal of a ghostly manifestation or undead form
 
 
-### 9
+### 73-81
 
 Trickery leads you into danger
 
 
-### 10
+### 82-90
 
 Visions reveal a horrifying aspect of this place
 
 
 ### 91-98
 
-[Action](id:starforged/oracles/core/action) + [Theme](id:starforged/oracles/core/theme)
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
-**References**
-- **Action** - [starforged/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [starforged/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 99-100
 

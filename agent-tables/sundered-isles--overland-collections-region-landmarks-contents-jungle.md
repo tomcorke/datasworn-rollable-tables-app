@@ -8,102 +8,102 @@
 
 Dense tropical rainforest
 ## Results
-### 1
+### 1-5
 
 Ancient tree with a vast canopy
 
 
-### 2
+### 6-10
 
 Branches crowded with colorful birds
 
 
-### 3
+### 11-15
 
 Carved, moss-covered stones
 
 
-### 4
+### 16-20
 
 Cave mouth hung with dripping vines
 
 
-### 5
+### 21-25
 
 Curtains of hanging vines
 
 
-### 6
+### 26-30
 
 Fallen tree bridges a ravine
 
 
-### 7
+### 31-35
 
 Fragrant fruit trees abuzz with insects
 
 
-### 8
+### 36-40
 
 Glade filled with vibrant butterflies
 
 
-### 9
+### 41-45
 
 Majestic falls spill into a rocky gorge
 
 
-### 10
+### 46-50
 
 Narrow path twists through undergrowth
 
 
-### 11
+### 51-55
 
 River cascading over smooth rocks
 
 
-### 12
+### 56-60
 
 Rocky spires cloaked in greenery
 
 
-### 13
+### 61-65
 
 Rope bridge spans a river gorge
 
 
-### 14
+### 66-70
 
 Rope bridges connect towering trees
 
 
-### 15
+### 71-75
 
 Serene pool below a terraced waterfall
 
 
-### 16
+### 76-80
 
 Tangled thicket of thorny plants
 
 
-### 17
+### 81-85
 
 Unbroken canopy casts deep shade
 
 
-### 18
+### 86-90
 
 Water-filled sinkhole
 
 
-### 19
+### 91-95
 
 Whispering bamboo grove
 
 
-### 20
+### 96-100
 
 Wide, slow-moving river
 

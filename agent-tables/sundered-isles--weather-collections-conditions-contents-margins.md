@@ -9,12 +9,12 @@ Outer Seas
 ## Results
 ### 1-60
 
-No result text supplied.
+Fair Weather
 
 
 ### 61-100
 
-No result text supplied.
+[Foul Weather](sundered-isles--weather-contents-foul.md)
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

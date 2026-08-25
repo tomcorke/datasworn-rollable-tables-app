@@ -5,7 +5,7 @@
 - **Source data:** `src/data/delve-monstrosity.yaml`
 ## Description
 
-Some results on these tables include two related options separated by a slash (/). Pick the one which best fits the nature of the creature or is the most interesting. You can also make one of the options likely, and [Ask the Oracle](id:classic/moves/fate/ask_the_oracle) (using the pick two procedure) to confirm your choice. Or just take both!
+Some results on these tables include two related options separated by a slash (/). Pick the one which best fits the nature of the creature or is the most interesting. You can also make one of the options likely, and [Ask the Oracle](#unresolved-reference) *(unresolved in bundled data)* (using the pick two procedure) to confirm your choice. Or just take both!
 ## Results
 ### 1-15
 

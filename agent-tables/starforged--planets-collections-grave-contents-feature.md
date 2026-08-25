@@ -7,81 +7,79 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-7
 
 Acid pools
 
 
-### 2
+### 8-14
 
 Ash dunes
 
 
-### 3
+### 15-21
 
 Corrosive rains
 
 
-### 4
+### 22-28
 
 Dead forests
 
 
-### 5
+### 29-35
 
 Fetid mudflats
 
 
-### 6
+### 36-42
 
 Mass graves
 
 
-### 7
+### 43-49
 
 Moldering bones
 
 
-### 8
+### 50-56
 
 Noxious fog
 
 
-### 9
+### 57-63
 
 Radioactive hotspots
 
 
-### 10
+### 64-70
 
 Ravaged cities
 
 
-### 11
+### 71-77
 
 Scarred battlefields
 
 
-### 12
+### 78-84
 
 Ship graveyards
 
 
-### 13
+### 85-91
 
 Whispers of the dead
 
 
 ### 92-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (planetside)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (planetside)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

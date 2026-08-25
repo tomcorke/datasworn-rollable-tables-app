@@ -82,12 +82,41 @@ for (const sourceFile of sourceFiles) {
   const ruleset = source._id || basename(sourceFile, ".yaml").split("-")[0];
   walk(source.oracles, [ruleset], [ruleset], sourceFile, ruleset);
 }
-const byId = new Map(tables.map((table) => [table.id, table]));
+function merged(value: AnyRecord): AnyRecord {
+  const inherited = value["<<"];
+  const bases = Array.isArray(inherited)
+    ? inherited
+    : inherited
+      ? [inherited]
+      : [];
+  return Object.assign({}, ...bases, value);
+}
+const byId = new Map<string, Table>();
+for (const table of tables) {
+  const path = table.id.split("/");
+  const aliases = [table.id];
+  if (path[1] === "oracles")
+    aliases.push([path[0], ...path.slice(2)].join("/"));
+  else aliases.push([path[0], "oracles", ...path.slice(1)].join("/"));
+  const contents = path.indexOf("contents");
+  if (contents >= 0) {
+    aliases.push(
+      [
+        path[0],
+        "oracles",
+        ...path.slice(1, contents),
+        ...path.slice(contents + 1),
+      ].join("/"),
+    );
+  }
+  for (const alias of aliases) byId.set(alias, table);
+}
 const linkPattern = /\[([^\]]+)\]\(id:([^)]*)\)/g;
 function formatResult(value: unknown): string {
   return text(value).replace(/\r\n/g, "\n").trim();
 }
-function result(row: AnyRecord): string {
+function result(input: AnyRecord): string {
+  const row = merged(input);
   const fields = [row.text, row.text2, row.text3].filter(
     (value) => value != null && text(value) !== "",
   );
@@ -97,13 +126,20 @@ function result(row: AnyRecord): string {
       : (row.result ?? row.description ?? "No result text supplied."),
   );
 }
+function linkedText(value: string): string {
+  return value.replace(linkPattern, (_, label, id) => {
+    const target = byId.get(id);
+    return `[${label}](${target ? target.filename : "#unresolved-reference"})${target ? "" : " *(unresolved in bundled data)*"}`;
+  });
+}
 function referenceLines(value: string): string[] {
   return [...value.matchAll(linkPattern)].map(([_, label, id]) => {
     const target = byId.get(id);
     return `- **${label}** - [${id}](${target ? target.filename : "#unresolved-reference"})${target ? "" : " *(unresolved in bundled data)*"}`;
   });
 }
-function range(row: AnyRecord, index: number): string {
+function range(input: AnyRecord, index: number): string {
+  const row = merged(input);
   if (row.min != null || row.max != null)
     return `${row.min ?? row.max}-${row.max ?? row.min}`;
   if (Array.isArray(row.roll) && row.roll.length) return row.roll.join(", ");
@@ -115,12 +151,12 @@ await mkdir(outputDir, { recursive: true });
 const sorted = tables.sort((a, b) => a.id.localeCompare(b.id));
 for (const table of sorted) {
   const source = table._source as AnyRecord | undefined;
-  const description = text(
-    table.summary || table.description || "No description supplied.",
+  const description = linkedText(
+    text(table.summary || table.description || "No description supplied."),
   );
   const rows = (table.rows as AnyRecord[])
     .map((row, index) => {
-      const rowResult = result(row);
+      const rowResult = linkedText(result(row));
       const references = referenceLines(rowResult);
       return [
         `### ${range(row, index)}`,
@@ -157,6 +193,24 @@ for (const table of sorted) {
     .join("\n");
   await writeFile(join(outputDir, table.filename), `${content}\n`);
 }
+const inheritedRows = tables.flatMap((table) =>
+  (table.rows as AnyRecord[]).filter((row) => {
+    const resolved = merged(row);
+    return (
+      resolved !== row &&
+      [resolved.text, resolved.text2, resolved.text3].some(
+        (value) => value != null,
+      )
+    );
+  }),
+);
+if (inheritedRows.some((row) => result(row) === "No result text supplied.")) {
+  throw new Error("Generated output lost inherited row text");
+}
+const canonicalReference = "starforged/oracles/core/action";
+if (!byId.has(canonicalReference)) {
+  throw new Error(`Canonical reference did not resolve: ${canonicalReference}`);
+}
 const index = [
   "# Datasworn Roll Tables - Agent Reference",
   "",
@@ -169,8 +223,8 @@ const index = [
   "| Table | Ruleset | Collection | Description |",
   "| --- | --- | --- | --- |",
   ...sorted.map((table) => {
-    const description = text(
-      table.summary || table.description || "No description supplied.",
+    const description = linkedText(
+      text(table.summary || table.description || "No description supplied."),
     )
       .replace(/\|/g, "\\|")
       .replace(/\s+/g, " ")

@@ -7,27 +7,27 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-20
 
 Helpful device
 
 
-### 2
+### 21-40
 
 Insight into the workings or purpose of the machines
 
 
-### 3
+### 41-60
 
 Intelligent machine offers aid
 
 
-### 4
+### 61-80
 
 Salvageable resource
 
 
-### 5
+### 81-100
 
 Wondrous technology
 

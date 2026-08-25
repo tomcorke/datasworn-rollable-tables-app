@@ -39,9 +39,7 @@ Huge (whale-sized)
 
 ### 100-100
 
-[Ultra-scale](id:starforged/oracles/creatures/ultra_scale)
+[Ultra-scale](starforged--creatures-contents-ultra-scale.md)
 
-**References**
-- **Ultra-scale** - [starforged/oracles/creatures/ultra_scale](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

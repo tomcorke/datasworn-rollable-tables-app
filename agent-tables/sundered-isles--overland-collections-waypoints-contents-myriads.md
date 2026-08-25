@@ -16,38 +16,39 @@ Feature of the landscape
 ### 21-30
 
 Changing landscape
-  [Overland Regions](id:sundered_isles/oracles/overland/regions)
+  [Overland Regions](sundered-isles--overland-contents-regions.md)
 
-**References**
-- **Overland Regions** - [sundered_isles/oracles/overland/regions](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 31-35
 
-No result text supplied.
+Changing weather
+  [Weather](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 36-55
 
-No result text supplied.
+Instance (choose one)
+  * [Overland Details](sundered-isles--overland-contents-details.md)
+  * [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
 
 ### 56-70
 
-No result text supplied.
+Inland community
+  [Settlements](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 71-75
 
-No result text supplied.
+Relic of the past
+  [Ruins](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 76-85
 
 Character focus
-  [Interlude Scene](id:sundered_isles/oracles/misc/interlude_scene)
+  [Interlude Scene](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Interlude Scene** - [sundered_isles/oracles/misc/interlude_scene](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 86-100
 

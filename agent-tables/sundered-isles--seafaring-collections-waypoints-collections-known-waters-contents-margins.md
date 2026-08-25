@@ -9,32 +9,39 @@ No description supplied.
 ## Results
 ### 1-15
 
-No result text supplied.
+__Sails, ho!__
+  [Sailing Ships](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 16-30
 
-No result text supplied.
+__Changing weather__
+  [Weather](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 31-50
 
-No result text supplied.
+__Instance (choose one)__
+  * [Seafaring Details](#unresolved-reference) *(unresolved in bundled data)*
+  * [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
 
 ### 51-60
 
-No result text supplied.
+__Lost souls__
+  [Shipwrecks](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 61-70
 
-No result text supplied.
+__Relic of the past__
+  [Ruins](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 71-85
 
-No result text supplied.
+__Character focus__
+  [Interlude Scene](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 86-100

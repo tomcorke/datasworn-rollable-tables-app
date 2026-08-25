@@ -19,22 +19,22 @@ Extinct
 
 ### 1-10
 
-No result text supplied.
+Scarce
 
 
 ### 11-45
 
-No result text supplied.
+Diverse
 
 
 ### 46-85
 
-No result text supplied.
+Bountiful
 
 
 ### 86-100
 
-No result text supplied.
+Overrun
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

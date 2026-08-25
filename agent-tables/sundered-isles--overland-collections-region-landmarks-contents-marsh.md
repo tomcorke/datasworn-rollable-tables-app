@@ -8,102 +8,102 @@
 
 Waterlogged region with grasses and reeds
 ## Results
-### 1
+### 1-5
 
 Bursts of flaming marsh gas
 
 
-### 2
+### 6-10
 
 Copse of rotted tree trunks
 
 
-### 3
+### 11-15
 
 Dense thicket of reeds
 
 
-### 4
+### 16-20
 
 Field of flowers upon sodden ground
 
 
-### 5
+### 21-25
 
 Hovels stand precariously on stilts
 
 
-### 6
+### 26-30
 
 Large island of dry land
 
 
-### 7
+### 31-35
 
 Muddy, sinking quagmire
 
 
-### 8
+### 36-40
 
 Nest of slithering serpents
 
 
-### 9
+### 41-45
 
 Nests of squawking waterfowl
 
 
-### 10
+### 46-50
 
 Pools of bubbling marsh gas
 
 
-### 11
+### 51-55
 
 Raised trail winds through a watery maze
 
 
-### 12
+### 56-60
 
 Rotting wooden walkway
 
 
-### 13
+### 61-65
 
 Shallow waterways flanked by tall grass
 
 
-### 14
+### 66-70
 
 Soggy mist-shrouded field
 
 
-### 15
+### 71-75
 
 Tall, rocky hillock
 
 
-### 16
+### 76-80
 
 Thicket of spindly trees atop a low hill
 
 
-### 17
+### 81-85
 
 Toppled stone tower
 
 
-### 18
+### 86-90
 
 Wide channel of deep water
 
 
-### 19
+### 91-95
 
 Wide, algae-covered pond
 
 
-### 20
+### 96-100
 
 Witchlights dance above dark pools
 

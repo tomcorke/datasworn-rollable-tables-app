@@ -7,63 +7,60 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-9
 
 Alarm or warning is triggered
 
 
-### 2
+### 10-18
 
 Automated weapon or trap is activated
 
 
-### 3
+### 19-27
 
 Environment made unsuitable for life
 
 
-### 4
+### 28-36
 
 Hostile machines on patrol
 
 
-### 5
+### 37-45
 
 Machines transform to reveal new capabilities
 
 
-### 6
+### 46-54
 
 Machines with corrupted or hacked programming
 
 
-### 7
+### 55-63
 
 Malfunctioning machines or technology
 
 
-### 8
+### 64-72
 
 Moving machinery creates a danger or obstacle
 
 
-### 9
+### 73-81
 
 Under surveillance by a central machine intelligence
 
 
-### 10
+### 82-90
 
 Volatile technology
 
 
 ### 91-98
 
-[Action](id:starforged/oracles/core/action) + [Theme](id:starforged/oracles/core/theme)
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
-**References**
-- **Action** - [starforged/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [starforged/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 99-100
 

@@ -5,7 +5,7 @@
 - **Source data:** `src/data/starforged-misc.yaml`
 ## Description
 
-This oracle will introduce narrative turns, troubles, and revelations. It can be used as an alternative to the [Pay the Price](id:starforged/moves/fate/pay_the_price) table when you encounter a negative outcome at a crucial moment. In particular, you might use this table after rolling matched 10s on the challenge dice.
+This oracle will introduce narrative turns, troubles, and revelations. It can be used as an alternative to the [Pay the Price](#unresolved-reference) *(unresolved in bundled data)* table when you encounter a negative outcome at a crucial moment. In particular, you might use this table after rolling matched 10s on the challenge dice.
 ## Results
 ### 1-4
 

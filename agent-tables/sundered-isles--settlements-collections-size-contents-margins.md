@@ -9,22 +9,26 @@ Outer Seas
 ## Results
 ### 1-40
 
-No result text supplied.
+Village or outpost
+Dozens
 
 
 ### 41-75
 
-No result text supplied.
+Town
+Hundreds
 
 
 ### 76-98
 
-No result text supplied.
+City
+Thousands
 
 
 ### 99-100
 
-No result text supplied.
+City-state
+Tens of thousands
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

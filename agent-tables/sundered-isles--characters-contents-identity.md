@@ -9,124 +9,92 @@ You may envision a character’s role, occupation, or persona using the broad ca
 ## Results
 ### 1-5
 
-[Academic](id:sundered_isles/oracles/characters/roles/academic)
+[Academic](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Academic** - [sundered_isles/oracles/characters/roles/academic](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 6-10
 
-[Agent](id:sundered_isles/oracles/characters/roles/agent)
+[Agent](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Agent** - [sundered_isles/oracles/characters/roles/agent](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 11-15
 
-[Caregiver](id:sundered_isles/oracles/characters/roles/caregiver)
+[Caregiver](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Caregiver** - [sundered_isles/oracles/characters/roles/caregiver](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 16-20
 
-[Combatant](id:sundered_isles/oracles/characters/roles/combatant)
+[Combatant](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Combatant** - [sundered_isles/oracles/characters/roles/combatant](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 21-25
 
-[Devotant](id:sundered_isles/oracles/characters/roles/devotant)
+[Devotant](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Devotant** - [sundered_isles/oracles/characters/roles/devotant](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 26-30
 
-[Laborer](id:sundered_isles/oracles/characters/roles/laborer)
+[Laborer](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Laborer** - [sundered_isles/oracles/characters/roles/laborer](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 31-35
 
-[Merchant](id:sundered_isles/oracles/characters/roles/merchant)
+[Merchant](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Merchant** - [sundered_isles/oracles/characters/roles/merchant](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 36-40
 
-[Mystic](id:sundered_isles/oracles/characters/roles/mystic)
+[Mystic](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Mystic** - [sundered_isles/oracles/characters/roles/mystic](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 41-45
 
-[Outcast](id:sundered_isles/oracles/characters/roles/outcast)
+[Outcast](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Outcast** - [sundered_isles/oracles/characters/roles/outcast](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 46-50
 
-[Outlander](id:sundered_isles/oracles/characters/roles/outlander)
+[Outlander](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Outlander** - [sundered_isles/oracles/characters/roles/outlander](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 51-55
 
-[Outlaw](id:sundered_isles/oracles/characters/roles/outlaw)
+[Outlaw](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Outlaw** - [sundered_isles/oracles/characters/roles/outlaw](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 56-60
 
-[Performer](id:sundered_isles/oracles/characters/roles/performer)
+[Performer](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Performer** - [sundered_isles/oracles/characters/roles/performer](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 61-65
 
-[Sailor](id:sundered_isles/oracles/characters/roles/sailor)
+[Sailor](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Sailor** - [sundered_isles/oracles/characters/roles/sailor](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 66-70
 
-[Scavenger](id:sundered_isles/oracles/characters/roles/scavenger)
+[Scavenger](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Scavenger** - [sundered_isles/oracles/characters/roles/scavenger](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-75
 
-[Statesperson](id:sundered_isles/oracles/characters/roles/statesperson)
+[Statesperson](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Statesperson** - [sundered_isles/oracles/characters/roles/statesperson](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 76-80
 
-[Tradesperson](id:sundered_isles/oracles/characters/roles/tradesperson)
+[Tradesperson](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Tradesperson** - [sundered_isles/oracles/characters/roles/tradesperson](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 81-90
 
-No result text supplied.
+[Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
 
 ### 91-100
 
-No result text supplied.
+Roll twice
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

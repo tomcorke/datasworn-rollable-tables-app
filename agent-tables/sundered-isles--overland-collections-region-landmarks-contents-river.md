@@ -8,102 +8,102 @@
 
 Major inland waterway
 ## Results
-### 1
+### 1-5
 
 Branching watercourse
 
 
-### 2
+### 6-10
 
 Cascading rapids
 
 
-### 3
+### 11-15
 
 Debris forming a dam
 
 
-### 4
+### 16-20
 
 Eddies swirl in a large, limpid pool
 
 
-### 5
+### 21-25
 
 Flooded riverbanks
 
 
-### 6
+### 26-30
 
 Gulch strewn with mossy boulders
 
 
-### 7
+### 31-35
 
 Landed boat
 
 
-### 8
+### 36-40
 
 Mighty fallen tree spans the river
 
 
-### 9
+### 41-45
 
 Muddy landing
 
 
-### 10
+### 46-50
 
 Old dock perched over the water
 
 
-### 11
+### 51-55
 
 Plunging series of terraced waterfalls
 
 
-### 12
+### 56-60
 
 Remains of an old bridge
 
 
-### 13
+### 61-65
 
 River-fed lake
 
 
-### 14
+### 66-70
 
 Sandy shoal in the midst of the river
 
 
-### 15
+### 71-75
 
 Shadowy passage flanked by tall cliffs
 
 
-### 16
+### 76-80
 
 Shallow ford
 
 
-### 17
+### 81-85
 
 Snaking, slow-moving watercourse
 
 
-### 18
+### 86-90
 
 Strong current leading to a high waterfall
 
 
-### 19
+### 91-95
 
 Trees crowd the river's edge
 
 
-### 20
+### 96-100
 
 Wrecked ship or boat
 

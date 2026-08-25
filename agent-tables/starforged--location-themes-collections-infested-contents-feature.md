@@ -7,72 +7,69 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-8
 
 Corpse of an unfortunate victim
 
 
-### 2
+### 9-16
 
 Eggs, cocoons, or nest
 
 
-### 3
+### 17-24
 
 Environment corrupted by the infestation
 
 
-### 4
+### 25-32
 
 Evidence of a lurking creature
 
 
-### 5
+### 33-40
 
 Evidence of an ill-fated victim
 
 
-### 6
+### 41-48
 
 Hoarded food
 
 
-### 7
+### 49-56
 
 Indistinct movement or sounds
 
 
-### 8
+### 57-64
 
 Lair of lesser creatures
 
 
-### 9
+### 65-72
 
 Ravaged supplies or equipment
 
 
-### 10
+### 73-80
 
 Remains of a creature or remnants of a previous form
 
 
-### 11
+### 81-88
 
 Territorial markings
 
 
-### 12
+### 89-96
 
 Trail or evidence of a creature's passage
 
 
 ### 97-100
 
-[Descriptor](id:starforged/oracles/core/descriptor) + [Focus](id:starforged/oracles/core/focus)
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
-**References**
-- **Descriptor** - [starforged/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [starforged/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

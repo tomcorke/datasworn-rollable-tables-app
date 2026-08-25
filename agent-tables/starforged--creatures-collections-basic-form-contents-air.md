@@ -9,87 +9,87 @@ No description supplied.
 ## Results
 ### 1-2
 
-No result text supplied.
+Amoeba / pseudopods
 
 
 ### 3-12
 
-No result text supplied.
+Amorphous / elemental
 
 
 ### 13-37
 
-No result text supplied.
+Avian / winged
 
 
 ### 38-40
 
-No result text supplied.
+Beast / mammal
 
 
 ### 41-42
 
-No result text supplied.
+Crustacean / shelled
 
 
 ### 43-47
 
-No result text supplied.
+Fish / torpedo-shaped
 
 
 ### 48-49
 
-No result text supplied.
+Humanoid / bipedal
 
 
 ### 50-51
 
-No result text supplied.
+Insectoid / exoskeletal
 
 
 ### 52-66
 
-No result text supplied.
+Jellyfish / gasbag
 
 
 ### 67-68
 
-No result text supplied.
+Lizard / reptilian
 
 
 ### 69-70
 
-No result text supplied.
+Octopoid / tentacled
 
 
 ### 71-72
 
-No result text supplied.
+Plant / fungus
 
 
 ### 73-82
 
-No result text supplied.
+Ray / flat-bodied
 
 
 ### 83-84
 
-No result text supplied.
+Snake / eel
 
 
 ### 85-86
 
-No result text supplied.
+Spider / web-weaver
 
 
 ### 87-88
 
-No result text supplied.
+Starfish / symmetrical
 
 
 ### 89-90
 
-No result text supplied.
+Worm / slug / larva
 
 
 ### 91-100

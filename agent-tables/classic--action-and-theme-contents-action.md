@@ -5,7 +5,7 @@
 - **Source data:** `src/data/classic-action_and_theme.yaml`
 ## Description
 
-Use this table to inspire a discovery, event, character goal, or situation. A roll on this table can be combined with a [Theme](id:classic/oracles/action_and_theme/theme) to provide an action and a subject. Then, interpret the result based on the context of the question and your current situation.
+Use this table to inspire a discovery, event, character goal, or situation. A roll on this table can be combined with a [Theme](classic--action-and-theme-contents-theme.md) to provide an action and a subject. Then, interpret the result based on the context of the question and your current situation.
 ## Results
 ### 1-1
 

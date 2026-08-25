@@ -7,81 +7,79 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-7
 
 Broken cities
 
 
-### 2
+### 8-14
 
 Colliding fragments
 
 
-### 3
+### 15-21
 
 Energy storms
 
 
-### 4
+### 22-28
 
 Exposed caverns
 
 
-### 5
+### 29-35
 
 Fluctuating gravity
 
 
-### 6
+### 36-42
 
 Magnetic disturbances
 
 
-### 7
+### 43-49
 
 Molten fissures
 
 
-### 8
+### 50-56
 
 Phantom visions of the past
 
 
-### 9
+### 57-63
 
 Pocket atmosphere
 
 
-### 10
+### 64-70
 
 Residual energy storms
 
 
-### 11
+### 71-77
 
 Swirling corrosive gases
 
 
-### 12
+### 78-84
 
 Unstable and fracturing terrain
 
 
-### 13
+### 85-91
 
 Venting magma
 
 
 ### 92-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (planetside)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (planetside)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

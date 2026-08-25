@@ -9,22 +9,26 @@ Central Seas
 ## Results
 ### 1-30
 
-No result text supplied.
+Village or outpost
+Dozens
 
 
 ### 31-70
 
-No result text supplied.
+Town
+Hundreds
 
 
 ### 71-98
 
-No result text supplied.
+City
+Thousands
 
 
 ### 99-100
 
-No result text supplied.
+City-state
+Tens of thousands
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

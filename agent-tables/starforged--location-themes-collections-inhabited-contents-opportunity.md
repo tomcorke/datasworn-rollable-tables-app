@@ -7,27 +7,27 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-20
 
 Intriguing offer from an unexpected source
 
 
-### 2
+### 21-40
 
 Lively festival or gathering place provides a chance to socialize
 
 
-### 3
+### 41-60
 
 Local gossip proves interesting or helpful
 
 
-### 4
+### 61-80
 
 Needed item, resource, or buyer is available
 
 
-### 5
+### 81-100
 
 Old friend or connection resurfaces
 

@@ -8,102 +8,102 @@
 
 Flooded forest with thick vegetation
 ## Results
-### 1
+### 1-5
 
 Abandoned boat or raft
 
 
-### 2
+### 6-10
 
 Ancient tree with sprawling root system
 
 
-### 3
+### 11-15
 
 Barricade of rotting logs
 
 
-### 4
+### 16-20
 
 Crumbling, moss-covered monument
 
 
-### 5
+### 21-25
 
 Dank cave hung with curtains of moss
 
 
-### 6
+### 26-30
 
 Decaying, half-sunk homestead
 
 
-### 7
+### 31-35
 
 Dense canopy of intertwined branches
 
 
-### 8
+### 36-40
 
 Insects swarm above stagnant water
 
 
-### 9
+### 41-45
 
 Large sandy island topped by trees
 
 
-### 10
+### 46-50
 
 Murky waterway through misty woods
 
 
-### 11
+### 51-55
 
 Pond filled with fragrant, floating flowers
 
 
-### 12
+### 56-60
 
 Ramshackle bridges connect dry land
 
 
-### 13
+### 61-65
 
 Rocky hillock
 
 
-### 14
+### 66-70
 
 Slow-moving, muddy channel
 
 
-### 15
+### 71-75
 
 Solitary hut on stilts
 
 
-### 16
+### 76-80
 
 Stirrings of a large creature
 
 
-### 17
+### 81-85
 
 Tangled thicket of tree roots and shrubs
 
 
-### 18
+### 86-90
 
 Thick vegetation in mucky soil
 
 
-### 19
+### 91-95
 
 Watery maze of towering tree trunks
 
 
-### 20
+### 96-100
 
 Wrecked ship or boat
 

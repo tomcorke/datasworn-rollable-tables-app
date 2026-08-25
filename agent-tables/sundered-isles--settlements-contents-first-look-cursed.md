@@ -154,9 +154,7 @@ Unsettling angles and labyrinthine paths
 
 ### 97-100
 
-[Cursed Weather](id:sundered_isles/oracles/weather/cursed)
+[Cursed Weather](sundered-isles--weather-contents-cursed.md)
 
-**References**
-- **Cursed Weather** - [sundered_isles/oracles/weather/cursed](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

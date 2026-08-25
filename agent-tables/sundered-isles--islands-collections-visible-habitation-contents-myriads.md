@@ -9,32 +9,32 @@ No description supplied.
 ## Results
 ### 1-35
 
-No result text supplied.
+No signs of habitation
 
 
 ### 36-40
 
-No result text supplied.
+Inland smoke
 
 
 ### 41-45
 
-No result text supplied.
+Costal boats
 
 
 ### 46-50
 
-No result text supplied.
+Seaside camp
 
 
 ### 51-85
 
-No result text supplied.
+Seaside settlement
 
 
 ### 86-100
 
-No result text supplied.
+Mutliple visible communities or extensive cultivation
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

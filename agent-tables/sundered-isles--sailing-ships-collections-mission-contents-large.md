@@ -9,87 +9,87 @@ No description supplied.
 ## Results
 ### 1-2
 
-No result text supplied.
+Blockade a location
 
 
 ### 3-4
 
-No result text supplied.
+Break a blockade
 
 
 ### 5-6
 
-No result text supplied.
+Attack a Location
 
 
 ### 7-8
 
-No result text supplied.
+Evacuate a location
 
 
 ### 9-14
 
-No result text supplied.
+Transport people
 
 
 ### 15-22
 
-No result text supplied.
+Transport cargo
 
 
 ### 23-30
 
-No result text supplied.
+Conduct trade
 
 
 ### 31-36
 
-No result text supplied.
+Hunt creatures
 
 
 ### 37-42
 
-No result text supplied.
+Patrol an area
 
 
 ### 43-48
 
-No result text supplied.
+Explore or travel to an area
 
 
 ### 49-58
 
-No result text supplied.
+Engage an enemy
 
 
 ### 59-70
 
-No result text supplied.
+Conduct piracy
 
 
 ### 71-74
 
-No result text supplied.
+Conduct diplomacy
 
 
 ### 75-76
 
-No result text supplied.
+Conduct espionage
 
 
 ### 77-78
 
-No result text supplied.
+Conduct research
 
 
 ### 79-80
 
-No result text supplied.
+Deliver item or message
 
 
 ### 81-84
 
-No result text supplied.
+Smuggle contraband
 
 
 ### 85-94
@@ -99,7 +99,7 @@ No result text supplied.
 
 ### 95-100
 
-No result text supplied.
+Roll twice
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

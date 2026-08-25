@@ -5,7 +5,7 @@
 - **Source data:** `src/data/starforged-core.yaml`
 ## Description
 
-When you [Ask the Oracle](id:starforged/moves/fate/ask_the_oracle) about a goal, situation, or event, roll for an [Action](id:starforged/oracles/core/action) and [Theme](id:starforged/oracles/core/theme). Together, these provide an interpretative verb/noun prompt.
+When you [Ask the Oracle](#unresolved-reference) *(unresolved in bundled data)* about a goal, situation, or event, roll for an [Action](starforged--core-contents-action.md) and [Theme](starforged--core-contents-theme.md). Together, these provide an interpretative verb/noun prompt.
 ## Results
 ### 1-1
 

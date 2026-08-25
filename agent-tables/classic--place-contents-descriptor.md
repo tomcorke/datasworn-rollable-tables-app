@@ -6,7 +6,7 @@
 - **Source book:** Ironsworn Rulebook, page 177
 ## Description
 
-Use this oracle to add detail to the [Location](id:classic/oracles/place/location) or [Coastal Waters Location](id:classic/oracles/place/coastal_waters_location) oracles, or by itself to generate a description of a location. Roll more than once for extra detail.
+Use this oracle to add detail to the [Location](classic--place-contents-location.md) or [Coastal Waters Location](classic--place-contents-coastal-waters-location.md) oracles, or by itself to generate a description of a location. Roll more than once for extra detail.
 ## Results
 ### 1-2
 

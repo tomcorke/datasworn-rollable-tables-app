@@ -11,36 +11,22 @@ An alternative approach to generating a faction from scratch is to start with a 
 ## Results
 ### 1-40
 
-[Legacy](id:starforged/oracles/factions/name/legacy) [Affiliation](id:starforged/oracles/factions/name/affiliation)
+[Legacy](#unresolved-reference) *(unresolved in bundled data)* [Affiliation](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Legacy** - [starforged/oracles/factions/name/legacy](#unresolved-reference) *(unresolved in bundled data)*
-- **Affiliation** - [starforged/oracles/factions/name/affiliation](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 41-55
 
-[Legacy](id:starforged/oracles/factions/name/legacy) [Identity](id:starforged/oracles/factions/name/identity)
+[Legacy](#unresolved-reference) *(unresolved in bundled data)* [Identity](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Legacy** - [starforged/oracles/factions/name/legacy](#unresolved-reference) *(unresolved in bundled data)*
-- **Identity** - [starforged/oracles/factions/name/identity](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 56-70
 
-[Identity](id:starforged/oracles/factions/name/identity) *of the* [Legacy](id:starforged/oracles/factions/name/legacy) [Affiliation](id:starforged/oracles/factions/name/affiliation)
+[Identity](#unresolved-reference) *(unresolved in bundled data)* *of the* [Legacy](#unresolved-reference) *(unresolved in bundled data)* [Affiliation](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Identity** - [starforged/oracles/factions/name/identity](#unresolved-reference) *(unresolved in bundled data)*
-- **Legacy** - [starforged/oracles/factions/name/legacy](#unresolved-reference) *(unresolved in bundled data)*
-- **Affiliation** - [starforged/oracles/factions/name/affiliation](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-100
 
-[Affiliation](id:starforged/oracles/factions/name/affiliation) *of the* [Legacy](id:starforged/oracles/factions/name/legacy) [Identity](id:starforged/oracles/factions/name/identity)
+[Affiliation](#unresolved-reference) *(unresolved in bundled data)* *of the* [Legacy](#unresolved-reference) *(unresolved in bundled data)* [Identity](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Affiliation** - [starforged/oracles/factions/name/affiliation](#unresolved-reference) *(unresolved in bundled data)*
-- **Legacy** - [starforged/oracles/factions/name/legacy](#unresolved-reference) *(unresolved in bundled data)*
-- **Identity** - [starforged/oracles/factions/name/identity](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

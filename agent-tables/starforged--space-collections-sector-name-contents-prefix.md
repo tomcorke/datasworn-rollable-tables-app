@@ -7,252 +7,252 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-2
 
 Accursed
 
 
-### 2
+### 3-4
 
 Ashen
 
 
-### 3
+### 5-6
 
 Asteria
 
 
-### 4
+### 7-8
 
 Bitter
 
 
-### 5
+### 9-10
 
 Blighted
 
 
-### 6
+### 11-12
 
 Bloodied
 
 
-### 7
+### 13-14
 
 Boundless
 
 
-### 8
+### 15-16
 
 Burning
 
 
-### 9
+### 17-18
 
 Cortana
 
 
-### 10
+### 19-20
 
 Corvus
 
 
-### 11
+### 21-22
 
 Crimson
 
 
-### 12
+### 23-24
 
 Cygnus
 
 
-### 13
+### 25-26
 
 Delphi
 
 
-### 14
+### 27-28
 
 Delphian
 
 
-### 15
+### 29-30
 
 Devil's
 
 
-### 16
+### 31-32
 
 Ebon
 
 
-### 17
+### 33-34
 
 Essus
 
 
-### 18
+### 35-36
 
 Fallen
 
 
-### 19
+### 37-38
 
 Ferrous
 
 
-### 20
+### 39-40
 
 Fool's
 
 
-### 21
+### 41-42
 
 Forgotten
 
 
-### 22
+### 43-44
 
 Haunted
 
 
-### 23
+### 45-46
 
 Hidden
 
 
-### 24
+### 47-48
 
 Hollow
 
 
-### 25
+### 49-50
 
 Igneous
 
 
-### 26
+### 51-52
 
 Infernal
 
 
-### 27
+### 53-54
 
 Invidia
 
 
-### 28
+### 55-56
 
 Iron
 
 
-### 29
+### 57-58
 
 Kalidas
 
 
-### 30
+### 59-60
 
 Kronos
 
 
-### 31
+### 61-62
 
 Lacuna
 
 
-### 32
+### 63-64
 
 Lumen
 
 
-### 33
+### 65-66
 
 Mobius
 
 
-### 34
+### 67-68
 
 Morien
 
 
-### 35
+### 69-70
 
 Onyx
 
 
-### 36
+### 71-72
 
 Outer
 
 
-### 37
+### 73-74
 
 Sanguis
 
 
-### 38
+### 75-76
 
 Scarred
 
 
-### 39
+### 77-78
 
 Scorched
 
 
-### 40
+### 79-80
 
 Shattered
 
 
-### 41
+### 81-82
 
 Shrouded
 
 
-### 42
+### 83-84
 
 Sindri
 
 
-### 43
+### 85-86
 
 Solana
 
 
-### 44
+### 87-88
 
 Stygian
 
 
-### 45
+### 89-90
 
 Sulaco
 
 
-### 46
+### 91-92
 
 Sundered
 
 
-### 47
+### 93-94
 
 Thunor
 
 
-### 48
+### 95-96
 
 Vanguard
 
 
-### 49
+### 97-98
 
 Veiled
 
 
-### 50
+### 99-100
 
 Wasted
 

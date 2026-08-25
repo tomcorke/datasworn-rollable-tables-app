@@ -9,190 +9,223 @@ No description supplied.
 ## Results
 ### 1-3
 
-No result text supplied.
+Piracy
+Pirate court, smuggler dens, taverns
 
 
 ### 4-9
 
-No result text supplied.
+Shipbuilding
+Dry docks, lumber mills, shipwrights
 
 
 ### 10-12
 
-No result text supplied.
+Whaling
+Whaling ships, processing plants, wharfs
 
 
 ### 13-14
 
-No result text supplied.
+Wrecking
+Ship graveyard
 
 
 ### 15-22
 
-No result text supplied.
+Fishing
+Boatwrights, fishmongers, net makers
 
 
 ### 23-24
 
-No result text supplied.
+Alcohol Production
+Breweries, distilleries, wineries
 
 
 ### 25-25
 
-No result text supplied.
+Archeology
+Excavation sites, field camps, relic hunters
 
 
 ### 26-27
 
-No result text supplied.
+Crafts
+Artisans, markets, workshops
 
 
 ### 28-29
 
-No result text supplied.
+Culture
+Archives, festivals, historical sites
 
 
 ### 30-35
 
-No result text supplied.
+Defense
+Armories, fortifications, militia
 
 
 ### 36-36
 
-No result text supplied.
+Dueling
+Dueling grounds, fencing schools
 
 
 ### 37-38
 
-No result text supplied.
+Education
+Libraries, universities
 
 
 ### 39-40
 
-No result text supplied.
+Entertainment
+Arenas, fairs, street performers, theaters
 
 
 ### 41-42
 
-No result text supplied.
+Espionage
+Assassin guild, spy network
 
 
 ### 43-44
 
-No result text supplied.
+Exploration
+Navigators guild, outfitters, scouts
 
 
 ### 45-48
 
-No result text supplied.
+Farming
+Fields, granaries, mills, orchards
 
 
 ### 49-54
 
-No result text supplied.
+Hospitality
+Bath houses, brothels, inns, taverns
 
 
 ### 55-55
 
-No result text supplied.
+Hunting
+Animal trainers, tanners, taxidermists,
 
 
 ### 56-57
 
-No result text supplied.
+Law
+Courts, gallows, patrols, prisons
 
 
 ### 58-58
 
-No result text supplied.
+Livestock / horses
+Ranches, slaughterhouses, stables
 
 
 ### 59-59
 
-No result text supplied.
+Logging
+Logging camps, sawmills
 
 
 ### 60-61
 
-No result text supplied.
+Medicine
+Apothecaries, herbalists, infirmaries
 
 
 ### 62-62
 
-No result text supplied.
+Metalworking
+Artificers, blacksmiths, forges
 
 
 ### 63-63
 
-No result text supplied.
+Mining
+Foundries, mines, smelters
 
 
 ### 64-65
 
-No result text supplied.
+Mysticism
+Alchemists, curio dealers, enclaves, mystics
 
 
 ### 66-66
 
-No result text supplied.
+Nature
+Animal sanctuaries, gardens, groves
 
 
 ### 67-68
 
-No result text supplied.
+Religion
+Monasteries, sacred sites, temples
 
 
 ### 69-70
 
-No result text supplied.
+Science
+Academies, naturalist guild, observatories
 
 
 ### 71-73
 
-No result text supplied.
+Smuggling
+Black market, fences, smugglers
 
 
 ### 74-75
 
-No result text supplied.
+Society
+Balls, boutiques, social clubs, tailors
 
 
 ### 76-77
 
-No result text supplied.
+Statecraft
+Embassies, envoys, court or council
 
 
 ### 78-78
 
-No result text supplied.
+Stoneworking
+Masons, quarries, stone yards
 
 
 ### 79-86
 
-No result text supplied.
+Trade
+Auction house, markets, merchant guild
 
 
 ### 87-89
 
-No result text supplied.
+Vices
+Brothels, drug dens, gambling halls, taverns
 
 
 ### 90-93
 
-No result text supplied.
+Warfare
+Armies or fleets, command post, forts
 
 
 ### 94-95
 
-No result text supplied.
+Weaponry
+Cannon foundries, gunsmiths, powder mills
 
 
 ### 96-100
 
-[Action](id:sundered_isles/oracles/core/action) + [Theme](id:sundered_isles/oracles/core/theme)
+[Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
-**References**
-- **Action** - [sundered_isles/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [sundered_isles/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

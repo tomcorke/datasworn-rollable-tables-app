@@ -7,72 +7,69 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-8
 
 Disembodied voices
 
 
-### 2
+### 9-16
 
 Eerie cold
 
 
-### 3
+### 17-24
 
 Foreboding omen or message
 
 
-### 4
+### 25-32
 
 Ghostly visions of this place in another time
 
 
-### 5
+### 33-40
 
 Glimpses of shadowy movement
 
 
-### 6
+### 41-48
 
 Objects move of their own accord
 
 
-### 7
+### 49-56
 
 Sensation of being watched
 
 
-### 8
+### 57-64
 
 Signs of death or violence
 
 
-### 9
+### 65-72
 
 Spectral sounds
 
 
-### 10
+### 73-80
 
 Twisted or altered architecture or terrain
 
 
-### 11
+### 81-88
 
 Unnatural blight, decay, or ruin
 
 
-### 12
+### 89-96
 
 Unnatural mists or darkness
 
 
 ### 97-100
 
-[Descriptor](id:starforged/oracles/core/descriptor) + [Focus](id:starforged/oracles/core/focus)
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
-**References**
-- **Descriptor** - [starforged/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [starforged/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

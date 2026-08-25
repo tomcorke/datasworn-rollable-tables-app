@@ -254,7 +254,7 @@ Wooden religious medallion
 
 ### 99-100
 
-No result text supplied.
+[Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

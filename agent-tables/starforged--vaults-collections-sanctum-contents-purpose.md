@@ -144,7 +144,7 @@ Worship of a god or being
 
 ### 91-95
 
-No result text supplied.
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
 
 ### 96-100

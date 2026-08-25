@@ -8,102 +8,102 @@
 
 Arid, rocky terrain
 ## Results
-### 1
+### 1-5
 
 Abandoned mineshaft
 
 
-### 2
+### 6-10
 
 Animal tracks in the sand
 
 
-### 3
+### 11-15
 
 Carrion birds roosting in a dead tree
 
 
-### 4
+### 16-20
 
 Dried riverbed
 
 
-### 5
+### 21-25
 
 Expanse of shifting, loose sand
 
 
-### 6
+### 26-30
 
 Fossilized tracks of an ancient beast
 
 
-### 7
+### 31-35
 
 Freshwater spring oasis
 
 
-### 8
+### 36-40
 
 Half-buried statue
 
 
-### 9
+### 41-45
 
 Maze of wind-carved spires
 
 
-### 10
+### 46-50
 
 Narrow trail through steep-sided ravine
 
 
-### 11
+### 51-55
 
 Natural stone bridge spans a canyon
 
 
-### 12
+### 56-60
 
 Parched lakebed
 
 
-### 13
+### 61-65
 
 Petrified forest
 
 
-### 14
+### 66-70
 
 Plain of rocky rubble
 
 
-### 15
+### 71-75
 
 Rainbow-hued rock formations
 
 
-### 16
+### 76-80
 
 Rock walls with ancient petroglyphs
 
 
-### 17
+### 81-85
 
 Shadowy cave
 
 
-### 18
+### 86-90
 
 Sprawling bones of a leviathan
 
 
-### 19
+### 91-95
 
 Sun-bleached skeletal remains
 
 
-### 20
+### 96-100
 
 Towering stone arches
 

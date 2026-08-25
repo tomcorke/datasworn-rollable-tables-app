@@ -7,56 +7,54 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-11
 
 Broken moon
 
 
-### 2
+### 12-22
 
 Perpetual overcast
 
 
-### 3
+### 23-33
 
 Cratered surface
 
 
-### 4
+### 34-44
 
 Sky-breaching ruins
 
 
-### 5
+### 45-55
 
 Dry seabeds
 
 
-### 6
+### 56-66
 
 Vast wastelands
 
 
-### 7
+### 67-77
 
 Irradiated atmosphere
 
 
-### 8
+### 78-88
 
 Orbiting ship graveyard
 
 
 ### 89-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (orbital)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (orbital)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

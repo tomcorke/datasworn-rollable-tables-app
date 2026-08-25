@@ -7,56 +7,54 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-11
 
 Expansive fungal plains
 
 
-### 2
+### 12-22
 
 Stagnant cloud cover
 
 
-### 3
+### 23-33
 
 Fungal forests
 
 
-### 4
+### 34-44
 
 Thick, murky atmosphere
 
 
-### 5
+### 45-55
 
 Scabrous, infected terrain
 
 
-### 6
+### 56-66
 
 Toxic seas
 
 
-### 7
+### 67-77
 
 Sky-breaching fungus
 
 
-### 8
+### 78-88
 
 Sludge-filled river networks
 
 
 ### 89-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (orbital)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (orbital)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

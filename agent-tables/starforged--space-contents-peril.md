@@ -169,7 +169,7 @@ Unsettling sounds or disturbances
 
 ### 97-99
 
-No result text supplied.
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
 
 ### 100-100

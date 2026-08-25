@@ -7,63 +7,60 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-9
 
 Dreadful atmosphere of loss and destruction weighs upon you
 
 
-### 2
+### 10-18
 
 Evidence of a horrible fate for others who passed this way
 
 
-### 3
+### 19-27
 
 Hazardous atmosphere or environment
 
 
-### 4
+### 28-36
 
 Hostile creature has staked out their territory
 
 
-### 5
+### 37-45
 
 Imminent collapse or destruction
 
 
-### 6
+### 46-54
 
 Lured into a trap or targeted by automated defenses
 
 
-### 7
+### 55-63
 
 Source of the destruction persists or returns anew
 
 
-### 8
+### 64-72
 
 Unearthed secrets best left buried
 
 
-### 9
+### 73-81
 
 Unstable or broken path
 
 
-### 10
+### 82-90
 
 Volatile device or artifact
 
 
 ### 91-98
 
-[Action](id:starforged/oracles/core/action) + [Theme](id:starforged/oracles/core/theme)
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
-**References**
-- **Action** - [starforged/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [starforged/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 99-100
 

@@ -154,10 +154,7 @@ Personal memento ( > Token; pg 217 )
 
 ### 93-100
 
-[Descriptor](id:sundered_isles/oracles/core/descriptor) + [Focus](id:sundered_isles/oracles/core/focus)
+[Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
-**References**
-- **Descriptor** - [sundered_isles/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [sundered_isles/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

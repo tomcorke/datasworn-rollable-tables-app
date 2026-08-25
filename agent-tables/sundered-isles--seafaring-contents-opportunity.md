@@ -6,7 +6,7 @@
 - **Source book:** Sundered Isles Book Preview
 ## Description
 
-Roll or choose on this table when you want inspiration for a beneficial encounter or event on a seagoing journey, such as when you roll a strong hit with a match as you [Undertake an Expedition](id:sundered_isles/moves/exploration/undertake_an_expedition), or if you [Explore a Waypoint](id:sundered_isles/moves/exploration/explore_a_waypoint) and find an opportunity.
+Roll or choose on this table when you want inspiration for a beneficial encounter or event on a seagoing journey, such as when you roll a strong hit with a match as you [Undertake an Expedition](#unresolved-reference) *(unresolved in bundled data)*, or if you [Explore a Waypoint](#unresolved-reference) *(unresolved in bundled data)* and find an opportunity.
 ## Results
 ### 1-4
 

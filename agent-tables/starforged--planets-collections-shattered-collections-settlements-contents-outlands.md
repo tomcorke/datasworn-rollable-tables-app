@@ -9,22 +9,22 @@ No description supplied.
 ## Results
 ### 1-85
 
-No result text supplied.
+None
 
 
 ### 86-96
 
-No result text supplied.
+Orbital settlement
 
 
 ### 97-99
 
-No result text supplied.
+Planetside settlement
 
 
 ### 100-100
 
-No result text supplied.
+Multiple settlements
 
 
 ### 5

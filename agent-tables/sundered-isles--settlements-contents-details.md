@@ -479,18 +479,12 @@ The leaders are puppets for a greater power
 
 ### 95-97
 
-[Action](id:sundered_isles/oracles/core/action) + [Theme](id:sundered_isles/oracles/core/theme)
+[Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
-**References**
-- **Action** - [sundered_isles/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [sundered_isles/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 98-100
 
-[Descriptor](id:sundered_isles/oracles/core/descriptor) + [Focus](id:sundered_isles/oracles/core/focus)
+[Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
-**References**
-- **Descriptor** - [sundered_isles/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [sundered_isles/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

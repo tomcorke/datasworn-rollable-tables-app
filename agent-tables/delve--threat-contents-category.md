@@ -9,66 +9,48 @@ No description supplied.
 ## Results
 ### 1-10
 
-[Burgeoning Conflict](id:delve/oracles/threat/burgeoning_conflict)
+[Burgeoning Conflict](delve--threat-contents-burgeoning-conflict.md)
 
-**References**
-- **Burgeoning Conflict** - [delve/oracles/threat/burgeoning_conflict](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 11-20
 
-[Cursed Site](id:delve/oracles/threat/cursed_site)
+[Cursed Site](delve--threat-contents-cursed-site.md)
 
-**References**
-- **Cursed Site** - [delve/oracles/threat/cursed_site](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 21-30
 
-[Environmental Calamity](id:delve/oracles/threat/environmental_calamity)
+[Environmental Calamity](delve--threat-contents-environmental-calamity.md)
 
-**References**
-- **Environmental Calamity** - [delve/oracles/threat/environmental_calamity](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 31-40
 
-[Malignant Plague](id:delve/oracles/threat/malignant_plague)
+[Malignant Plague](delve--threat-contents-malignant-plague.md)
 
-**References**
-- **Malignant Plague** - [delve/oracles/threat/malignant_plague](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 41-50
 
-[Rampaging Creature](id:delve/oracles/threat/rampaging_creature)
+[Rampaging Creature](delve--threat-contents-rampaging-creature.md)
 
-**References**
-- **Rampaging Creature** - [delve/oracles/threat/rampaging_creature](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 51-60
 
-[Ravaging Horde](id:delve/oracles/threat/ravaging_horde)
+[Ravaging Horde](delve--threat-contents-ravaging-horde.md)
 
-**References**
-- **Ravaging Horde** - [delve/oracles/threat/ravaging_horde](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 61-70
 
-[Scheming Leader](id:delve/oracles/threat/scheming_leader)
+[Scheming Leader](delve--threat-contents-scheming-leader.md)
 
-**References**
-- **Scheming Leader** - [delve/oracles/threat/scheming_leader](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-80
 
-[Power-Hungry Mystic](id:delve/oracles/threat/power_hungry_mystic)
+[Power-Hungry Mystic](delve--threat-contents-power-hungry-mystic.md)
 
-**References**
-- **Power-Hungry Mystic** - [delve/oracles/threat/power_hungry_mystic](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 81-90
 
-[Zealous Cult](id:delve/oracles/threat/zealous_cult)
+[Zealous Cult](delve--threat-contents-zealous-cult.md)
 
-**References**
-- **Zealous Cult** - [delve/oracles/threat/zealous_cult](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 91-100
 

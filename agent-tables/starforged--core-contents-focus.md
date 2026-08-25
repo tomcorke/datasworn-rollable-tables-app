@@ -5,7 +5,7 @@
 - **Source data:** `src/data/starforged-core.yaml`
 ## Description
 
-When you [Ask the Oracle](id:starforged/moves/fate/ask_the_oracle) to help define the nature of a location, discovery, or encounter, roll for a [Descriptor](id:starforged/oracles/core/descriptor) and a [Focus](id:starforged/oracles/core/focus) for an adjective/noun prompt.
+When you [Ask the Oracle](#unresolved-reference) *(unresolved in bundled data)* to help define the nature of a location, discovery, or encounter, roll for a [Descriptor](starforged--core-contents-descriptor.md) and a [Focus](starforged--core-contents-focus.md) for an adjective/noun prompt.
 ## Results
 ### 1-1
 

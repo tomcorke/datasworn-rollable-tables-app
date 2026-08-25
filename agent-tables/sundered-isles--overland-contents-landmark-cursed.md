@@ -114,17 +114,13 @@ Titanic machine
 
 ### 85-89
 
-Foreboding [Cave](id:sundered_isles/collections/oracles/caves)
+Foreboding [Cave](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Cave** - [sundered_isles/collections/oracles/caves](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 90-94
 
-Grounded [Shipwreck](id:sundered_isles/collections/oracles/shipwrecks)
+Grounded [Shipwreck](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Shipwreck** - [sundered_isles/collections/oracles/shipwrecks](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 95-100
 

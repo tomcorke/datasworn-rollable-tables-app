@@ -29,12 +29,12 @@ Awash / partially submerged
 
 ### 1-80
 
-No result text supplied.
+Stranded on dry ground or rocks
 
 
 ### 81-100
 
-No result text supplied.
+Perched on improbably high ground
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

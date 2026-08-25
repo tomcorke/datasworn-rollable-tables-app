@@ -7,72 +7,69 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-8
 
 Conspicuous patrols or surveillance
 
 
-### 2
+### 9-16
 
 Crews at work
 
 
-### 3
+### 17-24
 
 Display or monument honors a notable cultural event
 
 
-### 4
+### 25-32
 
 Emergency teams responding to an incident or crisis
 
 
-### 5
+### 33-40
 
 Families gathering or children playing
 
 
-### 6
+### 41-48
 
 Festival, celebration, or observance
 
 
-### 7
+### 49-56
 
 Fight breaks out
 
 
-### 8
+### 57-64
 
 Notable figure stands out from the crowd
 
 
-### 9
+### 65-72
 
 Protest or strike
 
 
-### 10
+### 73-80
 
 Unrepaired damage
 
 
-### 11
+### 81-88
 
 Unusually empty or quiet area
 
 
-### 12
+### 89-96
 
 Vendor or merchant hawking their wares
 
 
 ### 97-100
 
-[Descriptor](id:starforged/oracles/core/descriptor) + [Focus](id:starforged/oracles/core/focus)
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
-**References**
-- **Descriptor** - [starforged/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [starforged/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

@@ -9,32 +9,38 @@ No description supplied.
 ## Results
 ### 1-15
 
-No result text supplied.
+Devastated
+Ravaged by natural forces or razed by despoilers
 
 
 ### 16-30
 
-No result text supplied.
+Dying
+Withered woodlands, blighted scrub, or sickly marshes
 
 
 ### 31-40
 
-No result text supplied.
+Desolate
+Arid wastes
 
 
 ### 41-50
 
-No result text supplied.
+Sparse
+Thin woodlands, bleak scrub, or stagnant marshes
 
 
 ### 51-90
 
-No result text supplied.
+Lush
+Verdant woodlands, dense jungles, or thriving swamps
 
 
 ### 91-100
 
-No result text supplied.
+Primeval
+Ancient jungles or impenetrable swamps
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

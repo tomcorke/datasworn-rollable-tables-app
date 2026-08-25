@@ -44,9 +44,7 @@ Transport and escorts
 
 ### 91-100
 
-[Starship Mission](id:starforged/oracles/starships/mission)
+[Starship Mission](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Starship Mission** - [starforged/oracles/starships/mission](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

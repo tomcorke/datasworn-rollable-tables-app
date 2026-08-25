@@ -8,102 +8,102 @@
 
 Hilly or mountainous terrain
 ## Results
-### 1
+### 1-5
 
 Bubbling mountain spring
 
 
-### 2
+### 6-10
 
 Cavernous opening in cliff face
 
 
-### 3
+### 11-15
 
 Constructed bridge over a wide chasm
 
 
-### 4
+### 16-20
 
 Crumbling watchtower atop an overlook
 
 
-### 5
+### 21-25
 
 Fallen tree or stone arch over a gorge
 
 
-### 6
+### 26-30
 
 Intricately stacked cairns
 
 
-### 7
+### 31-35
 
 Mist-shrouded ravine
 
 
-### 8
+### 36-40
 
 Narrow ridgeline trail
 
 
-### 9
+### 41-45
 
 Ornate stone carvings
 
 
-### 10
+### 46-50
 
 River crashing through a narrow gorge
 
 
-### 11
+### 51-55
 
 Scars of a recent landslide
 
 
-### 12
+### 56-60
 
 Sheer precipice
 
 
-### 13
+### 61-65
 
 Sheltered highland lake
 
 
-### 14
+### 66-70
 
 Steep, rocky slope
 
 
-### 15
+### 71-75
 
 Stone stairs carved into a cliff face
 
 
-### 16
+### 76-80
 
 Thundering waterfall
 
 
-### 17
+### 81-85
 
 Towering rock spires
 
 
-### 18
+### 86-90
 
 Vantage point with an expansive view
 
 
-### 19
+### 91-95
 
 Veins of ore
 
 
-### 20
+### 96-100
 
 Winding footpath
 

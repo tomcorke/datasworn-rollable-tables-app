@@ -9,10 +9,8 @@ If you’re not sure of a treasure’s location—such as when chasing down a ru
 ## Results
 ### 1-25
 
-Borne on a [Sailing Ship](id:sundered_isles/collections/oracles/sailing_ships)
+Borne on a [Sailing Ship](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Sailing Ship** - [sundered_isles/collections/oracles/sailing_ships](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 26-50
 
@@ -21,10 +19,8 @@ Lost with a > Shipwreck; pg XX
 
 ### 51-70
 
-Hidden on an [Island](id:sundered_isles/collections/oracles/islands)
+Hidden on an [Island](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Island** - [sundered_isles/collections/oracles/islands](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-85
 
@@ -33,10 +29,8 @@ Sheltered in a > Cave; pg XX
 
 ### 86-95
 
-Secured in a [Settlement](id:sundered_isles/collections/oracles/settlements)
+Secured in a [Settlement](#unresolved-reference) *(unresolved in bundled data)*
 
-**References**
-- **Settlement** - [sundered_isles/collections/oracles/settlements](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 96-100
 

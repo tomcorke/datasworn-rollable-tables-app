@@ -9,17 +9,17 @@ Remote Seas
 ## Results
 ### 1-25
 
-No result text supplied.
+Known faction
 
 
 ### 26-60
 
-No result text supplied.
+Unknown faction
 
 
 ### 61-100
 
-No result text supplied.
+Independent
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

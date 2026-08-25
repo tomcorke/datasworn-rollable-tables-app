@@ -7,56 +7,54 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-11
 
 Fiery world-spanning chasms
 
 
-### 2
+### 12-22
 
 Glowing rivers of lava
 
 
-### 3
+### 23-33
 
 Lightning-wracked ash clouds
 
 
-### 4
+### 34-44
 
 Magma seas
 
 
-### 5
+### 45-55
 
 Massive supervolcano
 
 
-### 6
+### 56-66
 
 Once verdant terrain
 
 
-### 7
+### 67-77
 
 Towering mountain ranges
 
 
-### 8
+### 78-88
 
 World-spanning fissures
 
 
 ### 89-98
 
-No result text supplied.
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
 
 ### 99-100
 
-[Precursor Vault](id:starforged/collections/oracles/vaults) (orbital)
+[Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (orbital)
 
-**References**
-- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

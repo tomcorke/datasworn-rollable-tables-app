@@ -9,27 +9,27 @@ No description supplied.
 ## Results
 ### 1-65
 
-No result text supplied.
+None
 
 
 ### 66-75
 
-No result text supplied.
+Orbital settlement
 
 
 ### 76-92
 
-No result text supplied.
+Planetside settlement
 
 
 ### 93-97
 
-No result text supplied.
+Multiple settlements
 
 
 ### 98-100
 
-No result text supplied.
+Settlements in conflict
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

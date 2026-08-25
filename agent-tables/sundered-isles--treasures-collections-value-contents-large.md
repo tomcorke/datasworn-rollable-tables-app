@@ -9,17 +9,20 @@ No description supplied.
 ## Results
 ### 1-30
 
-No result text supplied.
+Trifle
+One [Precious Item](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 31-99
 
-No result text supplied.
+Stash
+Roll the action die and reveal that many [Precious Items](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 100-100
 
-No result text supplied.
+Trove
+Bountiful riches
 
 
 ### 4

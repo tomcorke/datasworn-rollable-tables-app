@@ -7,72 +7,69 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-8
 
 Captives or prisoners
 
 
-### 2
+### 9-16
 
 Control area or terminal
 
 
-### 3
+### 17-24
 
 Empty or inactive area
 
 
-### 4
+### 25-32
 
 Enemy forces assembled for an event
 
 
-### 5
+### 33-40
 
 Enemy forces off-duty or at leisure
 
 
-### 6
+### 41-48
 
 Enemy forces on guard
 
 
-### 7
+### 49-56
 
 Enemy forces on patrol
 
 
-### 8
+### 57-64
 
 Enemy forces transporting supplies or equipment
 
 
-### 9
+### 65-72
 
 Enemy leader makes an inspection
 
 
-### 10
+### 73-80
 
 Prototype technology or equipment
 
 
-### 11
+### 81-88
 
 Robotic assistant or watchful AI
 
 
-### 12
+### 89-96
 
 Support personnel at work
 
 
 ### 97-100
 
-[Descriptor](id:starforged/oracles/core/descriptor) + [Focus](id:starforged/oracles/core/focus)
+[Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
-**References**
-- **Descriptor** - [starforged/oracles/core/descriptor](#unresolved-reference) *(unresolved in bundled data)*
-- **Focus** - [starforged/oracles/core/focus](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

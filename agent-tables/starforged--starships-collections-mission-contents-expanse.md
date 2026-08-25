@@ -9,161 +9,158 @@ No description supplied.
 ## Results
 ### 1-2
 
-No result text supplied.
+Blockade a location
 
 
 ### 3-4
 
-No result text supplied.
+Break a blockade
 
 
 ### 5-8
 
-No result text supplied.
+Collect a resource
 
 
 ### 9-10
 
-No result text supplied.
+Command others
 
 
 ### 11-12
 
-No result text supplied.
+Conduct diplomacy
 
 
 ### 13-14
 
-No result text supplied.
+Conduct espionage
 
 
 ### 15-16
 
-No result text supplied.
+Conduct piracy
 
 
 ### 17-22
 
-No result text supplied.
+Conduct research
 
 
 ### 23-25
 
-No result text supplied.
+Defend against an attack
 
 
 ### 26-29
 
-No result text supplied.
+Deliver messages or data
 
 
 ### 30-35
 
-No result text supplied.
+Establish a settlement
 
 
 ### 36-39
 
-No result text supplied.
+Evacuate a location
 
 
 ### 40-45
 
-No result text supplied.
+Explore a region
 
 
 ### 46-47
 
-No result text supplied.
+Hold prisoners
 
 
 ### 48-49
 
-No result text supplied.
+Hunt down another ship
 
 
 ### 50-51
 
-No result text supplied.
+Launch an attack
 
 
 ### 52-53
 
-No result text supplied.
+Patrol an area
 
 
 ### 54-55
 
-No result text supplied.
+Provide medical aid
 
 
 ### 56-57
 
-No result text supplied.
+Provide repairs
 
 
 ### 58-61
 
-No result text supplied.
+Provide shelter
 
 
 ### 62-63
 
-No result text supplied.
+Quarantine a danger
 
 
 ### 64-65
 
-No result text supplied.
+Raid a settlement
 
 
 ### 66-69
 
-No result text supplied.
+Resupply a settlement
 
 
 ### 70-71
 
-No result text supplied.
+Retrieve salvage
 
 
 ### 72-73
 
-No result text supplied.
+Search and rescue
 
 
 ### 74-75
 
-No result text supplied.
+Smuggle cargo
 
 
 ### 76-77
 
-No result text supplied.
+Survey a site
 
 
 ### 78-79
 
-No result text supplied.
+Test a technology
 
 
 ### 80-83
 
-No result text supplied.
+Transport cargo
 
 
 ### 84-85
 
-No result text supplied.
+Transport passengers
 
 
 ### 86-90
 
-[Action](id:starforged/oracles/core/action) + [Theme](id:starforged/oracles/core/theme)
+[Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
-**References**
-- **Action** - [starforged/oracles/core/action](#unresolved-reference) *(unresolved in bundled data)*
-- **Theme** - [starforged/oracles/core/theme](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 91-100
 

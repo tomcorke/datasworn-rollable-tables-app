@@ -7,27 +7,27 @@
 
 No description supplied.
 ## Results
-### 1
+### 1-20
 
 Encounter with a benign spirit or being
 
 
-### 2
+### 21-40
 
 Helpful vision of past events
 
 
-### 3
+### 41-60
 
 Message or clue offers insight into the nature of this haunting
 
 
-### 4
+### 61-80
 
 Secret area or path is revealed
 
 
-### 5
+### 81-100
 
 Useful or interesting artifact or device
 
