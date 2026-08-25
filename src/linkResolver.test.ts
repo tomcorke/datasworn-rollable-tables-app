@@ -44,6 +44,14 @@ describe("bundled Datasworn links", () => {
         .join("\n"),
     ).toEqual([]);
   });
+  it("prefers the named table over another table in the same source", () => {
+    const target = resolveTableLink(
+      "sundered_isles/oracles/treasures/precious_item",
+      tables,
+    );
+    expect(target?.name).toBe("Precious Items");
+    expect(target?.label).toBe("Treasures / Precious Items");
+  });
   it("does not cross-resolve rulesets with the same short link", () => {
     const sundered = {
       id: "sailing_ships/contents/size",

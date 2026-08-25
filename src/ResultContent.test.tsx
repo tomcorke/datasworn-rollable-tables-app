@@ -28,6 +28,9 @@ describe("ResultContent", () => {
     expect(markup).toContain("First\nSecond ");
     expect(markup).toContain("Source-book lookup");
     expect(markup).toContain("page unknown");
+    expect(markup).toMatch(
+      /book-reference-mark" aria-hidden="true">↗<\/span><span class="book-reference-content">/,
+    );
   });
 
   it("renders compact references without help text", () => {
@@ -40,6 +43,7 @@ describe("ResultContent", () => {
       />,
     );
     expect(markup).toContain("book-reference-compact");
+    expect(markup).toContain('book-reference-mark" aria-hidden="true"');
     expect(markup).not.toContain("page unknown");
   });
 });

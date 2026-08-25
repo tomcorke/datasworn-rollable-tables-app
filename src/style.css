@@ -333,21 +333,34 @@ a {
   color: var(--warning-text);
 }
 .book-reference {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 3px;
-  margin: 0 3px;
-  padding: 6px 9px;
+  display: inline-grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0 0.35em;
+  max-width: 100%;
+  height: auto;
+  margin: 0 2px;
+  padding: 1px 6px;
   border: 1px solid var(--border);
   border-radius: 4px;
   background: var(--reference-surface);
   color: var(--reference-text);
-  font:
-    500 0.8em "DM Mono",
-    monospace;
-  letter-spacing: 0.01em;
+  font: inherit;
+  line-height: inherit;
   vertical-align: middle;
   text-align: left;
+}
+.book-reference-mark {
+  grid-column: 1;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.book-reference-content {
+  display: inline-flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
+  overflow-wrap: anywhere;
 }
 .book-reference-label {
   font-size: 0.72em;
@@ -361,22 +374,6 @@ a {
     sans-serif;
   color: var(--text-muted);
   white-space: normal;
-}
-.book-reference-compact {
-  display: inline-block;
-  padding: 1px 5px;
-  font-size: 0.75em;
-  vertical-align: 0.08em;
-}
-.book-reference-compact::before {
-  content: none;
-}
-.book-reference::before {
-  content: "↗ ";
-  color: var(--reference-text);
-  position: absolute;
-  margin-left: -7px;
-  margin-top: -1px;
 }
 .history {
   min-width: 0;

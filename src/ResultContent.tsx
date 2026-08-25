@@ -17,21 +17,26 @@ export function ResultContent({
 }: ResultContentProps) {
   return resultParts(row).map((part, index) => {
     if (part.type === "reference")
-      return compactReferences ? (
+      return (
         <span
-          className="book-reference book-reference-compact"
+          className={`book-reference${compactReferences ? " book-reference-compact" : ""}`}
           key={index}
-          title="Source-book reference"
+          title={compactReferences ? "Source-book reference" : undefined}
         >
-          {part.value}
-        </span>
-      ) : (
-        <span className="book-reference" key={index}>
-          <span className="book-reference-label">Source-book lookup</span>
-          <span>{part.value}</span>
-          <span className="book-reference-help">
-            {referenceExplanation(part.value)}
+          <span className="book-reference-mark" aria-hidden="true">
+            ↗
           </span>
+          {compactReferences ? (
+            part.value
+          ) : (
+            <span className="book-reference-content">
+              <span className="book-reference-label">Source-book lookup</span>
+              <span>{part.value}</span>
+              <span className="book-reference-help">
+                {referenceExplanation(part.value)}
+              </span>
+            </span>
+          )}
         </span>
       );
     if (part.type === "link") {

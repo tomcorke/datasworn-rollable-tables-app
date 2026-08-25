@@ -21,6 +21,7 @@ export function resolveTableLink(
   const slugs = parts.slice(-2).map(normalise);
   return (
     candidates.find((t) => t.id === id) ||
+    candidates.find((t) => slugs.includes(normalise(t.tableId))) ||
     candidates.find((t) =>
       slugs.some((slug) => {
         const source = normalise(t.sourceKey);
@@ -29,7 +30,6 @@ export function resolveTableLink(
         );
       }),
     ) ||
-    candidates.find((t) => slugs.includes(normalise(t.tableId))) ||
     candidates.find((t) =>
       slugs.some((slug) =>
         t.id.split("/").some((part) => normalise(part) === slug),
