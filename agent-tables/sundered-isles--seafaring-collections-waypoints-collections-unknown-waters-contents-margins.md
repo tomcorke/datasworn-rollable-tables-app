@@ -15,37 +15,44 @@ __Land, ho!__
 
 ### 16-25
 
-No result text supplied.
+__Sails, ho!__
+  [Sailing Ships](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 26-40
 
-No result text supplied.
+__Changing weather__
+  [Weather](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 41-55
 
-No result text supplied.
+__Instance (choose one)__
+  * [Seafaring Details](#unresolved-reference) *(unresolved in bundled data)*
+  * [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
 
 ### 56-65
 
-No result text supplied.
+__Lost souls__
+  [Shipwrecks](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 66-75
 
-No result text supplied.
+__Relic of the past__
+  [Ruins](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 76-90
 
-No result text supplied.
+__Character focus__
+  [Interlude Scene](#unresolved-reference) *(unresolved in bundled data)*
 
 
 ### 91-100
 
-No result text supplied.
+Roll twice
 
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

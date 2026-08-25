@@ -89,7 +89,19 @@ function merged(value: AnyRecord): AnyRecord {
     : inherited
       ? [inherited]
       : [];
-  return Object.assign({}, ...bases, value);
+  const result: AnyRecord = {};
+  for (const base of bases) {
+    if (base && typeof base === "object" && !Array.isArray(base))
+      Object.assign(result, merged(base as AnyRecord));
+  }
+  for (const [key, child] of Object.entries(value)) {
+    if (key === "<<") continue;
+    result[key] =
+      child && typeof child === "object" && !Array.isArray(child)
+        ? merged(child as AnyRecord)
+        : child;
+  }
+  return result;
 }
 const byId = new Map<string, Table>();
 for (const table of tables) {
