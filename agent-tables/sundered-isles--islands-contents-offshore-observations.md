@@ -202,20 +202,29 @@ Whales congregate in coastal waters
 
 [Ship](#unresolved-reference) *(unresolved in bundled data)* (at anchor)
 
+**References**
+- **Ship** - [sundered_isles/collections/oracles/ship](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 81-86
 
 [Wreck](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Wreck** - [sundered_isles/collections/oracles/wreck](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 87-90
 
 [Ruins](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Ruins** - [sundered_isles/collections/oracles/ruins](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 91-100
 
 [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

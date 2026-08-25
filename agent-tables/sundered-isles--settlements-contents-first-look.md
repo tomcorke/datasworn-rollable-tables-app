@@ -221,10 +221,15 @@ Visited by large fleet or caravan
 
 Built among [Ruins](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Ruins** - [sundered_isles/collections/oracles/ruins](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 91-100
 
 [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

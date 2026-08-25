@@ -196,5 +196,8 @@ Unexpected [Mission]
 
 [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

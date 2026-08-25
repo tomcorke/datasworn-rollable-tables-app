@@ -16,5 +16,7 @@ Fair Weather
 
 [Foul Weather](sundered-isles--weather-contents-foul.md)
 
+**References**
+- **Foul Weather** - [sundered_isles/oracles/weather/foul](sundered-isles--weather-contents-foul.md)
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

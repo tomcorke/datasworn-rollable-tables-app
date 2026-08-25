@@ -12,12 +12,16 @@ No description supplied.
 __Sails, ho!__
   [Sailing Ships](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Sailing Ships** - [sundered_isles/collections/oracles/ships](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 6-25
 
 __Changing weather__
   [Weather](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Weather** - [sundered_isles/collections/oracles/weather](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 26-45
 
@@ -25,24 +29,34 @@ __Instance (choose one)__
   * [Seafaring Details](#unresolved-reference) *(unresolved in bundled data)*
   * [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Seafaring Details** - [sundered_isles/oracles/seafaring/details](#unresolved-reference) *(unresolved in bundled data)*
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 
 ### 46-55
 
 __Lost souls__
   [Shipwrecks](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Shipwrecks** - [sundered_isles/collections/oracles/shipwrecks](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 56-70
 
 __Relic of the past__
   [Ruins](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Ruins** - [sundered_isles/collections/oracles/ruins](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-85
 
 __Character focus__
   [Interlude Scene](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Interlude Scene** - [sundered_isles/oracles/misc/interlude_scene](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 86-100
 

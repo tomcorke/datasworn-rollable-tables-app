@@ -221,6 +221,9 @@ Wine
 
 [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 
 ### 100-100
 

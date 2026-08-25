@@ -171,5 +171,8 @@ Vulnerable to attack or aggression
 
 [Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
+**References**
+- **Action** - [starforged/oracles/core/action](starforged--core-contents-action.md)
+- **Theme** - [starforged/oracles/core/theme](starforged--core-contents-theme.md)
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

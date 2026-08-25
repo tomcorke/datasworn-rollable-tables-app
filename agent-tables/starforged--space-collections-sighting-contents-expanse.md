@@ -11,41 +11,58 @@ No description supplied.
 
 [Stellar Object](starforged--space-contents-stellar-object.md)
 
+**References**
+- **Stellar Object** - [starforged/oracles/space/stellar_object](starforged--space-contents-stellar-object.md)
 
 ### 16-35
 
 [Planet](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Planet** - [starforged/collections/oracles/planets](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 36-37
 
 [Settlement](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Settlement** - [starforged/collections/oracles/settlements](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 38-39
 
 [Starship](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Starship** - [starforged/collections/oracles/starships](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 40-41
 
 [Derelict](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Derelict** - [starforged/collections/oracles/derelicts](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 42-45
 
 [Precursor Vault](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 46-49
 
 [Creature](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Creature** - [starforged/collections/oracles/creatures](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 50-56
 
 [Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [starforged/oracles/core/descriptor](starforged--core-contents-descriptor.md)
+- **Focus** - [starforged/oracles/core/focus](starforged--core-contents-focus.md)
 
 ### 57-61
 

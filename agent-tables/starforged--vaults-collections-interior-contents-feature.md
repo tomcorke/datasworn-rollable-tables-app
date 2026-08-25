@@ -171,11 +171,16 @@ Vertical shaft
 
 Transition into the [Sanctum](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Sanctum** - [starforged/oracles/vaults/sanctum](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 91-95
 
 [Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [starforged/oracles/core/descriptor](starforged--core-contents-descriptor.md)
+- **Focus** - [starforged/oracles/core/focus](starforged--core-contents-focus.md)
 
 ### 96-100
 

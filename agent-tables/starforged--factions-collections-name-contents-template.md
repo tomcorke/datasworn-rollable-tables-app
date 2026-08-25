@@ -13,20 +13,34 @@ An alternative approach to generating a faction from scratch is to start with a 
 
 [Legacy](#unresolved-reference) *(unresolved in bundled data)* [Affiliation](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Legacy** - [starforged/oracles/factions/name/legacy](#unresolved-reference) *(unresolved in bundled data)*
+- **Affiliation** - [starforged/oracles/factions/name/affiliation](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 41-55
 
 [Legacy](#unresolved-reference) *(unresolved in bundled data)* [Identity](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Legacy** - [starforged/oracles/factions/name/legacy](#unresolved-reference) *(unresolved in bundled data)*
+- **Identity** - [starforged/oracles/factions/name/identity](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 56-70
 
 [Identity](#unresolved-reference) *(unresolved in bundled data)* *of the* [Legacy](#unresolved-reference) *(unresolved in bundled data)* [Affiliation](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Identity** - [starforged/oracles/factions/name/identity](#unresolved-reference) *(unresolved in bundled data)*
+- **Legacy** - [starforged/oracles/factions/name/legacy](#unresolved-reference) *(unresolved in bundled data)*
+- **Affiliation** - [starforged/oracles/factions/name/affiliation](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-100
 
 [Affiliation](#unresolved-reference) *(unresolved in bundled data)* *of the* [Legacy](#unresolved-reference) *(unresolved in bundled data)* [Identity](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Affiliation** - [starforged/oracles/factions/name/affiliation](#unresolved-reference) *(unresolved in bundled data)*
+- **Legacy** - [starforged/oracles/factions/name/legacy](#unresolved-reference) *(unresolved in bundled data)*
+- **Identity** - [starforged/oracles/factions/name/identity](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

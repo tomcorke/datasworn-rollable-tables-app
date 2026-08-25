@@ -161,6 +161,9 @@ Transport passengers
 
 [Action](starforged--core-contents-action.md) + [Theme](starforged--core-contents-theme.md)
 
+**References**
+- **Action** - [starforged/oracles/core/action](starforged--core-contents-action.md)
+- **Theme** - [starforged/oracles/core/theme](starforged--core-contents-theme.md)
 
 ### 91-100
 

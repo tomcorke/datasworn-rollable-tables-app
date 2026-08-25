@@ -76,10 +76,15 @@ Wind-carved ice formations
 
 [Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [starforged/oracles/core/descriptor](starforged--core-contents-descriptor.md)
+- **Focus** - [starforged/oracles/core/focus](starforged--core-contents-focus.md)
 
 ### 99-100
 
 [Precursor Vault](#unresolved-reference) *(unresolved in bundled data)* (planetside)
 
+**References**
+- **Precursor Vault** - [starforged/collections/oracles/vaults](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

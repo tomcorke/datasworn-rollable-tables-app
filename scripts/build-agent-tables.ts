@@ -168,8 +168,9 @@ for (const table of sorted) {
   );
   const rows = (table.rows as AnyRecord[])
     .map((row, index) => {
-      const rowResult = linkedText(result(row));
-      const references = referenceLines(rowResult);
+      const rawResult = result(row);
+      const references = referenceLines(rawResult);
+      const rowResult = linkedText(rawResult);
       return [
         `### ${range(row, index)}`,
         "",

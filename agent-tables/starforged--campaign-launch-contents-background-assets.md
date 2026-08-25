@@ -12,119 +12,179 @@ If you want some direction for your starting paths, roll or pick from the table 
 Battlefield Medic
 [Healer](#unresolved-reference) *(unresolved in bundled data)*; [Veteran](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Healer** - [starforged/assets/path/healer](#unresolved-reference) *(unresolved in bundled data)*
+- **Veteran** - [starforged/assets/path/veteran](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 6-10
 
 Delegate
 [Bannersworn](#unresolved-reference) *(unresolved in bundled data)*; [Diplomat](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Bannersworn** - [starforged/assets/path/bannersworn](#unresolved-reference) *(unresolved in bundled data)*
+- **Diplomat** - [starforged/assets/path/diplomat](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 11-15
 
 Exobiologist
 [Lore Hunter](#unresolved-reference) *(unresolved in bundled data)*; [Naturalist](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Lore Hunter** - [starforged/assets/path/lore_hunter](#unresolved-reference) *(unresolved in bundled data)*
+- **Naturalist** - [starforged/assets/path/naturalist](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 16-20
 
 Far Trader
 [Navigator](#unresolved-reference) *(unresolved in bundled data)*; [Trader](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Navigator** - [starforged/assets/path/navigator](#unresolved-reference) *(unresolved in bundled data)*
+- **Trader** - [starforged/assets/path/trader](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 21-25
 
 Fugitive Hunter
 [Armored](#unresolved-reference) *(unresolved in bundled data)*; [Bounty Hunter](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Armored** - [starforged/assets/path/armored](#unresolved-reference) *(unresolved in bundled data)*
+- **Bounty Hunter** - [starforged/assets/path/bounty_hunter](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 26-30
 
 Hacker
 [Infiltrator](#unresolved-reference) *(unresolved in bundled data)*; [Tech](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Infiltrator** - [starforged/assets/path/infiltrator](#unresolved-reference) *(unresolved in bundled data)*
+- **Tech** - [starforged/assets/path/tech](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 31-35
 
 Hotshot Pilot
 [Ace](#unresolved-reference) *(unresolved in bundled data)*; [Navigator](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Ace** - [starforged/assets/path/ace](#unresolved-reference) *(unresolved in bundled data)*
+- **Navigator** - [starforged/assets/path/navigator](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 36-40
 
 Interstellar Scout
 [Explorer](#unresolved-reference) *(unresolved in bundled data)*; [Voidborn](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Explorer** - [starforged/assets/path/explorer](#unresolved-reference) *(unresolved in bundled data)*
+- **Voidborn** - [starforged/assets/path/voidborn](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 41-45
 
 Monster Hunter
 [Gunner](#unresolved-reference) *(unresolved in bundled data)*; [Slayer](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Gunner** - [starforged/assets/path/gunner](#unresolved-reference) *(unresolved in bundled data)*
+- **Slayer** - [starforged/assets/path/slayer](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 46-50
 
 Occultist
 [Outcast](#unresolved-reference) *(unresolved in bundled data)*; [Shade](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Outcast** - [starforged/assets/path/outcast](#unresolved-reference) *(unresolved in bundled data)*
+- **Shade** - [starforged/assets/path/shade](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 51-55
 
 Operative
 [Infiltrator](#unresolved-reference) *(unresolved in bundled data)*; [Blademaster](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Infiltrator** - [starforged/assets/path/infiltrator](#unresolved-reference) *(unresolved in bundled data)*
+- **Blademaster** - [starforged/assets/path/blademaster](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 56-60
 
 Outlaw
 [Fugitive](#unresolved-reference) *(unresolved in bundled data)*; [Gunslinger](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Fugitive** - [starforged/assets/path/fugitive](#unresolved-reference) *(unresolved in bundled data)*
+- **Gunslinger** - [starforged/assets/path/gunslinger](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 61-65
 
 Private Investigator
 [Brawler](#unresolved-reference) *(unresolved in bundled data)*; [Sleuth](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Brawler** - [starforged/assets/path/brawler](#unresolved-reference) *(unresolved in bundled data)*
+- **Sleuth** - [starforged/assets/path/sleuth](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 66-70
 
 Prophet
 [Devotant](#unresolved-reference) *(unresolved in bundled data)*; [Seer](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Devotant** - [starforged/assets/path/devotant](#unresolved-reference) *(unresolved in bundled data)*
+- **Seer** - [starforged/assets/path/seer](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-75
 
 Psionicist
 [Kinetic](#unresolved-reference) *(unresolved in bundled data)*; [Vestige](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Kinetic** - [starforged/assets/path/kinetic](#unresolved-reference) *(unresolved in bundled data)*
+- **Vestige** - [starforged/assets/path/vestige](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 76-80
 
 Smuggler
 [Courier](#unresolved-reference) *(unresolved in bundled data)*; [Scoundrel](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Courier** - [starforged/assets/path/courier](#unresolved-reference) *(unresolved in bundled data)*
+- **Scoundrel** - [starforged/assets/path/scoundrel](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 81-85
 
 Spiritualist
 [Haunted](#unresolved-reference) *(unresolved in bundled data)*; [Empath](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Haunted** - [starforged/assets/path/haunted](#unresolved-reference) *(unresolved in bundled data)*
+- **Empath** - [starforged/assets/path/empath](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 86-90
 
 Starship Engineer
 [Gearhead](#unresolved-reference) *(unresolved in bundled data)*; [Tech](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Gearhead** - [starforged/assets/path/gearhead](#unresolved-reference) *(unresolved in bundled data)*
+- **Tech** - [starforged/assets/path/tech](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 91-95
 
 Supersoldier
 [Augmented](#unresolved-reference) *(unresolved in bundled data)*; [Mercenary](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Augmented** - [starforged/assets/path/augmented](#unresolved-reference) *(unresolved in bundled data)*
+- **Mercenary** - [starforged/assets/path/mercenary](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 96-100
 
 Tomb Raider
 [Scavenger](#unresolved-reference) *(unresolved in bundled data)*; [Scoundrel](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Scavenger** - [starforged/assets/path/scavenger](#unresolved-reference) *(unresolved in bundled data)*
+- **Scoundrel** - [starforged/assets/path/scoundrel](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

@@ -246,5 +246,8 @@ Uphold or enforce laws
 
 [Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
+**References**
+- **Action** - [sundered_isles/oracles/core/action](sundered-isles--core-contents-action.md)
+- **Theme** - [sundered_isles/oracles/core/theme](sundered-isles--core-contents-theme.md)
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

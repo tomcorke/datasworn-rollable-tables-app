@@ -172,6 +172,9 @@ You are lost or off course
 
 [Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
+**References**
+- **Action** - [sundered_isles/oracles/core/action](sundered-isles--core-contents-action.md)
+- **Theme** - [sundered_isles/oracles/core/theme](sundered-isles--core-contents-theme.md)
 
 ### 100-100
 

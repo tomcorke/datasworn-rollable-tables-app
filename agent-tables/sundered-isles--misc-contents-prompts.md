@@ -11,25 +11,41 @@ Use this table to choose a structured prompt from among the Core oracles (pages 
 
 [Action](sundered-isles--core-contents-action.md) + [Theme](sundered-isles--core-contents-theme.md)
 
+**References**
+- **Action** - [sundered_isles/oracles/core/action](sundered-isles--core-contents-action.md)
+- **Theme** - [sundered_isles/oracles/core/theme](sundered-isles--core-contents-theme.md)
 
 ### 21-40
 
 [Action](sundered-isles--core-contents-action.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Action** - [sundered_isles/oracles/core/action](sundered-isles--core-contents-action.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 
 ### 41-60
 
 [Descriptor](sundered-isles--core-contents-descriptor.md) + [Theme](sundered-isles--core-contents-theme.md)
 
+**References**
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Theme** - [sundered_isles/oracles/core/theme](sundered-isles--core-contents-theme.md)
 
 ### 61-80
 
 [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 
 ### 81-100
 
 [Action](sundered-isles--core-contents-action.md) + [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Action** - [sundered_isles/oracles/core/action](sundered-isles--core-contents-action.md)
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

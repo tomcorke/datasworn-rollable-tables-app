@@ -18,12 +18,16 @@ Feature of the landscape
 Changing landscape
   [Overland Regions](sundered-isles--overland-contents-regions.md)
 
+**References**
+- **Overland Regions** - [sundered_isles/oracles/overland/regions](sundered-isles--overland-contents-regions.md)
 
 ### 31-35
 
 Changing weather
   [Weather](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Weather** - [sundered_isles/collections/oracles/weather](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 36-55
 
@@ -31,24 +35,34 @@ Instance (choose one)
   * [Overland Details](sundered-isles--overland-contents-details.md)
   * [Descriptor](sundered-isles--core-contents-descriptor.md) + [Focus](sundered-isles--core-contents-focus.md)
 
+**References**
+- **Overland Details** - [sundered_isles/oracles/overland/details](sundered-isles--overland-contents-details.md)
+- **Descriptor** - [sundered_isles/oracles/core/descriptor](sundered-isles--core-contents-descriptor.md)
+- **Focus** - [sundered_isles/oracles/core/focus](sundered-isles--core-contents-focus.md)
 
 ### 56-70
 
 Inland community
   [Settlements](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Settlements** - [sundered_isles/collections/oracles/settlements](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 71-75
 
 Relic of the past
   [Ruins](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Ruins** - [sundered_isles/collections/oracles/ruins](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 76-85
 
 Character focus
   [Interlude Scene](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Interlude Scene** - [sundered_isles/oracles/misc/interlude_scene](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 86-100
 

@@ -61,5 +61,7 @@ Destroyed
 
 [Derelict](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Derelict** - [starforged/collections/oracles/derelicts](#unresolved-reference) *(unresolved in bundled data)*
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.

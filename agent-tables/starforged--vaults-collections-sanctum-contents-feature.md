@@ -176,6 +176,9 @@ Whispering voices speak to you
 
 [Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [starforged/oracles/core/descriptor](starforged--core-contents-descriptor.md)
+- **Focus** - [starforged/oracles/core/focus](starforged--core-contents-focus.md)
 
 ### 96-100
 

@@ -120,6 +120,8 @@ Small attack craft
 Multipurpose
 [Starship Mission](#unresolved-reference) *(unresolved in bundled data)*
 
+**References**
+- **Starship Mission** - [starforged/oracles/starships/mission](#unresolved-reference) *(unresolved in bundled data)*
 
 ### 83-84
 
@@ -130,6 +132,8 @@ Unusual or unknown
 
 [Fleet](starforged--starships-contents-fleet.md)
 
+**References**
+- **Fleet** - [starforged/oracles/starships/fleet](starforged--starships-contents-fleet.md)
 
 ### 95-100
 

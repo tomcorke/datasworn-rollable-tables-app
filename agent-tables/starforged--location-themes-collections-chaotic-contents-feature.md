@@ -71,5 +71,8 @@ Visions of your past or future
 
 [Descriptor](starforged--core-contents-descriptor.md) + [Focus](starforged--core-contents-focus.md)
 
+**References**
+- **Descriptor** - [starforged/oracles/core/descriptor](starforged--core-contents-descriptor.md)
+- **Focus** - [starforged/oracles/core/focus](starforged--core-contents-focus.md)
 ## Reference syntax
 Links in results use Datasworn IDs. Resolved links point to the corresponding flat-directory file; unresolved links are labelled explicitly.
