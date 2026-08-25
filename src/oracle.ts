@@ -16,6 +16,7 @@ export type OracleTable = {
   name?: string;
   rows?: OracleRow[];
   ruleset?: string;
+  collectionKey?: string;
   sourceKey?: string;
   dice?: string;
   [key: string]: unknown;

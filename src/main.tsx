@@ -13,6 +13,7 @@ import { validateBundledData } from "./dataValidation";
 import type { OracleRow, OracleTable } from "./oracle";
 import { ResultContent } from "./ResultContent";
 import { resolveTableLink } from "./linkResolver";
+import { resolveSelection, selectionUrl } from "./urlState";
 import {
   getSavedTheme,
   getSystemTheme,
@@ -35,12 +36,16 @@ const parsedBundledData = Object.fromEntries(
   }),
 );
 
-const COLLECTIONS = {
+const COLLECTIONS: Record<string, string> = {
   classic: "Ironsworn",
   delve: "Delve",
   starforged: "Starforged",
   sundered_isles: "Sundered Isles",
 };
+const collectionKey = (savedCollection: string | null) =>
+  Object.keys(COLLECTIONS).find(
+    (key) => key === savedCollection || COLLECTIONS[key] === savedCollection,
+  );
 const fallback = {
   oracles: {
     overland: {
@@ -88,7 +93,7 @@ function App() {
   });
   const [selectedSource, setSelectedSource] = useState<string>();
   const [selectedCollection, setSelectedCollection] = useState<string>(
-    () => saved("datasworn.collection") ?? "Ironsworn",
+    () => collectionKey(saved("datasworn.collection")) ?? "classic",
   );
   const [favourites, setFavourites] = useState<string[]>(
     () => saved("datasworn.favourites") ?? [],
@@ -134,43 +139,61 @@ function App() {
       );
       return getTables(data).map((t) => ({
         ...t,
+        collectionKey: ruleset,
         sourceKey: key.slice(`${ruleset}-`.length),
         ruleset: COLLECTIONS[ruleset],
       }));
     });
     if (loaded.length) {
+      const selection = resolveSelection(
+        window.location.search,
+        loaded,
+        collectionKey(saved("datasworn.collection")),
+        saved("datasworn.selected"),
+      );
       setTables(loaded);
-      setSelectedSource(
-        loaded.find((table) => table.id === selected)?.sourceKey,
+      setSelectedCollection(selection.collectionKey);
+      setSelected(selection.table?.id ?? "");
+      setSelectedSource(selection.table?.sourceKey);
+      window.history.replaceState(
+        {
+          ...window.history.state,
+          collection: selection.collectionKey,
+          table: selection.table?.id,
+        },
+        "",
       );
     }
     setLoading(false);
   }, []);
   useEffect(() => save("datasworn.selected", selected), [selected]);
   useEffect(() => {
-    const onPopState = () => {
-      const id = new URLSearchParams(window.location.search).get("table");
-      if (!id) return;
-      const next = tables.find((item) => item.id === id);
-      if (!next) return;
-      setSelected(id);
-      setSelectedSource(next.sourceKey);
-      if (next.ruleset) setSelectedCollection(next.ruleset);
+    const onPopState = (event: PopStateEvent) => {
+      const selection = resolveSelection(
+        window.location.search,
+        tables,
+        event.state?.collection ?? selectedCollection,
+        event.state?.table ?? selected,
+      );
+      if (!selection.table) return;
+      setSelected(selection.table.id ?? "");
+      setSelectedSource(selection.table.sourceKey);
+      setSelectedCollection(selection.collectionKey);
       setLast(null);
     };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
-  }, [tables]);
+  }, [tables, selected, selectedCollection]);
   useEffect(
     () => save("datasworn.collection", selectedCollection),
     [selectedCollection],
   );
   useEffect(() => save("datasworn.favourites", favourites), [favourites]);
   const collections = [
-    ...new Set(tables.map((t) => t.ruleset).filter(Boolean)),
+    ...new Set(tables.map((t) => t.collectionKey).filter(Boolean)),
   ];
   const collectionTables = tables.filter(
-    (t) => t.ruleset === selectedCollection,
+    (t) => t.collectionKey === selectedCollection,
   );
   const matchingTables = searchTables(collectionTables, tableQuery);
   const table =
@@ -186,10 +209,14 @@ function App() {
   const isFavourite = table && favourites.includes(favouriteKey(table));
   const choose = (next: OracleTable) => {
     const id = next.id ?? "";
-    window.history.pushState({}, "", `?table=${encodeURIComponent(id)}`);
+    window.history.pushState(
+      { collection: next.collectionKey, table: id },
+      "",
+      selectionUrl(window.location.href, next.collectionKey ?? "", id),
+    );
     setSelected(id);
     setSelectedSource(next.sourceKey);
-    if (next.ruleset) setSelectedCollection(next.ruleset);
+    if (next.collectionKey) setSelectedCollection(next.collectionKey);
     setLast(null);
   };
   const toggleFavourite = (tableId: string) =>
@@ -201,7 +228,7 @@ function App() {
   const favouriteTables = favourites
     .map((id) => tables.find((t) => t.id === id))
     .filter(Boolean);
-  const collectionName = table?.ruleset ?? selectedCollection;
+  const collectionName = table?.collectionKey ?? selectedCollection;
   return (
     <div className={`layout${historyVisible ? "" : " history-hidden"}`}>
       <aside>
@@ -231,11 +258,11 @@ function App() {
               collection === selectedCollection ? "true" : undefined
             }
             onClick={() => {
-              const first = tables.find((t) => t.ruleset === collection);
+              const first = tables.find((t) => t.collectionKey === collection);
               if (first) choose(first);
             }}
           >
-            {collection}
+            {COLLECTIONS[collection] ?? collection}
           </button>
         ))}
       </aside>
@@ -263,13 +290,15 @@ function App() {
             <select
               value={collectionName}
               onChange={(e) => {
-                const first = tables.find((t) => t.ruleset === e.target.value);
+                const first = tables.find(
+                  (t) => t.collectionKey === e.target.value,
+                );
                 if (first) choose(first);
               }}
             >
               {collections.map((collection) => (
                 <option key={collection} value={collection}>
-                  {collection}
+                  {COLLECTIONS[collection] ?? collection}
                 </option>
               ))}
             </select>
