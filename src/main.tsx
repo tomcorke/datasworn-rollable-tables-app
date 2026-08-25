@@ -7,6 +7,7 @@ import {
   rowRange,
   favouriteKey,
   tableDisplayName,
+  searchTables,
 } from "./oracle";
 import { validateBundledData } from "./dataValidation";
 import type { OracleRow, OracleTable } from "./oracle";
@@ -94,6 +95,7 @@ function App() {
   );
   const [last, setLast] = useState<RollResult | null>(null);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [tableQuery, setTableQuery] = useState("");
   const [historyVisible, setHistoryVisible] = useState(true);
   const [loading, setLoading] = useState(true);
   const [explicitTheme, setExplicitTheme] = useState(
@@ -170,6 +172,7 @@ function App() {
   const collectionTables = tables.filter(
     (t) => t.ruleset === selectedCollection,
   );
+  const matchingTables = searchTables(collectionTables, tableQuery);
   const table =
     collectionTables.find(
       (t) =>
@@ -248,10 +251,10 @@ function App() {
             <span aria-hidden="true">{theme === "light" ? "☀" : "☾"}</span>
           </button>
           <p className="eyebrow">DATASWORN ORACLES</p>
-          <h1>Roll the unknown.</h1>
+          <h1>Datasworn Roll Tables</h1>
           <p className="intro">
             Browse oracle tables across Ironsworn, Starforged, and Sundered
-            Isles. Choose a table, roll, follow the prompt.
+            Isles.
           </p>
         </header>
         <section className="controls">
@@ -273,17 +276,50 @@ function App() {
           </label>
           <label>
             Table
+            <span className="table-search">
+              <input
+                type="search"
+                value={tableQuery}
+                placeholder="Search tables"
+                aria-label="Search tables in selected collection"
+                onChange={(event) => setTableQuery(event.target.value)}
+              />
+              <output className="match-count" aria-live="polite">
+                <span aria-hidden="true">
+                  {matchingTables.length === 1
+                    ? "1 match"
+                    : `${matchingTables.length} matches`}
+                </span>
+                <span className="sr-only">
+                  {matchingTables.length === 1
+                    ? "1 matching table"
+                    : `${matchingTables.length} matching tables`}
+                </span>
+              </output>
+            </span>
             <select
-              value={table?.id ?? ""}
+              aria-label="Table"
+              value={matchingTables.includes(table) ? (table?.id ?? "") : ""}
               onChange={(e) => {
-                const next = collectionTables.find(
+                const next = matchingTables.find(
                   (t) => t.id === e.target.value,
                 );
                 if (next) choose(next);
               }}
             >
-              {collectionTables.map((t) => (
-                <option key={t.id} value={t.id}>
+              {matchingTables.length ? (
+                !matchingTables.includes(table) && (
+                  <option value="" disabled>
+                    Choose a matching table
+                  </option>
+                )
+              ) : (
+                <option value="" disabled>
+                  No matching tables
+                </option>
+              )}
+              {matchingTables.map((t) => (
+                <option key={`${t.sourceKey}/${t.id}`} value={t.id}>
                   {tableDisplayName(t)}
                 </option>
               ))}
@@ -382,13 +418,42 @@ function App() {
       </main>
       {historyVisible && (
         <aside className="history" id="roll-history">
-          <p className="eyebrow">ROLL HISTORY</p>
+          <div className="history-heading">
+            <p className="eyebrow">ROLL HISTORY</p>
+            <button
+              className="history-clear"
+              type="button"
+              disabled={!history.length}
+              onClick={() => setHistory([])}
+            >
+              Clear
+            </button>
+          </div>
           {history.length ? (
             history.map((entry) => (
               <article className="history-entry" key={entry.sequence}>
-                <button onClick={() => choose(entry.table)}>
-                  {entry.table.ruleset} / {tableDisplayName(entry.table)}
-                </button>
+                <div className="history-entry-heading">
+                  <button
+                    className="history-table-link"
+                    onClick={() => choose(entry.table)}
+                  >
+                    {entry.table.ruleset} / {tableDisplayName(entry.table)}
+                  </button>
+                  <button
+                    className="history-delete"
+                    type="button"
+                    aria-label={`Delete ${tableDisplayName(entry.table)} roll from history`}
+                    onClick={() =>
+                      setHistory((current) =>
+                        current.filter(
+                          (item) => item.sequence !== entry.sequence,
+                        ),
+                      )
+                    }
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
                 <div className="history-result">
                   <span className="history-roll">{entry.roll}</span>
                   <p>

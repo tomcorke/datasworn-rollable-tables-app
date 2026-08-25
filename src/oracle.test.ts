@@ -9,6 +9,7 @@ import {
   rollTable,
   resultParts,
   resultText,
+  searchTables,
   tableDisplayName,
 } from "./oracle";
 
@@ -47,6 +48,36 @@ describe("Datasworn oracle helpers", () => {
     expect(tableDisplayName({ name: "Regions" })).toBe("Regions");
     expect(tableDisplayName({ tableId: "regions" })).toBe("regions");
   });
+  it("searches by independent words and ranks match count before quality", () => {
+    const tables = [
+      { label: "Coastal Settlement" },
+      { label: "Coast" },
+      { label: "Settlement Trouble" },
+      { label: "Character Goal" },
+    ];
+
+    expect(searchTables(tables, "  coast settlement ")).toEqual([
+      tables[0],
+      tables[1],
+      tables[2],
+    ]);
+  });
+
+  it("ranks complete words above prefixes and partial matches", () => {
+    const tables = [
+      { label: "Stormcoast" },
+      { label: "Coastal Waters" },
+      { label: "Coast" },
+    ];
+
+    expect(searchTables(tables, "coast")).toEqual([
+      tables[2],
+      tables[1],
+      tables[0],
+    ]);
+    expect(searchTables(tables, "   ")).toBe(tables);
+  });
+
   it("ignores object and array names while discovering table labels", () => {
     const tables = getTables({
       oracles: {

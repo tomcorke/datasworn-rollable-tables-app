@@ -84,6 +84,46 @@ export function tableDisplayName(table: OracleTable | undefined): string {
   }
   return "Oracle table";
 }
+
+export function searchTables(
+  tables: OracleTable[],
+  query: string,
+): OracleTable[] {
+  const words = query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+  if (!words.length) return tables;
+
+  return tables
+    .map((table, index) => {
+      const name = tableDisplayName(table).toLocaleLowerCase();
+      const nameWords = name.split(/\s+/);
+      const scores = words.map((word) => {
+        if (name === word) return 4;
+        if (nameWords.includes(word)) return 3;
+        if (nameWords.some((nameWord) => nameWord.startsWith(word))) return 2;
+        return name.includes(word) ? 1 : 0;
+      });
+      return {
+        table,
+        index,
+        matches: scores.filter(Boolean).length,
+        quality: scores.reduce((total, score) => total + score, 0),
+        completeness: words.reduce(
+          (total, word, wordIndex) =>
+            total + (scores[wordIndex] ? word.length / name.length : 0),
+          0,
+        ),
+      };
+    })
+    .filter(({ matches }) => matches > 0)
+    .sort(
+      (left, right) =>
+        right.matches - left.matches ||
+        right.quality - left.quality ||
+        right.completeness - left.completeness ||
+        left.index - right.index,
+    )
+    .map(({ table }) => table);
+}
 export type ResultPart = {
   type: "text" | "link" | "reference";
   value: string;

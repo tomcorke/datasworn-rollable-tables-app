@@ -52,14 +52,14 @@ body {
 }
 .layout {
   display: grid;
-  grid-template-columns: 220px minmax(0, 900px) 280px;
+  grid-template-columns: 220px minmax(0, 900px) minmax(280px, 1fr);
   gap: 32px;
-  max-width: 1492px;
-  margin: auto;
+  margin-left: max(0px, calc((100% - 1492px) / 2));
 }
 .layout.history-hidden {
   grid-template-columns: 220px minmax(0, 900px);
   max-width: 1180px;
+  margin: auto;
 }
 aside {
   padding: 64px 0 32px;
@@ -118,7 +118,6 @@ main {
 }
 header {
   position: relative;
-  max-width: 650px;
 }
 .theme-toggle {
   position: fixed;
@@ -158,9 +157,20 @@ h2 {
   letter-spacing: -0.03em;
 }
 .intro {
+  max-width: 650px;
   font-size: 19px;
   line-height: 1.45;
   color: var(--text-muted);
+}
+.table-search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+.match-count {
+  font: 12px "DM Mono";
+  white-space: nowrap;
 }
 .controls {
   display: flex;
@@ -179,6 +189,7 @@ label {
   flex: 1;
   color: var(--text-muted);
 }
+input,
 select,
 button {
   min-width: 0;
@@ -380,12 +391,42 @@ a {
   background: var(--surface);
   color: var(--accent);
 }
+.history-heading,
+.history-entry-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.history-heading .eyebrow {
+  margin: 0;
+}
+.history-clear,
+.history-delete {
+  width: auto;
+  height: auto;
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 12px;
+}
+.history-clear:disabled {
+  color: var(--text-muted);
+  cursor: default;
+  opacity: 0.6;
+}
 .history-entry {
+  position: relative;
   padding: 14px 0;
   border-bottom: 1px solid var(--border);
 }
-.history-entry > button {
-  width: 100%;
+.history-entry-heading {
+  align-items: flex-start;
+}
+.history-table-link {
+  flex: 1 1 auto;
+  min-width: 0;
   height: auto;
   padding: 0;
   border: 0;
@@ -393,11 +434,18 @@ a {
   color: var(--accent);
   text-align: left;
   font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.history-delete {
+  flex: 0 0 28px;
+  font-size: 20px;
+  line-height: 1;
 }
 .history-result {
   display: grid;
-  grid-template-columns: 36px 1fr;
+  grid-template-columns: 36px minmax(0, 1fr);
   gap: 10px;
+  padding-right: 36px;
   margin-top: 8px;
 }
 .history-result p {
@@ -415,6 +463,7 @@ button:hover {
   filter: brightness(1.1);
 }
 button:focus-visible,
+input:focus-visible,
 select:focus-visible,
 a:focus-visible {
   outline: 3px solid var(--focus);
@@ -436,6 +485,9 @@ a:focus-visible {
   .controls {
     display: grid;
     align-items: stretch;
+  }
+  .table-search {
+    grid-template-columns: minmax(0, 1fr) max-content;
   }
   .row {
     grid-template-columns: 65px 1fr;
